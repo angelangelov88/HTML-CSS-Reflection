@@ -7,94 +7,222 @@ $color-button-gray: #999aa2;
 
 
 
-body {
-    font-family: Poppins,sans-serif;
-    font-size: 1rem;
-}
 
-.btn {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 5px 15px;
-    &-support {
-        background-color: $color-button-blue;
-    }
-    &-contact {
-        background-color: $color-button-gray;
-    }
-}
-.btn-top {
-    border: 2px black solid;
-    display: flex;
-    float: right;
-}
-
-.btn-support:hover{
-        background-color: darken($color: $color-button-blue, $amount: 10%);
+// Media queries
+@media only screen and (max-width: 568px ) {
+    .header-container {
+        border: 5px green solid;
         
+    }
+
+    .btn {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin: 5px 8px;
+        &-support {
+            background-color: $color-button-blue;
+            display: none;
+        }
+        &-contact {
+            background-color: $color-button-gray;
+            display: none;
+        }
+    }
+    .btn-contact:hover{
+        background-color: darken($color: $color-button-gray, $amount: 10%);
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: white;
+    }
+    
+    
+    i {
+        color: white;
+    }
+    
+    .logo {
+        padding-top: 15px;
+        margin-left: .1rem;
+
+    }
+    
+    .header-container {
+        border: 5px green solid;
+        
+    }
+    .btn-menu {
+        color: white;
+        width: 4.2rem;
+        height: 3.5rem;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: black;
+        position: relative;
+        top: -9rem;
+        left: 12rem;
+        border-radius: 7%;
+        border: 2px black solid;
+    }
+    
+    .btn-menu:hover {
+        background-color: darken($color: #333645, $amount: 10%)
+    }
+
+    .fa-search {
+        color: black;
+        background-color: #E5E5E5;
+        height: 20px;
+        padding: 15px;
+        margin-left: -9px;
+    }
+
+    .form-control {
+        background-color: #e5e5e5;
+    }
+    
+    .container-search {
+        width: 470px;
+        margin-left: -25px;
+        background-color: #E5E5E5;
+        border: 1px red solid;
+    }
+
+
+
 }
 
-.btn-contact:hover{
-    background-color: darken($color: $color-button-gray, $amount: 10%);
+@media only screen and (min-width: 600px ) {
+    
 }
 
-
-a {
-    color: white;
-    text-decoration: none;
+@media only screen and (min-width: 768px ) {
+    
 }
-
-a:hover {
-    color: white;
+@media only screen and (min-width: 992px ) {
+    
 }
+@media only screen and (min-width: 1200px ) {
 
 
-i {
-    color: white;
+    body {
+        font-family: Poppins,sans-serif;
+        font-size: 1rem;
+    }
+
+    .header-container {
+        border: 5px green solid;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .btn {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 1.2rem;
+        margin: 5px 8px;
+        &-support {
+            background-color: $color-button-blue;
+        }
+        &-contact {
+            background-color: $color-button-gray;
+        }
+    }
+    .btn-top {
+        border: 2px black solid;
+        display: flex;
+    }
+    .btn-support:hover{
+            background-color: darken($color: $color-button-blue, $amount: 10%);
+            
+    }
+    
+    .btn-contact:hover{
+        background-color: darken($color: $color-button-gray, $amount: 10%);
+    }
+    
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: white;
+    }
+    
+    
+    i {
+        color: white;
+    }
+    
+    .logo {
+        padding-top: 15px;
+    }
+    
+    .header-container {
+        border: 5px green solid;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .fas {
+        padding: 5px;
+    }
+    
+    .fa-search {
+        color: white;
+        background-color: $color-button-gray;
+        padding: 15px;
+        margin-left: -8px;
+    }
+    
+    .fa-search:hover {
+        background-color: darken($color: $color-button-gray, $amount: 10%);
+    }
+    
+    .container-search {
+        width: 300px;
+        margin-right: 10px;
+    }
+    
+    .form-control {
+        width: 240px;
+        height: 55px;
+        border: 1px $color-button-gray solid;
+        border-radius: 1%;
+    }
+    
+    .btn-menu {
+        color: white;
+        width: 4.2rem;
+        height: 3.5rem;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: black;
+        position: relative;
+        top: 0.44rem;
+        border-radius: 7%;
+        border: 2px black solid;
+    }
+    
+    .btn-menu:hover {
+        background-color: darken($color: #333645, $amount: 10%)
+    }
+    
+    
+    
 }
-
-.logo {
-    float: left;
-}
-
-.header-container {
-    border: 5px green solid;
-}
-.fas {
-    padding: 5px;
-}
-
-.fa-search {
-    color: white;
-    background-color: $color-button-gray;
-    padding: 15px;
-    margin-left: -8px;
-}
-
-.fa-search:hover {
-    background-color: darken($color: $color-button-gray, $amount: 10%);
-}
-
-.container {
-    width: 300px;
-    border: 1px red solid;
-}
-
-.form-control {
-    width: 240px;
-}
-
-
-.menu-button {
-    font-size: 10px;
-    border: 2px blueviolet solid;
-}
-.fa-bars {
-}
-
-
