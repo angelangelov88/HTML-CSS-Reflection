@@ -2,6 +2,16 @@
 $color-button-blue: #4183d7;
 $color-button-gray: #999aa2;
 
+$color-navbar: #333645;
+$color-web-design: #926FB1;
+$color-it: #4183D7;
+$color-telecoms: #D64541;
+$color-software: #67809F;
+$color-digital-marketing: #2ECC71;
+$color-cyber-security: #F62459;
+
+
+
 
 //Mixins
 @mixin search-md-screen{
@@ -246,84 +256,115 @@ li {
 .main-navigation {
   background: #333645;
   border-bottom: solid 1px white;
-	display: none;
-	text-transform: uppercase;
-	//max-height: 100px;
-	width: 100%;
+  display: none;
+  text-transform: uppercase;
+  //max-height: 100px;
+  width: 100%;
 
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
 		text-transform: uppercase;
+		border: 2px #eb64ae solid;
 
 	}
 }
 
+.container {
+	border: 2px #2ECC71 solid;
+
+}
+
+
+.li-main {
+	display: inline-table;
+}
+
+.li-sub {
+	display: none;
+}
+
+
 .btn-navbar {
-	background-color: #333645;
+	background-color: $color-navbar;
 	width: 197px;
 	line-height: 0.3;
 	text-transform: uppercase;
 	font-size: 1.125rem;
 }
 
+
+
+
+//NAV BAR COLOURS
 .btn-web:hover {
-	background-color: #926FB1;
+	background-color: $color-web-design;
 	.fa-code {
 		color: white;
+	}
+	.li-web-design {
+		display: inline;
 	}
 }
 
 .fa-code {
-	color: #926FB1;
+	color: $color-web-design;
 }
 
 .btn-it:hover {
-	background-color: #4183D7;
+	background-color: $color-it;
 	.fa-tv {
 		color: white;
 	}
 }
 
 .fa-tv {
-	color: #926FB1;
+	color: $color-it;
 }
 
-.btn-web:hover {
-	background-color: #926FB1;
-	.fa-code {
+.btn-telecoms:hover {
+	background-color: $color-telecoms;
+	.fa-phone-alt {
 		color: white;
 	}
 }
 
-.fa-code {
-	color: #926FB1;
+.fa-phone-alt {
+	color: $color-telecoms;
 }
 
-.btn-web:hover {
-	background-color: #926FB1;
-	.fa-code {
+.btn-software:hover {
+	background-color: $color-software;
+	.fa-th {
 		color: white;
 	}
 }
 
-.fa-code {
-	color: #926FB1;
+.fa-th {
+	color: $color-software;
 }
 
-.btn-web:hover {
-	background-color: #926FB1;
-	.fa-code {
+.btn-digital-marketing:hover {
+	background-color: $color-digital-marketing;
+	.fa-signal {
 		color: white;
 	}
 }
 
-.fa-code {
-	color: #926FB1;
+.fa-signal {
+	color: $color-digital-marketing;
+}
+
+.btn-cyber-security:hover {
+	background-color: $color-cyber-security;
+	.fa-shield-alt {
+		color: white;
+	}
+}
+
+.fa-shield-alt {
+	color: $color-cyber-security;
 }
 
 
 
-li {
-	display: inline;
-}

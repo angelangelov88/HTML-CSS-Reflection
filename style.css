@@ -1,5 +1,5 @@
 body {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
 }
 
@@ -7,17 +7,27 @@ body {
   border: 5px green solid;
   height: 12rem;
 }
+
 @media only screen and (min-width: 768px) {
   .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 8rem;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 8rem;
   }
 }
@@ -31,24 +41,33 @@ body {
   font-size: 1.2rem;
   margin: 5px 8px;
 }
+
 .btn-support {
   background-color: #4183d7;
   display: none;
 }
+
 @media only screen and (min-width: 992px) {
   .btn-support {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
+
 .btn-contact {
   background-color: #999aa2;
   display: none;
 }
+
 @media only screen and (min-width: 992px) {
   .btn-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .btn {
     display: inline-block;
@@ -69,12 +88,14 @@ body {
   bottom: 5.7rem;
   left: 2rem;
 }
+
 @media only screen and (min-width: 768px) {
   .btn-menu {
     float: right;
     position: inherit;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .btn-menu {
     position: relative;
@@ -88,13 +109,17 @@ body {
 }
 
 .btn-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 2px black solid;
   max-height: 100px;
   max-width: 100%;
   width: 100%;
 }
+
 @media only screen and (min-width: 1200px) {
   .btn-top {
     height: 6rem;
@@ -125,8 +150,9 @@ i {
 
 .logo {
   padding: 15px 0 0 15px;
-  margin-left: 0.1rem;
+  margin-left: .1rem;
 }
+
 .fas {
   padding: 5px;
 }
@@ -138,6 +164,7 @@ i {
   padding: 11px;
   margin-left: -9px;
 }
+
 @media only screen and (min-width: 768px) {
   .fa-search {
     color: white;
@@ -146,6 +173,7 @@ i {
     height: 2.8rem;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .fa-search {
     color: white;
@@ -165,6 +193,7 @@ i {
   background-color: #e5e5e5;
   border: 10px green solid;
 }
+
 @media only screen and (min-width: 768px) {
   .form-control {
     max-width: 20vw;
@@ -178,14 +207,18 @@ i {
     left: 27rem;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .form-control {
     display: none;
     position: inherit;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 340px;
   }
@@ -197,6 +230,7 @@ i {
   margin-right: -180px;
   background-color: #E5E5E5;
 }
+
 @media only screen and (min-width: 768px) {
   .container-search {
     max-width: 300px;
@@ -210,8 +244,11 @@ i {
 }
 
 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main-navigation {
@@ -221,12 +258,30 @@ li {
   text-transform: uppercase;
   width: 100%;
 }
+
 @media screen and (min-width: 992px) {
   .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-transform: uppercase;
+    border: 2px #eb64ae solid;
   }
+}
+
+.container {
+  border: 2px #2ECC71 solid;
+}
+
+.li-main {
+  display: inline-table;
+}
+
+.li-sub {
+  display: none;
 }
 
 .btn-navbar {
@@ -240,8 +295,13 @@ li {
 .btn-web:hover {
   background-color: #926FB1;
 }
+
 .btn-web:hover .fa-code {
   color: white;
+}
+
+.btn-web:hover .li-web-design {
+  display: inline;
 }
 
 .fa-code {
@@ -251,49 +311,60 @@ li {
 .btn-it:hover {
   background-color: #4183D7;
 }
+
 .btn-it:hover .fa-tv {
   color: white;
 }
 
 .fa-tv {
-  color: #926FB1;
+  color: #4183D7;
 }
 
-.btn-web:hover {
-  background-color: #926FB1;
+.btn-telecoms:hover {
+  background-color: #D64541;
 }
-.btn-web:hover .fa-code {
+
+.btn-telecoms:hover .fa-phone-alt {
   color: white;
 }
 
-.fa-code {
-  color: #926FB1;
+.fa-phone-alt {
+  color: #D64541;
 }
 
-.btn-web:hover {
-  background-color: #926FB1;
+.btn-software:hover {
+  background-color: #67809F;
 }
-.btn-web:hover .fa-code {
+
+.btn-software:hover .fa-th {
   color: white;
 }
 
-.fa-code {
-  color: #926FB1;
+.fa-th {
+  color: #67809F;
 }
 
-.btn-web:hover {
-  background-color: #926FB1;
+.btn-digital-marketing:hover {
+  background-color: #2ECC71;
 }
-.btn-web:hover .fa-code {
+
+.btn-digital-marketing:hover .fa-signal {
   color: white;
 }
 
-.fa-code {
-  color: #926FB1;
+.fa-signal {
+  color: #2ECC71;
 }
 
-li {
-  display: inline;
+.btn-cyber-security:hover {
+  background-color: #F62459;
 }
 
+.btn-cyber-security:hover .fa-shield-alt {
+  color: white;
+}
+
+.fa-shield-alt {
+  color: #F62459;
+}
 /*# sourceMappingURL=style.css.map */
