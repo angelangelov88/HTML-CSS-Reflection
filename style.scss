@@ -3,226 +3,327 @@ $color-button-blue: #4183d7;
 $color-button-gray: #999aa2;
 
 
+//Mixins
+@mixin search-md-screen{
+			max-width: 20vw;
+				height: 45px;
+				font-size: 0.9rem;
+				color: $color-button-gray;
+				border: 1px $color-button-gray solid;
+				border-radius: 1%;
+				background-color: white;
+				position: absolute;
+				left: 27rem;
+}
 
+//Breakpoints
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+$break-xl: 1200px;
 
 
 
 
 // Media queries
-@media only screen and (max-width: 568px ) {
-    .header-container {
-        border: 5px green solid;
-        
+@media only screen and (max-width: 575px ) {} //xs
+@media only screen and (min-width: 576px ) {}     //s
+@media only screen and (min-width: 768px ) {}     //m
+@media only screen and (min-width: 992px ) {}     //l
+@media only screen and (min-width: 1200px ) {}    //xl
+
+
+
+body {
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+}
+
+
+	.header-container {
+		border: 5px green solid;
+		height: 12rem;
+		 
+			@media only screen and (min-width: $break-m ) {
+				display: flex;
+				justify-content: center;
+				height: 8rem;
+		}
+      @media only screen and (min-width: $break-xl ) {
+				display: flex;
+				justify-content: center;
+				height: 8rem;
+		}
     }
 
-    .btn {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        margin: 5px 8px;
-        &-support {
-            background-color: $color-button-blue;
-            display: none;
-        }
-        &-contact {
-            background-color: $color-button-gray;
-            display: none;
+  .btn {
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		margin: 5px 8px;
+			&-support {
+				background-color: $color-button-blue;
+				display: none;
+				@media only screen and (min-width: $break-l ) {
+					display: flex;
+				}
+		}
+			&-contact {
+				background-color: $color-button-gray;
+				display: none;
+				@media only screen and (min-width: $break-l ) {
+					display: flex;
+				}
+		}
+			@media only screen and (min-width: $break-xl ) {
+				display: inline-block;
+				width: 55rem;
         }
     }
-    .btn-contact:hover{
+ .btn-menu {
+		color: white;
+		width: 4.2rem;
+		height: 3.5rem;
+		font-size: 12px;
+		text-transform: uppercase;
+		background-color: black;
+		border-radius: 7%;
+		border: 2px black solid;
+		position: relative;
+		bottom: 5.7rem;
+		left: 2rem;
+			@media only screen and (min-width: $break-m ) {
+				float: right;
+				position: inherit;
+  }
+			@media only screen and (min-width: $break-xl ) {
+				position: relative;
+				top: 0.1rem;
+				left: 12rem;
+  }
+  }
+    
+  .btn-menu:hover {
+    background-color: darken($color: #333645, $amount: 10%)
+    }
+
+  .btn-top {
+		display: flex;
+		justify-content: space-around;
+		border: 2px black solid;
+		max-height: 100px;
+		max-width: 100%;
+		width: 100%;
+
+		@media only screen and (min-width: $break-m ) {
+		}
+
+		@media only screen and (min-width: $break-l ) {
+			
+	}
+
+			@media only screen and (min-width: $break-xl ) {
+				height: 6rem;
+				width: 45rem;
+			
+    }
+    }
+
+  .btn-support:hover{
+    background-color: darken($color: $color-button-blue, $amount: 10%);    
+}
+
+  .btn-contact:hover{
+    background-color: darken($color: $color-button-gray, $amount: 10%);
+}
+	a {
+		color: white;
+		text-decoration: none;
+    }
+    
+  a:hover {
+    color: white;
+    }
+    
+  i {
+    color: white;
+    }
+    
+  .logo {
+		padding: 15px 0 0 15px;
+		margin-left: .1rem;
+		@media only screen and (min-width: $break-m ) {
+		}
+
+		@media only screen and (min-width: $break-l ) {
+			
+	}
+
+			@media only screen and (min-width: $break-xl ) {
+
+			}
+    }
+
+
+  .fas {
+    padding: 5px;
+    }
+    
+ 
+  .fa-search {
+		color: black;
+		background-color: #E5E5E5;
+		height: 20px;
+		padding: 11px;
+		margin-left: -9px;
+			@media only screen and (min-width: $break-m ) {
+				color: white;
+				background-color: $color-button-gray;
+				padding: 15px;
+				height: 2.8rem;
+				
+		}
+			@media only screen and (min-width: $break-xl ) {
+				color: white;
+				background-color: $color-button-gray;
+				padding: 15px;
+				height: 2.8rem;
+    }
+    }
+	.fa-search:hover {
+      @media only screen and (min-width: $break-m ) { 
         background-color: darken($color: $color-button-gray, $amount: 10%);
     }
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: white;
-    }
-    
-    
-    i {
-        color: white;
-    }
-    
-    .logo {
-        padding-top: 15px;
-        margin-left: .1rem;
-
-    }
-    
-    .header-container {
-        border: 5px green solid;
-        
-    }
-    .btn-menu {
-        color: white;
-        width: 4.2rem;
-        height: 3.5rem;
-        font-size: 12px;
-        text-transform: uppercase;
-        background-color: black;
-        position: relative;
-        top: -9rem;
-        left: 12rem;
-        border-radius: 7%;
-        border: 2px black solid;
-    }
-    
-    .btn-menu:hover {
-        background-color: darken($color: #333645, $amount: 10%)
-    }
-
-    .fa-search {
-        color: black;
-        background-color: #E5E5E5;
-        height: 20px;
-        padding: 15px;
-        margin-left: -9px;
-    }
-
-    .form-control {
-        background-color: #e5e5e5;
-    }
-    
-    .container-search {
-        width: 470px;
-        margin-left: -25px;
-        background-color: #E5E5E5;
-        border: 1px red solid;
-    }
+	}
+	
+  .form-control {
+		background-color: #e5e5e5;
+		border: 10px green solid;
+      @media only screen and (min-width: $break-m ) {
+				@include search-md-screen ();
 
 
+    }
+			@media only screen and (min-width: $break-l ) {
+				display: none;
+				position: inherit;
+		}
+			@media only screen and (min-width: $break-xl ) {
+				display: flex;
+				width: 340px;
+		}
 
 }
 
-@media only screen and (min-width: 600px ) {
-    
+  .container-search {
+		width: 100%;
+		margin-left: -80px;
+		margin-right: -180px;
+
+		background-color: #E5E5E5;
+			@media only screen and (min-width: $break-m ) {
+				max-width: 300px;
+				margin-left: 1rem;
+				background-color: white;
+}
 }
 
-@media only screen and (min-width: 768px ) {
-    
+.main-navigation {
+	background-color: lightskyblue;
 }
-@media only screen and (min-width: 992px ) {
-    
+
+li {
+	display: flex;
+	justify-content: space-around;
 }
-@media only screen and (min-width: 1200px ) {
+
+//Navigation bar starts here
+
+.main-navigation {
+  background: #333645;
+  border-bottom: solid 1px white;
+	display: none;
+	text-transform: uppercase;
+	//max-height: 100px;
+	width: 100%;
+
+	@media screen and (min-width: $break-l) {
+		display: flex;
+		justify-content: center;
+		text-transform: uppercase;
+
+	}
+}
+
+.btn-navbar {
+	background-color: #333645;
+	width: 197px;
+	line-height: 0.3;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+}
+
+.btn-web:hover {
+	background-color: #926FB1;
+	.fa-code {
+		color: white;
+	}
+}
+
+.fa-code {
+	color: #926FB1;
+}
+
+.btn-it:hover {
+	background-color: #4183D7;
+	.fa-tv {
+		color: white;
+	}
+}
+
+.fa-tv {
+	color: #926FB1;
+}
+
+.btn-web:hover {
+	background-color: #926FB1;
+	.fa-code {
+		color: white;
+	}
+}
+
+.fa-code {
+	color: #926FB1;
+}
+
+.btn-web:hover {
+	background-color: #926FB1;
+	.fa-code {
+		color: white;
+	}
+}
+
+.fa-code {
+	color: #926FB1;
+}
+
+.btn-web:hover {
+	background-color: #926FB1;
+	.fa-code {
+		color: white;
+	}
+}
+
+.fa-code {
+	color: #926FB1;
+}
 
 
-    body {
-        font-family: Poppins,sans-serif;
-        font-size: 1rem;
-    }
 
-    .header-container {
-        border: 5px green solid;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .btn {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-transform: uppercase;
-        display: inline-block;
-        font-size: 1.2rem;
-        margin: 5px 8px;
-        &-support {
-            background-color: $color-button-blue;
-        }
-        &-contact {
-            background-color: $color-button-gray;
-        }
-    }
-    .btn-top {
-        border: 2px black solid;
-        display: flex;
-    }
-    .btn-support:hover{
-            background-color: darken($color: $color-button-blue, $amount: 10%);
-            
-    }
-    
-    .btn-contact:hover{
-        background-color: darken($color: $color-button-gray, $amount: 10%);
-    }
-    
-    
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: white;
-    }
-    
-    
-    i {
-        color: white;
-    }
-    
-    .logo {
-        padding-top: 15px;
-    }
-    
-    .header-container {
-        border: 5px green solid;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .fas {
-        padding: 5px;
-    }
-    
-    .fa-search {
-        color: white;
-        background-color: $color-button-gray;
-        padding: 15px;
-        margin-left: -8px;
-    }
-    
-    .fa-search:hover {
-        background-color: darken($color: $color-button-gray, $amount: 10%);
-    }
-    
-    .container-search {
-        width: 300px;
-        margin-right: 10px;
-    }
-    
-    .form-control {
-        width: 240px;
-        height: 55px;
-        border: 1px $color-button-gray solid;
-        border-radius: 1%;
-    }
-    
-    .btn-menu {
-        color: white;
-        width: 4.2rem;
-        height: 3.5rem;
-        font-size: 12px;
-        text-transform: uppercase;
-        background-color: black;
-        position: relative;
-        top: 0.44rem;
-        border-radius: 7%;
-        border: 2px black solid;
-    }
-    
-    .btn-menu:hover {
-        background-color: darken($color: #333645, $amount: 10%)
-    }
-    
-    
-    
+li {
+	display: inline;
 }

@@ -1,178 +1,299 @@
-@media only screen and (max-width: 568px) {
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
+
+.header-container {
+  border: 5px green solid;
+  height: 12rem;
+}
+@media only screen and (min-width: 768px) {
   .header-container {
-    border: 5px green solid;
+    display: flex;
+    justify-content: center;
+    height: 8rem;
   }
-  .btn {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin: 5px 8px;
-  }
-  .btn-support {
-    background-color: #4183d7;
-    display: none;
-  }
-  .btn-contact {
-    background-color: #999aa2;
-    display: none;
-  }
-  .btn-contact:hover {
-    background-color: #7e808a;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    color: white;
-  }
-  i {
-    color: white;
-  }
-  .logo {
-    padding-top: 15px;
-    margin-left: .1rem;
-  }
+}
+@media only screen and (min-width: 1200px) {
   .header-container {
-    border: 5px green solid;
-  }
-  .btn-menu {
-    color: white;
-    width: 4.2rem;
-    height: 3.5rem;
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: black;
-    position: relative;
-    top: -9rem;
-    left: 12rem;
-    border-radius: 7%;
-    border: 2px black solid;
-  }
-  .btn-menu:hover {
-    background-color: #1d1f28;
-  }
-  .fa-search {
-    color: black;
-    background-color: #E5E5E5;
-    height: 20px;
-    padding: 15px;
-    margin-left: -9px;
-  }
-  .form-control {
-    background-color: #e5e5e5;
-  }
-  .container-search {
-    width: 470px;
-    margin-left: -25px;
-    background-color: #E5E5E5;
-    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    height: 8rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  body {
-    font-family: Poppins,sans-serif;
-    font-size: 1rem;
-  }
-  .header-container {
-    border: 5px green solid;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .btn {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 5px 8px;
-  }
+.btn {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 5px 8px;
+}
+.btn-support {
+  background-color: #4183d7;
+  display: none;
+}
+@media only screen and (min-width: 992px) {
   .btn-support {
-    background-color: #4183d7;
+    display: flex;
   }
+}
+.btn-contact {
+  background-color: #999aa2;
+  display: none;
+}
+@media only screen and (min-width: 992px) {
   .btn-contact {
-    background-color: #999aa2;
+    display: flex;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .btn {
+    display: inline-block;
+    width: 55rem;
+  }
+}
+
+.btn-menu {
+  color: white;
+  width: 4.2rem;
+  height: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 7%;
+  border: 2px black solid;
+  position: relative;
+  bottom: 5.7rem;
+  left: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .btn-menu {
+    float: right;
+    position: inherit;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn-menu {
+    position: relative;
+    top: 0.1rem;
+    left: 12rem;
+  }
+}
+
+.btn-menu:hover {
+  background-color: #1d1f28;
+}
+
+.btn-top {
+  display: flex;
+  justify-content: space-around;
+  border: 2px black solid;
+  max-height: 100px;
+  max-width: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
   .btn-top {
-    border: 2px black solid;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 6rem;
+    width: 45rem;
   }
-  .btn-support:hover {
-    background-color: #286abd;
-  }
-  .btn-contact:hover {
-    background-color: #7e808a;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    color: white;
-  }
-  i {
-    color: white;
-  }
-  .logo {
-    padding-top: 15px;
-  }
-  .header-container {
-    border: 5px green solid;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .fas {
-    padding: 5px;
-  }
+}
+
+.btn-support:hover {
+  background-color: #286abd;
+}
+
+.btn-contact:hover {
+  background-color: #7e808a;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+.logo {
+  padding: 15px 0 0 15px;
+  margin-left: 0.1rem;
+}
+.fas {
+  padding: 5px;
+}
+
+.fa-search {
+  color: black;
+  background-color: #E5E5E5;
+  height: 20px;
+  padding: 11px;
+  margin-left: -9px;
+}
+@media only screen and (min-width: 768px) {
   .fa-search {
     color: white;
     background-color: #999aa2;
     padding: 15px;
-    margin-left: -8px;
+    height: 2.8rem;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .fa-search {
+    color: white;
+    background-color: #999aa2;
+    padding: 15px;
+    height: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .fa-search:hover {
     background-color: #7e808a;
   }
-  .container-search {
-    width: 300px;
-    margin-right: 10px;
-  }
+}
+
+.form-control {
+  background-color: #e5e5e5;
+  border: 10px green solid;
+}
+@media only screen and (min-width: 768px) {
   .form-control {
-    width: 240px;
-    height: 55px;
+    max-width: 20vw;
+    height: 45px;
+    font-size: 0.9rem;
+    color: #999aa2;
     border: 1px #999aa2 solid;
     border-radius: 1%;
-  }
-  .btn-menu {
-    color: white;
-    width: 4.2rem;
-    height: 3.5rem;
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: black;
-    position: relative;
-    top: 0.44rem;
-    border-radius: 7%;
-    border: 2px black solid;
-  }
-  .btn-menu:hover {
-    background-color: #1d1f28;
+    background-color: white;
+    position: absolute;
+    left: 27rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .form-control {
+    display: none;
+    position: inherit;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .form-control {
+    display: flex;
+    width: 340px;
+  }
+}
+
+.container-search {
+  width: 100%;
+  margin-left: -80px;
+  margin-right: -180px;
+  background-color: #E5E5E5;
+}
+@media only screen and (min-width: 768px) {
+  .container-search {
+    max-width: 300px;
+    margin-left: 1rem;
+    background-color: white;
+  }
+}
+
+.main-navigation {
+  background-color: lightskyblue;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-navigation {
+  background: #333645;
+  border-bottom: solid 1px white;
+  display: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .main-navigation {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+}
+
+.btn-navbar {
+  background-color: #333645;
+  width: 197px;
+  line-height: 0.3;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.btn-web:hover {
+  background-color: #926FB1;
+}
+.btn-web:hover .fa-code {
+  color: white;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+.btn-it:hover {
+  background-color: #4183D7;
+}
+.btn-it:hover .fa-tv {
+  color: white;
+}
+
+.fa-tv {
+  color: #926FB1;
+}
+
+.btn-web:hover {
+  background-color: #926FB1;
+}
+.btn-web:hover .fa-code {
+  color: white;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+.btn-web:hover {
+  background-color: #926FB1;
+}
+.btn-web:hover .fa-code {
+  color: white;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+.btn-web:hover {
+  background-color: #926FB1;
+}
+.btn-web:hover .fa-code {
+  color: white;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+li {
+  display: inline;
+}
+
 /*# sourceMappingURL=style.css.map */
