@@ -240,22 +240,11 @@ i {
 }
 
 .main-navigation {
-  background-color: lightskyblue;
-}
-
-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.main-navigation {
   background: #333645;
   border-bottom: solid 1px white;
   display: none;
   text-transform: uppercase;
+  max-height: 95px;
   width: 100%;
 }
 
@@ -267,41 +256,95 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-transform: uppercase;
     border: 2px #eb64ae solid;
   }
 }
 
 .container {
   border: 2px #2ECC71 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 1400px;
 }
 
 .li-main {
   display: inline-table;
+  margin: 0 -5px;
 }
 
 .li-sub {
   display: none;
 }
 
-.btn-navbar {
-  background-color: #333645;
-  width: 197px;
-  line-height: 0.3;
-  text-transform: uppercase;
-  font-size: 1.125rem;
+.web-design:hover {
+  width: 100%;
 }
 
-.btn-web:hover {
+.web-design:hover .li-web-design {
+  background-color: #926FB1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 300px;
+}
+
+.it:hover .li-it {
+  background-color: #4183D7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.telecoms:hover .li-telecoms {
+  background-color: #D64541;
+  display: block;
+}
+
+.software:hover .li-software {
+  background-color: #67809F;
+  display: block;
+}
+
+.digital-marketing:hover .li-digital-marketing {
+  background-color: #2ECC71;
+  display: block;
+}
+
+.cyber-security:hover .li-cyber-security {
+  background-color: #F62459;
+  display: block;
+}
+
+.btn-navbar {
+  background-color: #333645;
+  width: 150px;
+  line-height: 0.3;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-navbar {
+    width: 195px;
+  }
+}
+
+.btn-web-design:hover {
   background-color: #926FB1;
 }
 
-.btn-web:hover .fa-code {
+.btn-web-design:hover .fa-code {
   color: white;
 }
 
-.btn-web:hover .li-web-design {
-  display: inline;
+.btn-web-design:hover .li-web-design {
+  background-color: aqua;
+  color: #F62459;
 }
 
 .fa-code {

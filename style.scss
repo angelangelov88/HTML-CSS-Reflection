@@ -55,15 +55,15 @@ body {
 		border: 5px green solid;
 		height: 12rem;
 		 
-			@media only screen and (min-width: $break-m ) {
-				display: flex;
-				justify-content: center;
-				height: 8rem;
+		@media only screen and (min-width: $break-m ) {
+			display: flex;
+			justify-content: center;
+			height: 8rem;
 		}
       @media only screen and (min-width: $break-xl ) {
-				display: flex;
-				justify-content: center;
-				height: 8rem;
+			display: flex;
+			justify-content: center;
+			height: 8rem;
 		}
     }
 
@@ -242,29 +242,22 @@ body {
 }
 }
 
-.main-navigation {
-	background-color: lightskyblue;
-}
-
-li {
-	display: flex;
-	justify-content: space-around;
-}
 
 //Navigation bar starts here
+
+
 
 .main-navigation {
   background: #333645;
   border-bottom: solid 1px white;
   display: none;
   text-transform: uppercase;
-  //max-height: 100px;
+  max-height: 95px;
   width: 100%;
 
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
-		text-transform: uppercase;
 		border: 2px #eb64ae solid;
 
 	}
@@ -272,38 +265,104 @@ li {
 
 .container {
 	border: 2px #2ECC71 solid;
-
+	display: flex;
+	justify-content: center;
+	min-width: 1400px;
 }
-
 
 .li-main {
 	display: inline-table;
+	margin: 0 -5px;
 }
 
 .li-sub {
 	display: none;
 }
 
+.web-design:hover {
+	width: 100%;
+
+	.li-web-design {
+		background-color: $color-web-design;
+		display: flex;
+		margin-right: 300px;
+
+		}
+}
+
+.it:hover {
+	.li-it {
+		background-color: $color-it;
+		display: flex;
+		align-content: flex-start;
+		
+		}
+}
+
+.telecoms:hover {
+
+	.li-telecoms {
+		background-color: $color-telecoms;
+		display: block;
+
+		}
+}
+
+
+.software:hover {
+
+	.li-software {
+		background-color: $color-software;
+		display: block;
+		
+
+		}
+}
+
+
+.digital-marketing:hover {
+
+	.li-digital-marketing {
+		background-color: $color-digital-marketing;
+		display: block;
+		
+
+		}
+}
+
+
+.cyber-security:hover {
+
+	.li-cyber-security {
+		background-color: $color-cyber-security;
+		display: block;
+		
+
+		}
+}
 
 .btn-navbar {
 	background-color: $color-navbar;
-	width: 197px;
+	width: 150px;
 	line-height: 0.3;
 	text-transform: uppercase;
-	font-size: 1.125rem;
+	@media only screen and (min-width: $break-xl ) {
+		width: 195px;
+	}
 }
 
 
 
 
 //NAV BAR COLOURS
-.btn-web:hover {
+.btn-web-design:hover {
 	background-color: $color-web-design;
 	.fa-code {
 		color: white;
 	}
 	.li-web-design {
-		display: inline;
+		background-color: aqua;
+		color: #F62459;
 	}
 }
 
@@ -365,6 +424,17 @@ li {
 .fa-shield-alt {
 	color: $color-cyber-security;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
