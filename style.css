@@ -278,46 +278,136 @@ i {
 
 .li-sub {
   display: none;
+  font-size: 1rem;
 }
 
-.web-design:hover {
+@media screen and (min-width: 1200px) {
+  .li-sub {
+    font-size: 0.9rem;
+  }
+}
+
+.li-sub:hover .li-main {
+  background-color: #926FB1;
+}
+
+.web-design:hover .web-design-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
   width: 100%;
+  background-color: #926FB1;
 }
 
 .web-design:hover .li-web-design {
-  background-color: #926FB1;
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.it:hover .it-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  background-color: #4183D7;
 }
 
 .it:hover .li-it {
-  background-color: #4183D7;
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.telecoms:hover .telecoms-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  background-color: #D64541;
 }
 
 .telecoms:hover .li-telecoms {
-  background-color: #D64541;
+  margin: 5px;
+  padding: 5px;
   display: block;
+}
+
+.software:hover .software-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  background-color: #67809F;
 }
 
 .software:hover .li-software {
-  background-color: #67809F;
+  margin: 5px;
+  padding: 5px;
   display: block;
+}
+
+.digital-marketing:hover .digital-marketing-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  background-color: #2ECC71;
 }
 
 .digital-marketing:hover .li-digital-marketing {
-  background-color: #2ECC71;
+  margin: 5px;
+  padding: 5px;
   display: block;
 }
 
-.cyber-security:hover .li-cyber-security {
+.cyber-security:hover .cyber-security-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
   background-color: #F62459;
+}
+
+.cyber-security:hover .li-cyber-security {
+  margin: 5px;
+  padding: 5px;
   display: block;
 }
 
@@ -326,6 +416,7 @@ i {
   width: 150px;
   line-height: 0.3;
   text-transform: uppercase;
+  border-right: 2px gray solid;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -340,11 +431,6 @@ i {
 
 .btn-web-design:hover .fa-code {
   color: white;
-}
-
-.btn-web-design:hover .li-web-design {
-  background-color: aqua;
-  color: #F62459;
 }
 
 .fa-code {

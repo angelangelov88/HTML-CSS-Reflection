@@ -1,6 +1,8 @@
 //Variables
 $color-button-blue: #4183d7;
 $color-button-gray: #999aa2;
+$color-icon: white;
+
 
 $color-navbar: #333645;
 $color-web-design: #926FB1;
@@ -25,6 +27,21 @@ $color-cyber-security: #F62459;
 				position: absolute;
 				left: 27rem;
 }
+
+@mixin navbar-flexbox-container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 0px;
+	height: 45px;
+	width: 100%;
+}
+
+@mixin navbar-flexbox-items {
+	margin: 5px;
+	padding: 5px;
+	display: block;
+	}
 
 //Breakpoints
 $break-xs: 575px;
@@ -277,67 +294,84 @@ body {
 
 .li-sub {
 	display: none;
+	font-size: 1rem;
+	@media screen and (min-width: $break-xl) {
+		font-size: 0.9rem;
+	}
+}
+
+.li-sub:hover {
+	.li-main {
+		background-color: $color-web-design;
+	}
 }
 
 .web-design:hover {
-	width: 100%;
-
-	.li-web-design {
+	.web-design-ul { //flexbox container
+		@include navbar-flexbox-container;
 		background-color: $color-web-design;
-		display: flex;
-		margin-right: 300px;
 
+	}
+	.li-web-design { //flexbox items
+		@include navbar-flexbox-items;
+		
 		}
-}
+	}
 
 .it:hover {
-	.li-it {
+	.it-ul {
+		@include navbar-flexbox-container;
 		background-color: $color-it;
-		display: flex;
-		align-content: flex-start;
-		
+	}
+	.li-it {
+		@include navbar-flexbox-items;	
 		}
 }
 
 .telecoms:hover {
-
-	.li-telecoms {
+	.telecoms-ul {
+		@include navbar-flexbox-container;
 		background-color: $color-telecoms;
-		display: block;
 
+	}
+	.li-telecoms {
+		@include navbar-flexbox-items;
 		}
 }
-
 
 .software:hover {
-
-	.li-software {
+	.software-ul {
+		@include navbar-flexbox-container;
 		background-color: $color-software;
-		display: block;
-		
 
+	}
+	.li-software {
+		@include navbar-flexbox-items;
+		
 		}
 }
-
 
 .digital-marketing:hover {
-
-	.li-digital-marketing {
+	.digital-marketing-ul {
+		@include navbar-flexbox-container;
 		background-color: $color-digital-marketing;
-		display: block;
-		
 
+	}
+	.li-digital-marketing {
+		@include navbar-flexbox-items;
+		
 		}
 }
 
-
 .cyber-security:hover {
-
-	.li-cyber-security {
+	.cyber-security-ul {
+		@include navbar-flexbox-container;
 		background-color: $color-cyber-security;
-		display: block;
-		
 
+	}
+	.li-cyber-security {
+		@include navbar-flexbox-items;
+		
 		}
 }
 
@@ -346,6 +380,8 @@ body {
 	width: 150px;
 	line-height: 0.3;
 	text-transform: uppercase;
+	border-right: 2px gray solid;
+
 	@media only screen and (min-width: $break-xl ) {
 		width: 195px;
 	}
@@ -358,11 +394,7 @@ body {
 .btn-web-design:hover {
 	background-color: $color-web-design;
 	.fa-code {
-		color: white;
-	}
-	.li-web-design {
-		background-color: aqua;
-		color: #F62459;
+		color: $color-icon;
 	}
 }
 
@@ -373,7 +405,7 @@ body {
 .btn-it:hover {
 	background-color: $color-it;
 	.fa-tv {
-		color: white;
+		color: $color-icon;
 	}
 }
 
@@ -384,7 +416,7 @@ body {
 .btn-telecoms:hover {
 	background-color: $color-telecoms;
 	.fa-phone-alt {
-		color: white;
+		color: $color-icon;
 	}
 }
 
@@ -395,7 +427,7 @@ body {
 .btn-software:hover {
 	background-color: $color-software;
 	.fa-th {
-		color: white;
+		color: $color-icon;
 	}
 }
 
@@ -406,7 +438,7 @@ body {
 .btn-digital-marketing:hover {
 	background-color: $color-digital-marketing;
 	.fa-signal {
-		color: white;
+		color: $color-icon;
 	}
 }
 
@@ -417,7 +449,7 @@ body {
 .btn-cyber-security:hover {
 	background-color: $color-cyber-security;
 	.fa-shield-alt {
-		color: white;
+		color: $color-icon;
 	}
 }
 
