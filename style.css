@@ -269,7 +269,6 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 1400px;
 }
 
 .li-main {
@@ -608,5 +607,70 @@ h1 {
 h5 {
   line-height: 2.1rem;
   padding: 15px;
+}
+
+.card {
+  border: 5px #ee326a solid;
+  display: flexbox;
+}
+
+h3 {
+  color: black;
+  padding-top: 1rem;
+}
+
+.card-container {
+  border: 1px #bbbbbb solid;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card-container:hover {
+  background-color: #67809F;
+  color: white;
+}
+
+.card-container:hover h3 {
+  color: white;
+}
+
+.card-container:hover .btn-card-software {
+  background-color: white;
+  color: #67809F;
+}
+
+.card-container:hover .fa-software-card {
+  color: #67809F;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.card-container:hover .a-cards-software {
+  color: #67809F;
+}
+
+.a-cards-software {
+  color: black;
+}
+
+.fa-software-card {
+  border-radius: 50%;
+  border: 15px #67809F solid;
+  background-color: #67809F;
+  color: white;
+}
+
+.btn-card-software {
+  color: white;
+  background-color: #67809F;
+}
+
+.dash {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
