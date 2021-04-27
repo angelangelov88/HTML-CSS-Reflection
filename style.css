@@ -518,13 +518,6 @@ i {
   background-size: cover;
 }
 
-@media only screen and (min-width: 1200px) {
-  .main-photo {
-    position: absolute;
-    top: 14rem;
-  }
-}
-
 .gradient-div {
   border: 3px turquoise solid;
   position: absolute;
@@ -548,12 +541,6 @@ i {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .gradient-div {
-    top: 0;
-  }
-}
-
 .text-block {
   text-align: center;
   border: 2px fuchsia solid;
@@ -574,12 +561,6 @@ i {
     /* Set the width of the positioned div */
     padding-left: 0px;
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .text-block {
-    top: 25%;
   }
 }
 
@@ -611,12 +592,21 @@ h5 {
 
 .card {
   border: 5px #ee326a solid;
-  display: flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
 }
 
-h3 {
-  color: black;
-  padding-top: 1rem;
+@media only screen and (min-width: 768px) {
+  .card {
+    border: 5px #2516f8 solid;
+  }
 }
 
 .card-container {
@@ -624,33 +614,47 @@ h3 {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 80%;
-  margin: auto;
+  margin: 1rem auto;
   text-align: center;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.card-container:hover {
+.software-container:hover {
   background-color: #67809F;
   color: white;
 }
 
-.card-container:hover h3 {
+.software-container:hover h3 {
   color: white;
 }
 
-.card-container:hover .btn-card-software {
+.software-container:hover .btn-card-software {
   background-color: white;
   color: #67809F;
 }
 
-.card-container:hover .fa-software-card {
+.software-container:hover .btn-card-software .a-cards-software {
+  color: #67809F;
+}
+
+.software-container:hover .fa-software-card {
   color: #67809F;
   background-color: white;
   border: 15px white solid;
 }
 
-.card-container:hover .a-cards-software {
-  color: #67809F;
+.software-container:hover .a-cards-software {
+  color: white;
 }
 
 .a-cards-software {
@@ -669,8 +673,305 @@ h3 {
   background-color: #67809F;
 }
 
+.btn-card-software .a-cards-software {
+  color: white;
+}
+
+.it-container:hover {
+  background-color: #4183D7;
+  color: white;
+}
+
+.it-container:hover h3 {
+  color: white;
+}
+
+.it-container:hover .btn-card-it {
+  background-color: white;
+  color: #4183D7;
+}
+
+.it-container:hover .btn-card-it .a-cards-it {
+  color: #4183D7;
+}
+
+.it-container:hover .fa-it-card {
+  color: #4183D7;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.it-container:hover .a-cards-it {
+  color: white;
+}
+
+.a-cards-it {
+  color: black;
+}
+
+.fa-it-card {
+  border-radius: 50%;
+  border: 15px #4183D7 solid;
+  background-color: #4183D7;
+  color: white;
+}
+
+.btn-card-it {
+  color: white;
+  background-color: #4183D7;
+}
+
+.btn-card-it .a-cards-it {
+  color: white;
+}
+
+.digital-marketing-container:hover {
+  background-color: #2ECC71;
+  color: white;
+}
+
+.digital-marketing-container:hover h3 {
+  color: white;
+}
+
+.digital-marketing-container:hover .btn-card-digital-marketing {
+  background-color: white;
+  color: #2ECC71;
+}
+
+.digital-marketing-container:hover .btn-card-digital-marketing .a-cards-digital-marketing {
+  color: #2ECC71;
+}
+
+.digital-marketing-container:hover .fa-digital-marketing-card {
+  color: #2ECC71;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.digital-marketing-container:hover .a-cards-digital-marketing {
+  color: white;
+}
+
+.a-cards-digital-marketing {
+  color: black;
+}
+
+.fa-digital-marketing-card {
+  border-radius: 50%;
+  border: 15px #2ECC71 solid;
+  background-color: #2ECC71;
+  color: white;
+}
+
+.btn-card-digital-marketing {
+  color: white;
+  background-color: #2ECC71;
+}
+
+.btn-card-digital-marketing .a-cards-digital-marketing {
+  color: white;
+}
+
+.telecoms-container:hover {
+  background-color: #D64541;
+  color: white;
+}
+
+.telecoms-container:hover h3 {
+  color: white;
+}
+
+.telecoms-container:hover .btn-card-telecoms {
+  background-color: white;
+  color: #D64541;
+}
+
+.telecoms-container:hover .btn-card-telecoms .a-cards-telecoms {
+  color: #D64541;
+}
+
+.telecoms-container:hover .fa-telecoms-card {
+  color: #D64541;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.telecoms-container:hover .a-cards-telecoms {
+  color: white;
+}
+
+.a-cards-telecoms {
+  color: black;
+}
+
+.fa-telecoms-card {
+  border-radius: 50%;
+  border: 15px #D64541 solid;
+  background-color: #D64541;
+  color: white;
+}
+
+.btn-card-telecoms {
+  color: white;
+  background-color: #D64541;
+}
+
+.btn-card-telecoms .a-cards-telecoms {
+  color: white;
+}
+
+.web-design-container:hover {
+  background-color: #926FB1;
+  color: white;
+}
+
+.web-design-container:hover h3 {
+  color: white;
+}
+
+.web-design-container:hover .btn-card-web-design {
+  background-color: white;
+  color: #926FB1;
+}
+
+.web-design-container:hover .btn-card-web-design .a-cards-web-design {
+  color: #926FB1;
+}
+
+.web-design-container:hover .fa-web-design-card {
+  color: #926FB1;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.web-design-container:hover .a-cards-web-design {
+  color: white;
+}
+
+.a-cards-web-design {
+  color: black;
+}
+
+.fa-web-design-card {
+  border-radius: 50%;
+  border: 15px #926FB1 solid;
+  background-color: #926FB1;
+  color: white;
+}
+
+.btn-card-web-design {
+  color: white;
+  background-color: #926FB1;
+}
+
+.btn-card-web-design .a-cards-web-design {
+  color: white;
+}
+
+.cyber-security-container:hover {
+  background-color: #F62459;
+  color: white;
+}
+
+.cyber-security-container:hover h3 {
+  color: white;
+}
+
+.cyber-security-container:hover .btn-card-cyber-security {
+  background-color: white;
+  color: #F62459;
+}
+
+.cyber-security-container:hover .btn-card-cyber-security .a-cards-cyber-security {
+  color: #F62459;
+}
+
+.cyber-security-container:hover .fa-cyber-security-card {
+  color: #F62459;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.cyber-security-container:hover .a-cards-cyber-security {
+  color: white;
+}
+
+.a-cards-cyber-security {
+  color: black;
+}
+
+.fa-cyber-security-card {
+  border-radius: 50%;
+  border: 15px #F62459 solid;
+  background-color: #F62459;
+  color: white;
+}
+
+.btn-card-cyber-security {
+  color: white;
+  background-color: #F62459;
+}
+
+.btn-card-cyber-security .a-cards-cyber-security {
+  color: white;
+}
+
+.developer-training-container:hover {
+  background-color: #926FB1;
+  color: white;
+}
+
+.developer-training-container:hover h3 {
+  color: white;
+}
+
+.developer-training-container:hover .btn-card-developer-training {
+  background-color: white;
+  color: #926FB1;
+}
+
+.developer-training-container:hover .btn-card-developer-training .a-cards-it {
+  color: #926FB1;
+}
+
+.developer-training-container:hover .fa-developer-training-card {
+  color: #926FB1;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.developer-training-container:hover .a-cards-developer-training {
+  color: white;
+}
+
+.a-cards-developer-training {
+  color: black;
+}
+
+.fa-developer-training-card {
+  border-radius: 50%;
+  border: 15px #926FB1 solid;
+  background-color: #926FB1;
+  color: white;
+}
+
+.btn-card-developer-training {
+  color: white;
+  background-color: #926FB1;
+}
+
+.btn-card-developer-training .a-cards-developer-training {
+  color: white;
+}
+
 .dash {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+h3 {
+  color: black;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

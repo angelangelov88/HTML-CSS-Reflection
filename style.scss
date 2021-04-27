@@ -66,7 +66,7 @@ $color-cyber-security: #F62459;
 	border: 1px rgb(187, 187, 187) solid;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 80%;
-	margin: auto;
+	margin: 1rem auto;
 	text-align: center;
 	padding: 2rem;
 	}
@@ -495,16 +495,13 @@ body {
 .main-photo {
 	border: 10px yellow solid;
 	background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
-	//background-size: cover;
 	width: 100%;
 	height: 550px;
-
 	background-size: cover;
 
 	@media only screen and (min-width: $break-xl ) {
-
-		position: absolute;
-		top: 14rem;
+		// position: absolute;
+		// top: 14rem;
 		//max-width: 1910px;
 
 }
@@ -529,14 +526,10 @@ body {
 	}
 
 	@media only screen and (min-width: $break-xl ) {
-		top: 0;
 
 
 	}
 }
-
-	// https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg
-
 
 .text-block {
 	text-align: center;
@@ -557,7 +550,6 @@ body {
 
 	}
 	@media only screen and (min-width: $break-xl ) {
-		top: 25%;
 
 
 	}
@@ -585,23 +577,62 @@ h5 {
 
 }
 
+
+
+
 // CARDS
+
+
 
 .card {
 	border: 5px rgb(238, 50, 106) solid;
-	display: flexbox;
+
+	display: flex;
+	//flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+
+	@media only screen and (min-width: $break-s) {
+
+		
+	}
+
+	@media only screen and (min-width: $break-m) {
+		border: 5px rgb(37, 22, 248) solid;
+		
+	}
 }
 
-h3 {
-	color: black;
-	padding-top: 1rem;
-}
+// .test {
+// 	display: flex;
+// 	justify-content: space-around;
+// 	flex-wrap: wrap;
+//  }
 
 .card-container {
 	@include cards;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+
+}
+.btn-card {
 }
 
-.card-container:hover {
+// @mixin cards {
+// 	border: 1px rgb(187, 187, 187) solid;
+// 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+// 	max-width: 80%;
+// 	margin: auto;
+// 	text-align: center;
+// 	padding: 2rem;
+// 	}
+
+//Software card
+
+.software-container:hover {
 	background-color: $color-software;
 	color: white; 
 	h3 {
@@ -610,6 +641,9 @@ h3 {
 	.btn-card-software {
 		background-color: white;
 		color: $color-software;
+		.a-cards-software {
+			color: $color-software;
+		}
 	}
 	.fa-software-card {
 		color: $color-software;
@@ -617,7 +651,7 @@ h3 {
 		border: 15px white solid;
 	}
 	.a-cards-software {
-		color: $color-software;
+		color: white;
 	}
 }
 .a-cards-software {
@@ -634,18 +668,284 @@ h3 {
 .btn-card-software {
 	color: white;
 	background-color: $color-software;
+	.a-cards-software {
+		color: white;
+	}
+}
+
+//IT card
+
+.it-container:hover {
+	background-color: $color-it;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-it {
+		background-color: white;
+		color: $color-it;
+		.a-cards-it {
+			color: $color-it;
+		}
+	}
+	.fa-it-card {
+		color: $color-it;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-it {
+		color: white;
+	
+	}
+}
+.a-cards-it {
+	color: black;
+}
+
+.fa-it-card {
+	border-radius: 50%;
+	border: 15px $color-it solid;
+	background-color: $color-it;
+	color: white;
+}
+
+.btn-card-it {
+	color: white;
+	background-color: $color-it;
+	.a-cards-it {
+		color: white;
+	}
 }
 
 
+//Digital Marketing card
+
+.digital-marketing-container:hover {
+	background-color: $color-digital-marketing;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-digital-marketing {
+		background-color: white;
+		color: $color-digital-marketing;
+		.a-cards-digital-marketing {
+			color: $color-digital-marketing;
+		}
+	}
+	.fa-digital-marketing-card {
+		color: $color-digital-marketing;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-digital-marketing {
+		color: white;
+	
+	}
+}
+.a-cards-digital-marketing {
+	color: black;
+}
+
+.fa-digital-marketing-card {
+	border-radius: 50%;
+	border: 15px $color-digital-marketing solid;
+	background-color: $color-digital-marketing;
+	color: white;
+}
+
+.btn-card-digital-marketing {
+	color: white;
+	background-color: $color-digital-marketing;
+	.a-cards-digital-marketing {
+		color: white;
+	}
+}
 
 
+//Telecoms card
 
+.telecoms-container:hover {
+	background-color: $color-telecoms;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-telecoms {
+		background-color: white;
+		color: $color-telecoms;
+		.a-cards-telecoms {
+			color: $color-telecoms;
+		}
+	}
+	.fa-telecoms-card {
+		color: $color-telecoms;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-telecoms {
+		color: white;
+	
+	}
+}
+.a-cards-telecoms {
+	color: black;
+}
 
+.fa-telecoms-card {
+	border-radius: 50%;
+	border: 15px $color-telecoms solid;
+	background-color: $color-telecoms;
+	color: white;
+}
 
+.btn-card-telecoms {
+	color: white;
+	background-color: $color-telecoms;
+	.a-cards-telecoms {
+		color: white;
+	}
+}
+
+//Web design card
+
+.web-design-container:hover {
+	background-color: $color-web-design;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-web-design {
+		background-color: white;
+		color: $color-web-design;
+		.a-cards-web-design {
+			color: $color-web-design;
+		}
+	}
+	.fa-web-design-card {
+		color: $color-web-design;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-web-design {
+		color: white;
+	
+	}
+}
+.a-cards-web-design {
+	color: black;
+}
+
+.fa-web-design-card {
+	border-radius: 50%;
+	border: 15px $color-web-design solid;
+	background-color: $color-web-design;
+	color: white;
+}
+
+.btn-card-web-design {
+	color: white;
+	background-color: $color-web-design;
+	.a-cards-web-design {
+		color: white;
+	}
+}
+
+//Cyber security card
+
+.cyber-security-container:hover {
+	background-color: $color-cyber-security;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-cyber-security {
+		background-color: white;
+		color: $color-cyber-security;
+		.a-cards-cyber-security {
+			color: $color-cyber-security;
+		}
+	}
+	.fa-cyber-security-card {
+		color: $color-cyber-security;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-cyber-security {
+		color: white;
+	
+	}
+}
+.a-cards-cyber-security {
+	color: black;
+}
+
+.fa-cyber-security-card {
+	border-radius: 50%;
+	border: 15px $color-cyber-security solid;
+	background-color: $color-cyber-security;
+	color: white;
+}
+
+.btn-card-cyber-security {
+	color: white;
+	background-color: $color-cyber-security;
+	.a-cards-cyber-security {
+		color: white;
+	}
+}
+
+// Developer training card
+.developer-training-container:hover {
+	background-color: $color-web-design;
+	color: white; 
+	h3 {
+		color: white;
+	}
+	.btn-card-developer-training {
+		background-color: white;
+		color: $color-web-design;
+		.a-cards-it {
+			color: $color-web-design;
+		}
+	}
+	.fa-developer-training-card {
+		color: $color-web-design;
+		background-color: white;
+		border: 15px white solid;
+	}
+	.a-cards-developer-training {
+		color: white;
+	
+	}
+}
+.a-cards-developer-training {
+	color: black;
+}
+
+.fa-developer-training-card {
+	border-radius: 50%;
+	border: 15px $color-web-design solid;
+	background-color: $color-web-design;
+	color: white;
+}
+
+.btn-card-developer-training {
+	color: white;
+	background-color: $color-web-design;
+	.a-cards-developer-training {
+		color: white;
+	}
+}
 
 
 
 .dash {
 	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+h3 {
+	color: black;
+	padding-top: 1rem;
 }
