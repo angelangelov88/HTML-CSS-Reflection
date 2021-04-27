@@ -586,40 +586,29 @@ h5 {
 
 .card {
 	border: 5px rgb(238, 50, 106) solid;
-
 	display: flex;
-	//flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-	margin: auto;
-
-	@media only screen and (min-width: $break-s) {
-
-		
-	}
-
-	@media only screen and (min-width: $break-m) {
+	@media only screen and (min-width: $break-l) {
 		border: 5px rgb(37, 22, 248) solid;
-		
+		padding: 1rem 0.2rem;
+		.card-text {
+			max-width: 250px;
+		}
+	}
+	@media only screen and (min-width: $break-xl) {
+	
+	
 	}
 }
-
-// .test {
-// 	display: flex;
-// 	justify-content: space-around;
-// 	flex-wrap: wrap;
-//  }
 
 .card-container {
 	@include cards;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	
+	//height: 312px;
+	//width: 370px;
+}
 
-}
-.btn-card {
-}
 
 // @mixin cards {
 // 	border: 1px rgb(187, 187, 187) solid;
@@ -629,6 +618,12 @@ h5 {
 // 	text-align: center;
 // 	padding: 2rem;
 // 	}
+
+.btn-card {
+	max-width: 12rem;
+}
+
+
 
 //Software card
 
@@ -948,4 +943,44 @@ h5 {
 h3 {
 	color: black;
 	padding-top: 1rem;
+}
+
+
+// CULTURE PART
+
+.brand-content {
+	border: 2px #c55f00 solid;
+	color: white;
+	background-color: #333645;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	@media only screen and (min-width: $break-l) {
+		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+		padding: 2rem 5rem;
+	}
+}
+
+.btn-culture {
+	background-color: white;
+	color: rgb(0, 0, 0);
+	font-size: 1.063rem;
+	width: 14rem;
+	border-radius: 3px;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+
+// NEWS CARDS
+
+.news-latest {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	border-bottom: 6px black solid;	
+	padding-bottom: 20px;
+	width: 90px;
+	margin-left: 10px;
+	margin-top: 40px;
 }

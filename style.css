@@ -595,17 +595,24 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .card {
     border: 5px #2516f8 solid;
+    padding: 1rem 0.2rem;
+  }
+  .card .card-text {
+    max-width: 250px;
   }
 }
 
@@ -617,16 +624,10 @@ h5 {
   margin: 1rem auto;
   text-align: center;
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+}
+
+.btn-card {
+  max-width: 12rem;
 }
 
 .software-container:hover {
@@ -973,5 +974,42 @@ h5 {
 h3 {
   color: black;
   padding-top: 1rem;
+}
+
+.brand-content {
+  border: 2px #c55f00 solid;
+  color: white;
+  background-color: #333645;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-content {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    padding: 2rem 5rem;
+  }
+}
+
+.btn-culture {
+  background-color: white;
+  color: black;
+  font-size: 1.063rem;
+  width: 14rem;
+  border-radius: 3px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.news-latest {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-bottom: 6px black solid;
+  padding-bottom: 20px;
+  width: 90px;
+  margin-left: 10px;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
