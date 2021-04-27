@@ -2,6 +2,11 @@
 $color-button-blue: #4183d7;
 $color-button-gray: #999aa2;
 $color-icon: white;
+$color-news-1: #7E57A0;
+$color-news-2: #2A6EC6;
+$color-news-3: #566C88;
+
+
 
 
 $color-navbar: #333645;
@@ -968,13 +973,19 @@ h3 {
 	border-radius: 3px;
 }
 
+.btn-culture:hover {
+	background-color: darken($color: white, $amount: 10%);
+}
+
 h2 {
 	text-transform: uppercase;
 }
 
 
 // NEWS CARDS
+// .news-container {
 
+// }
 .news-latest {
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -983,4 +994,74 @@ h2 {
 	width: 90px;
 	margin-left: 10px;
 	margin-top: 40px;
+}
+
+.news-cards-container {
+	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+	padding-top: 3rem;
+	
+}
+
+
+
+
+
+.photo-hiring {
+	width: 450px;
+	height: 260px;
+}
+
+
+
+.news-card {
+	border: 1px $color-button-gray solid;
+	width: 452px;
+	margin: 1rem 1rem;
+	background-color: white;
+}
+
+#news-1-title {
+	color: $color-news-1;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 30px;
+
+}
+
+#news-1-title:hover {
+	text-decoration: underline;
+}
+
+#news-1-text {
+	color: black;
+	padding-left: 30px;
+	font-size: 0.9rem;
+
+}
+
+.btn-news-card {
+	color: white;
+	background-color: $color-news-1;
+	margin: 30px;
+	width: 190px;
+}
+
+.btn-news-card:hover {
+	color: white;
+	background-color: darken($color: $color-news-1, $amount: 10%);
+
+}
+
+.photo-news-1 {
+	border-radius: 50%;
+	margin: 2rem;
+}
+
+.posted-by {
+	color: black;
+	font-weight: 600;
+}
+
+.news-date {
+	color: black;
 }
