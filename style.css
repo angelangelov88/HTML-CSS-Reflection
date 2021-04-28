@@ -1207,4 +1207,87 @@ h2 {
   position: relative;
   bottom: 4.3rem;
 }
+
+.clients {
+  display: none;
+  padding: 1rem 18rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+  background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+  height: 150px;
+  padding-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 170px;
+  }
+}
+
+.client-logo {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin: 0 -10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin: 0 15px;
+  }
+}
+
+.client-logo:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.client-logo:hover .text-holder {
+  visibility: visible;
+}
+
+.client-logo:hover #beat-text {
+  margin-left: -120px;
+}
+
+.client-logo:hover #diver-text {
+  margin-left: 0px;
+}
+
+.text-holder {
+  visibility: hidden;
+  width: 340px;
+  background-color: #333645;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 190%;
+  margin-left: -60px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.client-logo-text {
+  text-transform: capitalize;
+}
+
+.text-holder::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  margin-left: -5px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+}
 /*# sourceMappingURL=style.css.map */
