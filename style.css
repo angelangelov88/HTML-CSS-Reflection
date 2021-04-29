@@ -1414,39 +1414,29 @@ input[type=submit] {
   background-color: #333645;
   color: white;
   padding-left: .8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .footer-container a:hover {
   text-decoration: underline;
 }
 
-h4 {
-  text-transform: uppercase;
-  padding-bottom: 1rem;
-  padding-top: 1.5rem;
-}
-
-.footer-content {
-  border: 2px #2ECC71 solid;
-  padding: -1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 @media only screen and (min-width: 768px) {
-  .footer-content {
+  .footer-container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    padding: 2rem 15rem;
   }
 }
 
@@ -1456,16 +1446,34 @@ h4 {
   padding-left: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .contact-us {
+    width: 350px;
+  }
+}
+
 .about-netmatters {
   border: 2px red solid;
   list-style-type: none;
   padding-left: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .about-netmatters {
+    width: 350px;
+  }
+}
+
 .website {
   border: 2px #008cff solid;
   list-style-type: none;
   padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .website {
+    width: 350px;
+  }
 }
 
 .social-media {
@@ -1480,13 +1488,52 @@ h4 {
   max-width: 635px;
 }
 
+@media only screen and (min-width: 768px) {
+  .social-media {
+    max-width: 400px;
+  }
+}
+
 .social-media-logos {
-  border: 1px #262834 solid;
+  border: 2px rgba(255, 255, 255, 0) solid;
   -webkit-transform: scale(2);
           transform: scale(2);
   margin: 3rem;
   padding: 0.1rem 3.1rem;
   background-color: #22242e;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media-logos {
+    margin: 50px;
+    padding: 0.1rem 2rem;
+  }
+}
+
+.social-media-text {
+  border: 3px mediumspringgreen solid;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media-text {
+    position: relative;
+    right: 11.5rem;
+    height: 0.1px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-media-text {
+    position: relative;
+    right: 300.5rem;
+    height: 0.1px;
+  }
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
 .social-media-logos-fb:hover {
@@ -1507,5 +1554,87 @@ h4 {
 
 .social-logo {
   color: white;
+}
+
+.awards {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .awards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.partners-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem 0;
+  max-width: 1000px;
+}
+
+.partners-section-item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+  .partners-section-item {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.partners-section-item:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.google {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.awards-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.awards-section-item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+  .awards-section-item {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.awards-section-item:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 /*# sourceMappingURL=style.css.map */

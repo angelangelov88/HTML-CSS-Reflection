@@ -1356,60 +1356,116 @@ input[type=submit] {
 	background-color: #333645;
 	color: white;
 	padding-left: .8rem;
-	display: flex;
-	flex-wrap: wrap;
 	a:hover {
 		text-decoration: underline;
 	}
-}
-
-h4 {
-	text-transform: uppercase;
-	padding-bottom: 1rem;
-	padding-top: 1.5rem;
-}
-
-.footer-content {
-	border: 2px #2ECC71 solid;
-	padding: -1rem;
-	display: flex;
-	flex-direction: column;
 	@media only screen and (min-width: $break-m) {
-	flex-wrap: wrap;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	@media only screen and (min-width: $break-xl) {
+		padding: 2rem 15rem;
+	
+	
 	}
 }
+
+
+// .footer-content {
+// 	border: 2px #2ECC71 solid;
+// 	display: flex;
+// 	flex-direction: column;
+// 	@media only screen and (min-width: $break-m) {
+
+
+
+// 	}
+// 	@media only screen and (min-width: $break-xl) {
+
+
+
+// 	}
+// }
 
 .contact-us {
 	border: 2px khaki solid;
 	list-style-type: none;
 	padding-left: 0;
+
+	@media only screen and (min-width: $break-m) {
+		width: 350px;
+			}	
 }
 
 .about-netmatters {
 	border: 2px red solid;
 	list-style-type: none;
 	padding-left: 0;
+	@media only screen and (min-width: $break-m) {
+		width: 350px;
+	}
 }
+
 .website {
 	border: 2px rgb(0, 140, 255) solid;
 	list-style-type: none;
-	padding-left: 0;
+	padding-left: 0;	
+	@media only screen and (min-width: $break-m) {
+		width: 350px;
+	}
 }
 
 .social-media {
 	border: 2px rgb(250, 95, 255) solid;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-max-width: 635px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 635px;
+	@media only screen and (min-width: $break-m) {
+		max-width: 400px;
+
+		// position: relative;
+		// bottom: 7rem;
+		// left: 22rem;
+	}
+	@media only screen and (min-width: $break-l) {
+		
+	
+	}
 }
 
 .social-media-logos {
-	border: 1px rgb(38, 40, 52) solid;
+	border: 2px rgba(255, 255, 255, 0) solid;
 	transform: scale(2);
 	margin: 3rem;
 	padding: 0.1rem 3.1rem;
 	background-color: darken($color: #333645, $amount: 8%);
+	@media only screen and (min-width: $break-m) {
+		margin: 50px;
+		padding: 0.1rem 2rem;
+	}
+}
+
+.social-media-text {
+	border: 3px mediumspringgreen solid;
+	@media only screen and (min-width: $break-m) {
+	position: relative;
+	right: 11.5rem;
+	height: 0.1px;
+	}
+	@media only screen and (min-width: $break-xl) {
+		position: relative;
+		right: 300.5rem;
+		height: 0.1px;
+	
+}}
+
+h4 {
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	padding-top: 1.5rem;
 }
 
 .social-media-logos-fb:hover {
@@ -1430,4 +1486,62 @@ max-width: 635px;
 }
 .social-logo {
 	color: white;
+}
+
+
+
+
+//AWARDS LOGOS
+
+.awards {
+	display: none;
+@media only screen and (min-width: $break-m) {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+}
+
+.partners-section {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 2rem 0;
+	max-width: 1000px;
+}
+
+.partners-section-item {
+	transform: scale(0.8);
+  filter: grayscale(100%);
+	@media only screen and (min-width: $break-l) {
+		transform: scale(1.1);
+	}
+}
+
+.partners-section-item:hover {
+		filter: none;
+	}
+
+	.google {
+		filter: none;
+	}
+	
+.awards-section {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 2rem;
+	max-width: 1000px;
+}
+
+.awards-section-item {
+	transform: scale(0.8);
+  filter: grayscale(100%);
+	@media only screen and (min-width: $break-l) {
+		transform: scale(1.1);
+	}
+}	
+
+.awards-section-item:hover {
+	filter: none;
 }
