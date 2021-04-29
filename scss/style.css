@@ -1,0 +1,1676 @@
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
+
+.header-container {
+  border: 5px green solid;
+  height: 12rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 8rem;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 2%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 5px 8px;
+}
+
+.btn-support {
+  background-color: #4183d7;
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .btn-support {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.btn-contact {
+  background-color: #999aa2;
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .btn-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn {
+    display: inline-block;
+    width: 55rem;
+  }
+}
+
+.btn-menu {
+  color: white;
+  width: 4.2rem;
+  height: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 7%;
+  border: 2px black solid;
+  position: relative;
+  bottom: 5.7rem;
+  left: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-menu {
+    float: right;
+    position: inherit;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-menu {
+    position: relative;
+    top: 0.1rem;
+    left: 12rem;
+  }
+}
+
+.btn-menu:hover {
+  background-color: #1d1f28;
+}
+
+.btn-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px black solid;
+  max-height: 100px;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-top {
+    height: 6rem;
+    width: 45rem;
+  }
+}
+
+.btn-support:hover {
+  background-color: #286abd;
+}
+
+.btn-contact:hover {
+  background-color: #7e808a;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+.logo {
+  padding: 15px 0 0 15px;
+  margin-left: .1rem;
+}
+
+.fas {
+  padding: 5px;
+}
+
+.fa-search {
+  color: black;
+  background-color: #E5E5E5;
+  height: 20px;
+  padding: 11px;
+  margin-left: -9px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fa-search {
+    color: white;
+    background-color: #999aa2;
+    padding: 15px;
+    height: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fa-search {
+    color: white;
+    background-color: #999aa2;
+    padding: 15px;
+    height: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fa-search:hover {
+    background-color: #7e808a;
+  }
+}
+
+.form-control {
+  background-color: #e5e5e5;
+  border: 10px green solid;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-control {
+    max-width: 20vw;
+    height: 45px;
+    font-size: 0.9rem;
+    color: #999aa2;
+    border: 1px #999aa2 solid;
+    border-radius: 1%;
+    background-color: white;
+    position: absolute;
+    left: 27rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .form-control {
+    display: none;
+    position: inherit;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 340px;
+  }
+}
+
+.container-search {
+  width: 100%;
+  margin-left: -80px;
+  margin-right: -180px;
+  background-color: #E5E5E5;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-search {
+    max-width: 300px;
+    margin-left: 1rem;
+    background-color: white;
+  }
+}
+
+.main-navigation {
+  background: #333645;
+  border-bottom: solid 1px white;
+  display: none;
+  text-transform: uppercase;
+  max-height: 95px;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px #eb64ae solid;
+  }
+}
+
+.container {
+  border: 2px #2ECC71 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.li-main {
+  display: inline-table;
+  margin: 0 -5px;
+}
+
+.li-sub {
+  display: none;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .li-sub {
+    font-size: 0.9rem;
+  }
+}
+
+.li-sub:hover .li-main {
+  background-color: #926FB1;
+}
+
+.web-design:hover .web-design-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #926FB1;
+}
+
+.web-design:hover .li-web-design {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.it:hover .it-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #4183D7;
+}
+
+.it:hover .li-it {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.telecoms:hover .telecoms-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #D64541;
+}
+
+.telecoms:hover .li-telecoms {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.software:hover .software-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #67809F;
+}
+
+.software:hover .li-software {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.digital-marketing:hover .digital-marketing-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #2ECC71;
+}
+
+.digital-marketing:hover .li-digital-marketing {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.cyber-security:hover .cyber-security-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #F62459;
+}
+
+.cyber-security:hover .li-cyber-security {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.btn-navbar {
+  background-color: #333645;
+  width: 150px;
+  line-height: 0.3;
+  text-transform: uppercase;
+  border-right: 2px gray solid;
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-navbar {
+    width: 195px;
+  }
+}
+
+.btn-web-design:hover {
+  background-color: #926FB1;
+}
+
+.btn-web-design:hover .fa-code {
+  color: white;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+.btn-it:hover {
+  background-color: #4183D7;
+}
+
+.btn-it:hover .fa-tv {
+  color: white;
+}
+
+.fa-tv {
+  color: #4183D7;
+}
+
+.btn-telecoms:hover {
+  background-color: #D64541;
+}
+
+.btn-telecoms:hover .fa-phone-alt {
+  color: white;
+}
+
+.fa-phone-alt {
+  color: #D64541;
+}
+
+.btn-software:hover {
+  background-color: #67809F;
+}
+
+.btn-software:hover .fa-th {
+  color: white;
+}
+
+.fa-th {
+  color: #67809F;
+}
+
+.btn-digital-marketing:hover {
+  background-color: #2ECC71;
+}
+
+.btn-digital-marketing:hover .fa-signal {
+  color: white;
+}
+
+.fa-signal {
+  color: #2ECC71;
+}
+
+.btn-cyber-security:hover {
+  background-color: #F62459;
+}
+
+.btn-cyber-security:hover .fa-shield-alt {
+  color: white;
+}
+
+.fa-shield-alt {
+  color: #F62459;
+}
+
+.main-photo-container {
+  border: 5px greenyellow solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-photo {
+  border: 10px yellow solid;
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+}
+
+.gradient-div {
+  border: 3px turquoise solid;
+  position: absolute;
+  top: 12rem;
+  width: inherit;
+  height: 650px;
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
+}
+
+@media only screen and (min-width: 768px) {
+  .gradient-div {
+    top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gradient-div {
+    top: 14rem;
+  }
+}
+
+.text-block {
+  text-align: center;
+  border: 2px fuchsia solid;
+  color: white;
+  z-index: 12;
+  position: relative;
+  top: 10rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .text-block {
+    position: relative;
+    margin: 1rem;
+    top: 30%;
+    /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 60%;
+    /* Set the width of the positioned div */
+    padding-left: 50px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .text-block {
+    left: 300px;
+  }
+}
+
+.btn-photo {
+  border: none;
+  border-radius: 2%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 5px 8px;
+  background-color: #926FB1;
+  max-width: 250px;
+}
+
+.btn-photo:hover {
+  background-color: #79539a;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+h5 {
+  line-height: 2.1rem;
+  padding: 15px;
+}
+
+.card {
+  border: 5px #ee326a solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    border: 5px #2516f8 solid;
+    padding: 1rem 0.2rem;
+  }
+  .card .card-text {
+    max-width: 250px;
+  }
+}
+
+.card-container {
+  border: 1px #bbbbbb solid;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn-card {
+  max-width: 12rem;
+}
+
+.software-container:hover {
+  background-color: #67809F;
+  color: white;
+}
+
+.software-container:hover h3 {
+  color: white;
+}
+
+.software-container:hover .btn-card-software {
+  background-color: white;
+  color: #67809F;
+}
+
+.software-container:hover .btn-card-software .a-cards-software {
+  color: #67809F;
+}
+
+.software-container:hover .fa-software-card {
+  color: #67809F;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.software-container:hover .a-cards-software {
+  color: white;
+}
+
+.a-cards-software {
+  color: black;
+}
+
+.fa-software-card {
+  border-radius: 50%;
+  border: 15px #67809F solid;
+  background-color: #67809F;
+  color: white;
+}
+
+.btn-card-software {
+  color: white;
+  background-color: #67809F;
+}
+
+.btn-card-software .a-cards-software {
+  color: white;
+}
+
+.it-container:hover {
+  background-color: #4183D7;
+  color: white;
+}
+
+.it-container:hover h3 {
+  color: white;
+}
+
+.it-container:hover .btn-card-it {
+  background-color: white;
+  color: #4183D7;
+}
+
+.it-container:hover .btn-card-it .a-cards-it {
+  color: #4183D7;
+}
+
+.it-container:hover .fa-it-card {
+  color: #4183D7;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.it-container:hover .a-cards-it {
+  color: white;
+}
+
+.a-cards-it {
+  color: black;
+}
+
+.fa-it-card {
+  border-radius: 50%;
+  border: 15px #4183D7 solid;
+  background-color: #4183D7;
+  color: white;
+}
+
+.btn-card-it {
+  color: white;
+  background-color: #4183D7;
+}
+
+.btn-card-it .a-cards-it {
+  color: white;
+}
+
+.digital-marketing-container:hover {
+  background-color: #2ECC71;
+  color: white;
+}
+
+.digital-marketing-container:hover h3 {
+  color: white;
+}
+
+.digital-marketing-container:hover .btn-card-digital-marketing {
+  background-color: white;
+  color: #2ECC71;
+}
+
+.digital-marketing-container:hover .btn-card-digital-marketing .a-cards-digital-marketing {
+  color: #2ECC71;
+}
+
+.digital-marketing-container:hover .fa-digital-marketing-card {
+  color: #2ECC71;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.digital-marketing-container:hover .a-cards-digital-marketing {
+  color: white;
+}
+
+.a-cards-digital-marketing {
+  color: black;
+}
+
+.fa-digital-marketing-card {
+  border-radius: 50%;
+  border: 15px #2ECC71 solid;
+  background-color: #2ECC71;
+  color: white;
+}
+
+.btn-card-digital-marketing {
+  color: white;
+  background-color: #2ECC71;
+}
+
+.btn-card-digital-marketing .a-cards-digital-marketing {
+  color: white;
+}
+
+.telecoms-container:hover {
+  background-color: #D64541;
+  color: white;
+}
+
+.telecoms-container:hover h3 {
+  color: white;
+}
+
+.telecoms-container:hover .btn-card-telecoms {
+  background-color: white;
+  color: #D64541;
+}
+
+.telecoms-container:hover .btn-card-telecoms .a-cards-telecoms {
+  color: #D64541;
+}
+
+.telecoms-container:hover .fa-telecoms-card {
+  color: #D64541;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.telecoms-container:hover .a-cards-telecoms {
+  color: white;
+}
+
+.a-cards-telecoms {
+  color: black;
+}
+
+.fa-telecoms-card {
+  border-radius: 50%;
+  border: 15px #D64541 solid;
+  background-color: #D64541;
+  color: white;
+}
+
+.btn-card-telecoms {
+  color: white;
+  background-color: #D64541;
+}
+
+.btn-card-telecoms .a-cards-telecoms {
+  color: white;
+}
+
+.web-design-container:hover {
+  background-color: #926FB1;
+  color: white;
+}
+
+.web-design-container:hover h3 {
+  color: white;
+}
+
+.web-design-container:hover .btn-card-web-design {
+  background-color: white;
+  color: #926FB1;
+}
+
+.web-design-container:hover .btn-card-web-design .a-cards-web-design {
+  color: #926FB1;
+}
+
+.web-design-container:hover .fa-web-design-card {
+  color: #926FB1;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.web-design-container:hover .a-cards-web-design {
+  color: white;
+}
+
+.a-cards-web-design {
+  color: black;
+}
+
+.fa-web-design-card {
+  border-radius: 50%;
+  border: 15px #926FB1 solid;
+  background-color: #926FB1;
+  color: white;
+}
+
+.btn-card-web-design {
+  color: white;
+  background-color: #926FB1;
+}
+
+.btn-card-web-design .a-cards-web-design {
+  color: white;
+}
+
+.cyber-security-container:hover {
+  background-color: #F62459;
+  color: white;
+}
+
+.cyber-security-container:hover h3 {
+  color: white;
+}
+
+.cyber-security-container:hover .btn-card-cyber-security {
+  background-color: white;
+  color: #F62459;
+}
+
+.cyber-security-container:hover .btn-card-cyber-security .a-cards-cyber-security {
+  color: #F62459;
+}
+
+.cyber-security-container:hover .fa-cyber-security-card {
+  color: #F62459;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.cyber-security-container:hover .a-cards-cyber-security {
+  color: white;
+}
+
+.a-cards-cyber-security {
+  color: black;
+}
+
+.fa-cyber-security-card {
+  border-radius: 50%;
+  border: 15px #F62459 solid;
+  background-color: #F62459;
+  color: white;
+}
+
+.btn-card-cyber-security {
+  color: white;
+  background-color: #F62459;
+}
+
+.btn-card-cyber-security .a-cards-cyber-security {
+  color: white;
+}
+
+.developer-training-container:hover {
+  background-color: #926FB1;
+  color: white;
+}
+
+.developer-training-container:hover h3 {
+  color: white;
+}
+
+.developer-training-container:hover .btn-card-developer-training {
+  background-color: white;
+  color: #926FB1;
+}
+
+.developer-training-container:hover .btn-card-developer-training .a-cards-it {
+  color: #926FB1;
+}
+
+.developer-training-container:hover .fa-developer-training-card {
+  color: #926FB1;
+  background-color: white;
+  border: 15px white solid;
+}
+
+.developer-training-container:hover .a-cards-developer-training {
+  color: white;
+}
+
+.a-cards-developer-training {
+  color: black;
+}
+
+.fa-developer-training-card {
+  border-radius: 50%;
+  border: 15px #926FB1 solid;
+  background-color: #926FB1;
+  color: white;
+}
+
+.btn-card-developer-training {
+  color: white;
+  background-color: #926FB1;
+}
+
+.btn-card-developer-training .a-cards-developer-training {
+  color: white;
+}
+
+.dash {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  color: black;
+  padding-top: 1rem;
+}
+
+.brand-content {
+  border: 2px #c55f00 solid;
+  color: white;
+  background-color: #333645;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-content {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    padding: 2rem 5rem;
+  }
+}
+
+.btn-culture {
+  background-color: white;
+  color: black;
+  font-size: 1.063rem;
+  width: 14rem;
+  border-radius: 3px;
+}
+
+.btn-culture:hover {
+  background-color: #e6e6e6;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.brand-text {
+  max-width: 680px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .brand-text {
+    max-width: 560px;
+  }
+}
+
+.news-latest {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-bottom: 6px black solid;
+  padding-bottom: 20px;
+  width: 90px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.news-cards-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+  background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+  padding-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .news-cards-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.news-card {
+  border: 1px #999aa2 solid;
+  width: 452px;
+  margin: 1rem 1rem;
+  background-color: white;
+}
+
+@media only screen and (min-width: 576px) {
+  .news-card {
+    max-width: 90%;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .news-card {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .news-card {
+    max-width: 450px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .news-card-3 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-card-3 {
+    display: block;
+  }
+}
+
+.photo-hiring,
+.photo-hand,
+.photo-rob {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .photo-rob:hover,
+  .photo-hiring:hover,
+  .photo-hand:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .7;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+#news-1-title {
+  color: #7E57A0;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 30px;
+}
+
+#news-2-title {
+  color: #2A6EC6;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 30px;
+}
+
+#news-3-title {
+  color: #566C88;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 30px;
+}
+
+#news-1-title:hover,
+#news-2-title:hover,
+#news-3-title:hover {
+  text-decoration: underline;
+}
+
+#news-text {
+  color: black;
+  padding-left: 30px;
+  font-size: 0.9rem;
+}
+
+.btn-news-card-1 {
+  color: white;
+  margin: 30px;
+  width: 190px;
+  background-color: #7E57A0;
+}
+
+.btn-news-card-2 {
+  color: white;
+  margin: 30px;
+  width: 190px;
+  background-color: #2A6EC6;
+}
+
+.btn-news-card-3 {
+  color: white;
+  margin: 30px;
+  width: 190px;
+  background-color: #566C88;
+}
+
+.btn-news-card-1:hover {
+  color: white;
+  background-color: #64457f;
+}
+
+.btn-news-card-2:hover {
+  color: white;
+  background-color: #21579c;
+}
+
+.btn-news-card-3:hover {
+  color: white;
+  background-color: #425369;
+}
+
+.news-card hr {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.photo-news {
+  padding-top: 1rem;
+}
+
+.photo-news-1 {
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.posted-by {
+  color: black;
+  font-weight: 600;
+  position: relative;
+  bottom: 4.4rem;
+  padding-left: 5.4rem;
+}
+
+.news-date {
+  color: black;
+  padding-left: 5.4rem;
+  position: relative;
+  bottom: 4.3rem;
+}
+
+.clients {
+  border: 2px yellow solid;
+  display: none;
+  padding: 2.5rem 18rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+  background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+  height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.client-logo {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin: 0 -10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin: 0 15px;
+  }
+}
+
+.client-logo:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.client-logo:hover .text-holder {
+  visibility: visible;
+}
+
+.client-logo:hover #beat-text {
+  margin-left: -120px;
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo:hover #beat-text {
+    margin-left: -85px;
+  }
+}
+
+.client-logo:hover #diver-text {
+  margin-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo:hover #diver-text {
+    margin-left: 20px;
+  }
+}
+
+.text-holder {
+  visibility: hidden;
+  width: 350px;
+  background-color: #333645;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 205%;
+  margin-left: -35px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .text-holder {
+    font-size: 0.9rem;
+    bottom: 160%;
+    margin-left: -35px;
+    width: 250px;
+  }
+}
+
+.client-logo-text {
+  text-transform: capitalize;
+  padding: 1rem 0 0 0;
+}
+
+.text-holder::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  margin-left: -5px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+}
+
+@media only screen and (min-width: 992px) {
+  .text-holder::after {
+    margin-left: 15px;
+    border-width: 30px;
+    left: 30%;
+  }
+}
+
+.newsletter {
+  border: 2px #030000 solid;
+  padding: 1.5rem;
+  background-color: #DDDDDD;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-content {
+  border: 2px #4183D7 solid;
+}
+
+@media only screen and (min-width: 992px) {
+  .form-content {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.name {
+  margin-bottom: 3px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: pink;
+}
+
+@media only screen and (min-width: 992px) {
+  .name {
+    min-width: 20rem;
+    position: relative;
+    left: 13rem;
+    height: 1rem;
+  }
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  height: 50px;
+  border: 1px #DDDDDD solid;
+}
+
+@media only screen and (min-width: 992px) {
+  input[type=text],
+  input[type=email] {
+    position: relative;
+    top: 2rem;
+    right: 7rem;
+    width: 11000px;
+    background-color: plum;
+  }
+}
+
+.newsletter-content {
+  border: 2px #fffb1b solid;
+  max-width: 850px;
+}
+
+.privacy-text {
+  color: black;
+  text-decoration: underline;
+}
+
+.privacy-text:hover {
+  color: black;
+}
+
+.submit-container {
+  border: 2px red solid;
+  margin-left: -37px;
+}
+
+.form-container {
+  border: 2px #2ECC71 solid;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.checkbox-text {
+  padding-left: 0;
+  line-height: 1.8;
+  position: relative;
+  bottom: 2.5rem;
+  left: 2.2rem;
+  width: 80%;
+}
+
+.checkbox {
+  height: 32px;
+  width: 32px;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  background-color: #333645;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.asterix {
+  color: red;
+}
+
+.footer-container {
+  border: 2px fuchsia solid;
+  background-color: #333645;
+  color: white;
+  padding-left: .8rem;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    padding: 2rem 15rem;
+  }
+}
+
+.contact-us {
+  border: 2px khaki solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-us {
+    width: 350px;
+  }
+}
+
+.about-netmatters {
+  border: 2px red solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-netmatters {
+    width: 350px;
+  }
+}
+
+.website {
+  border: 2px #008cff solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .website {
+    width: 350px;
+  }
+}
+
+.social-media {
+  border: 2px #fa5fff solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 635px;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media {
+    max-width: 400px;
+  }
+}
+
+.social-media-logos {
+  border: 2px rgba(255, 255, 255, 0) solid;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 3rem;
+  padding: 0.1rem 3.1rem;
+  background-color: #22242e;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media-logos {
+    margin: 50px;
+    padding: 0.1rem 2rem;
+  }
+}
+
+.social-media-text {
+  border: 3px mediumspringgreen solid;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media-text {
+    position: relative;
+    right: 11.5rem;
+    height: 0.1px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-media-text {
+    position: relative;
+    right: 300.5rem;
+    height: 0.1px;
+  }
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+
+.social-media-logos-fb:hover {
+  background-color: #4064AC;
+}
+
+.social-media-logos-twitter:hover {
+  background-color: #1C9CEA;
+}
+
+.social-media-logos-insta:hover {
+  background-color: #E1306C;
+}
+
+.social-media-logos-linkedin:hover {
+  background-color: #2867B2;
+}
+
+.social-logo {
+  color: white;
+}
+
+.awards {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .awards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.partners-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem 0;
+  max-width: 1000px;
+}
+
+.partners-section-item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+  .partners-section-item {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.partners-section-item:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.google {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.awards-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.awards-section-item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+  .awards-section-item {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.awards-section-item:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+/*# sourceMappingURL=style.css.map */

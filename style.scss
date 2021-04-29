@@ -1,22 +1,10 @@
+@import "main-photo";
+@import "mixins";
+@import "variables";
 
 
 
-//Variables
-$color-button-blue: #4183d7;
-$color-button-gray: #999aa2;
-$color-icon: white;
-$color-news-1: #7E57A0;
-$color-news-2: #2A6EC6;
-$color-news-3: #566C88;
 
-
-$color-navbar: #333645;
-$color-web-design: #926FB1;
-$color-it: #4183D7;
-$color-telecoms: #D64541;
-$color-software: #67809F;
-$color-digital-marketing: #2ECC71;
-$color-cyber-security: #F62459;
 
 
 //Breakpoints
@@ -25,69 +13,6 @@ $break-s: 576px;
 $break-m: 768px;
 $break-l: 992px;
 $break-xl: 1200px;
-
-
-//Mixins
-@mixin search-md-screen{
-	max-width: 20vw;
-		height: 45px;
-		font-size: 0.9rem;
-		color: $color-button-gray;
-		border: 1px $color-button-gray solid;
-		border-radius: 1%;
-		background-color: white;
-		position: absolute;
-		left: 27rem;
-}
-
-@mixin navbar-flexbox-container {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	left: 0px;
-	height: 45px;
-	width: 100%;
-	z-index: 100;
-
-}
-
-@mixin navbar-flexbox-items {
-	margin: 5px;
-	padding: 5px;
-	display: block;
-	}
-	
-@mixin btn {
-	border: none;
-	border-radius: 2%;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	margin: 5px 8px;
-	}
-
-@mixin cards {
-	border: 1px rgb(187, 187, 187) solid;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 80%;
-	margin: 1rem auto;
-	text-align: center;
-	padding: 2rem;
-	}
-
-@mixin news-title-style {
-	font-size: 1rem;
-	font-weight: 600;
-	padding: 30px;
-}
-
-@mixin button-news-colour {
-	color: white;
-	margin: 30px;
-	width: 190px;
-}
 
 
 
@@ -482,106 +407,6 @@ body {
 	color: $color-cyber-security;
 }
 
-
-//MAIN PHOTO
-
-.main-photo-container {
-	border: 5px greenyellow solid;
-	//width: 100%;
-	display: flex;
-
-	@media only screen and (min-width: $break-xl ) {
-
-}	
-}
-
-
-.main-photo {
-	border: 10px yellow solid;
-	background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
-	width: 100%;
-	//height: 550px;
-	height: 650px;
-	
-	background-size: cover;
-
-	@media only screen and (min-width: $break-xl ) {
-		// position: absolute;
-		// top: 14rem;
-		//max-width: 1910px;
-
-}
-}
-
-.gradient-div {
-	border: 3px turquoise solid;
-	position: absolute;
-	top: 12rem;
-	width: inherit;
-	//height: 550px;
-	height: 650px;
-
-	z-index: 10;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
-	
-	@media only screen and (min-width: $break-m ) {
-		top: 8rem;
-	}
-
-	@media only screen and (min-width: $break-l ) {
-		top: 14rem;
-
-	}
-
-	@media only screen and (min-width: $break-xl ) {
-
-
-	}
-}
-
-.text-block {
-	text-align: center;
-	border: 2px fuchsia solid;
-	color: white;
-	z-index: 12;
-	position: relative;
-	top: 10rem;
-
-	@media only screen and (min-width: $break-l ) {
-		position: relative;
-		margin: 1rem;
-		top: 30%; /* Adjust this value to move the positioned div up and down */
-		text-align: left;
-		width: 60%; /* Set the width of the positioned div */
-		padding-left: 50px;
-		text-align: left;
-	}
-	@media only screen and (min-width: $break-xl ) {
-		left: 300px;
-	}
-}
-
-.btn-photo {
-	@include btn;
-	background-color: $color-web-design;
-	max-width: 250px;
-}
-
-.btn-photo:hover {
-	background-color: darken($color: $color-web-design, $amount: 10%);
-
-}
-
-h1 {
-	text-transform: uppercase;
-	font-size: 3.5rem;
-}
-
-h5 {
-	line-height: 2.1rem;
-	padding: 15px;
-
-}
 
 
 
