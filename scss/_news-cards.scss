@@ -1,5 +1,6 @@
 // NEWS CARDS
 
+
 .news-latest {
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -8,6 +9,8 @@
 	width: 90px;
 	margin-left: 10px;
 	margin-top: 40px;
+	display: flex;
+
 }
 
 .news-cards-container {
@@ -30,20 +33,57 @@
 	width: 452px;
 	margin: 1rem 1rem;
 	background-color: white;
+	height: 38rem;
 	@media only screen and (min-width: $break-s) {
 		max-width: 90%;
 		width: auto;
+		height: 45rem;
 	}
 	@media only screen and (min-width: $break-m) {
 		// display: flex;
 		// justify-content: center;
 		max-width: 350px;
+		height: 34rem;
 	}
-		@media only screen and (min-width: $break-l) {
+	@media only screen and (min-width: $break-l) {
 		max-width: 450px;
 		overflow: hidden;
-
+		height: 38rem;
 }
+	@media only screen and (min-width: $break-xl) {
+		height: 38rem;
+}
+}
+	
+
+
+.image-caption-1, 
+.image-caption-2, 
+.image-caption-3 {
+	color: white;
+	font-weight: 600;
+	font-size: 0.8rem;
+	padding: 3px 10px 3px 10px;
+	width: 85px;
+	margin: 20px 0 0 370px;
+	background-color: $color-news-3;
+	display: flex;
+	justify-content: center;
+}
+.image-caption-1 {
+	background-color: $color-news-1;
+}
+
+.image-caption-2 {
+	background-color: $color-news-2;
+}
+
+
+
+.image-caption-1:hover, 
+.image-caption-2:hover, 
+.image-caption-3:hover {
+	text-decoration: underline;
 }
 
 .news-card-3 {
@@ -73,16 +113,19 @@
 
 #news-1-title {
 	color: $color-news-1;
+	padding: 30px;
 	@include news-title-style;
 }
 
 #news-2-title {
 	color: $color-news-2;
+	padding: 30px 30px 15px;
 	@include news-title-style;
 }
 
 #news-3-title {
 	color: $color-news-3;
+	padding: 30px 30px 0;
 	@include news-title-style;
 }
 
@@ -156,5 +199,6 @@
 	padding-left: 5.4rem;
 	position: relative;
 	bottom: 4.3rem;
+	padding-bottom: 0;
 }
 
