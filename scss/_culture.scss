@@ -1,0 +1,36 @@
+// CULTURE PART
+
+.brand-content {
+	border: 2px #c55f00 solid;
+	color: white;
+	background-color: #333645;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	@media only screen and (min-width: $break-l) {
+		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+		padding: 2rem 5rem;
+	}
+}
+
+.btn-culture {
+	background-color: white;
+	color: rgb(0, 0, 0);
+	font-size: 1.063rem;
+	width: 14rem;
+	border-radius: 3px;
+}
+
+.btn-culture:hover {
+	background-color: darken($color: white, $amount: 10%);
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.brand-text {
+	max-width: 680px;
+	@media only screen and (min-width: $break-xl) {
+		max-width: 560px;
+	}
+}

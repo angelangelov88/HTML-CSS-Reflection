@@ -1,0 +1,54 @@
+//AWARDS LOGOS
+
+.awards {
+	display: none;
+@media only screen and (min-width: $break-m) {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+}
+
+.partners-section {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 2rem 0;
+	max-width: 1000px;
+}
+
+.partners-section-item {
+	transform: scale(0.8);
+  filter: grayscale(100%);
+	@media only screen and (min-width: $break-l) {
+		transform: scale(1.1);
+	}
+}
+
+.partners-section-item:hover {
+		filter: none;
+	}
+
+	.google {
+		filter: none;
+	}
+	
+.awards-section {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 2rem;
+	max-width: 1000px;
+}
+
+.awards-section-item {
+	transform: scale(0.8);
+  filter: grayscale(100%);
+	@media only screen and (min-width: $break-l) {
+		transform: scale(1.1);
+	}
+}	
+
+.awards-section-item:hover {
+	filter: none;
+}

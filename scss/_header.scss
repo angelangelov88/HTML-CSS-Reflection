@@ -1,0 +1,185 @@
+.header-container {
+  border: 5px green solid;
+  height: 12rem;
+   
+  @media only screen and (min-width: $break-m ) {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+  }
+    @media only screen and (min-width: $break-xl ) {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+  }
+  }
+
+.btn {
+  @include btn;
+    &-support {
+      background-color: $color-button-blue;
+      display: none;
+      @media only screen and (min-width: $break-l ) {
+        display: flex;
+      }
+  }
+    &-contact {
+      background-color: $color-button-gray;
+      display: none;
+      @media only screen and (min-width: $break-l ) {
+        display: flex;
+      }
+  }
+    @media only screen and (min-width: $break-xl ) {
+      display: inline-block;
+      width: 55rem;
+      }
+  }
+.btn-menu {
+  color: white;
+  width: 4.2rem;
+  height: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 7%;
+  border: 2px black solid;
+  position: relative;
+  bottom: 5.7rem;
+  left: 2rem;
+    @media only screen and (min-width: $break-m ) {
+      float: right;
+      position: inherit;
+}
+    @media only screen and (min-width: $break-xl ) {
+      position: relative;
+      top: 0.1rem;
+      left: 12rem;
+}
+}
+  
+.btn-menu:hover {
+  background-color: darken($color: #333645, $amount: 10%)
+  }
+
+.btn-top {
+  display: flex;
+  justify-content: space-around;
+  border: 2px black solid;
+  max-height: 100px;
+  max-width: 100%;
+  width: 100%;
+
+  @media only screen and (min-width: $break-m ) {
+  }
+
+  @media only screen and (min-width: $break-l ) {
+    
+}
+
+    @media only screen and (min-width: $break-xl ) {
+      height: 6rem;
+      width: 45rem;
+    
+  }
+  }
+
+.btn-support:hover{
+  background-color: darken($color: $color-button-blue, $amount: 10%);    
+}
+
+.btn-contact:hover{
+  background-color: darken($color: $color-button-gray, $amount: 10%);
+}
+a {
+  color: white;
+  text-decoration: none;
+  }
+  
+a:hover {
+  color: white;
+  }
+  
+i {
+  color: white;
+  }
+  
+.logo {
+  padding: 15px 0 0 15px;
+  margin-left: .1rem;
+  @media only screen and (min-width: $break-m ) {
+  }
+
+  @media only screen and (min-width: $break-l ) {
+    
+}
+
+    @media only screen and (min-width: $break-xl ) {
+
+    }
+  }
+
+
+.fas {
+  padding: 5px;
+  }
+  
+
+.fa-search {
+  color: black;
+  background-color: #E5E5E5;
+  height: 20px;
+  padding: 11px;
+  margin-left: -9px;
+    @media only screen and (min-width: $break-m ) {
+      color: white;
+      background-color: $color-button-gray;
+      padding: 15px;
+      height: 2.8rem;
+      
+  }
+    @media only screen and (min-width: $break-xl ) {
+      color: white;
+      background-color: $color-button-gray;
+      padding: 15px;
+      height: 2.8rem;
+  }
+  }
+.fa-search:hover {
+    @media only screen and (min-width: $break-m ) { 
+      background-color: darken($color: $color-button-gray, $amount: 10%);
+  }
+}
+
+.form-control {
+  background-color: #e5e5e5;
+  border: 10px green solid;
+    @media only screen and (min-width: $break-m ) {
+      @include search-md-screen ();
+
+
+  }
+    @media only screen and (min-width: $break-l ) {
+      display: none;
+      position: inherit;
+  }
+    @media only screen and (min-width: $break-xl ) {
+      display: flex;
+      width: 340px;
+  }
+
+}
+
+.container-search {
+  width: 100%;
+  margin-left: -80px;
+  margin-right: -180px;
+
+  background-color: #E5E5E5;
+    @media only screen and (min-width: $break-m ) {
+      max-width: 300px;
+      margin-left: 1rem;
+      background-color: white;
+}
+}
+

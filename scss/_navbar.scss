@@ -1,0 +1,196 @@
+//NAVIGATION BAR
+
+.main-navigation {
+  background: #333645;
+  border-bottom: solid 1px white;
+  display: none;
+  text-transform: uppercase;
+  max-height: 95px;
+  width: 100%;
+
+	@media screen and (min-width: $break-l) {
+		display: flex;
+		justify-content: center;
+		border: 2px #eb64ae solid;
+
+	}
+}
+
+.container {
+	border: 2px #2ECC71 solid;
+	display: flex;
+	justify-content: center;
+	//min-width: 1400px;
+
+}
+
+.li-main {
+	display: inline-table;
+	margin: 0 -5px;
+}
+
+.li-sub {
+	display: none;
+	font-size: 1rem;
+	@media screen and (min-width: $break-xl) {
+		font-size: 0.9rem;
+	}
+}
+
+.li-sub:hover {
+	.li-main {
+		background-color: $color-web-design;
+	}
+}
+
+.web-design:hover {
+	.web-design-ul { //flexbox container
+		@include navbar-flexbox-container;
+		background-color: $color-web-design;
+	
+
+	}
+	.li-web-design { //flexbox items
+		@include navbar-flexbox-items;
+		
+		}
+	}
+
+.it:hover {
+	.it-ul {
+		@include navbar-flexbox-container;
+		background-color: $color-it;
+	}
+	.li-it {
+		@include navbar-flexbox-items;	
+		}
+}
+
+.telecoms:hover {
+	.telecoms-ul {
+		@include navbar-flexbox-container;
+		background-color: $color-telecoms;
+
+	}
+	.li-telecoms {
+		@include navbar-flexbox-items;
+		}
+}
+
+.software:hover {
+	.software-ul {
+		@include navbar-flexbox-container;
+		background-color: $color-software;
+
+	}
+	.li-software {
+		@include navbar-flexbox-items;
+		
+		}
+}
+
+.digital-marketing:hover {
+	.digital-marketing-ul {
+		@include navbar-flexbox-container;
+		background-color: $color-digital-marketing;
+
+	}
+	.li-digital-marketing {
+		@include navbar-flexbox-items;
+		
+		}
+}
+
+.cyber-security:hover {
+	.cyber-security-ul {
+		@include navbar-flexbox-container;
+		background-color: $color-cyber-security;
+
+	}
+	.li-cyber-security {
+		@include navbar-flexbox-items;
+		
+		}
+}
+
+.btn-navbar {
+	background-color: $color-navbar;
+	width: 150px;
+	line-height: 0.3;
+	text-transform: uppercase;
+	border-right: 2px gray solid;
+
+	@media only screen and (min-width: $break-xl ) {
+		width: 195px;
+	}
+}
+
+
+
+
+//NAV BAR COLOURS
+.btn-web-design:hover {
+	background-color: $color-web-design;
+	.fa-code {
+		color: $color-icon;
+	}
+}
+
+.fa-code {
+	color: $color-web-design;
+}
+
+.btn-it:hover {
+	background-color: $color-it;
+	.fa-tv {
+		color: $color-icon;
+	}
+}
+
+.fa-tv {
+	color: $color-it;
+}
+
+.btn-telecoms:hover {
+	background-color: $color-telecoms;
+	.fa-phone-alt {
+		color: $color-icon;
+	}
+}
+
+.fa-phone-alt {
+	color: $color-telecoms;
+}
+
+.btn-software:hover {
+	background-color: $color-software;
+	.fa-th {
+		color: $color-icon;
+	}
+}
+
+.fa-th {
+	color: $color-software;
+}
+
+.btn-digital-marketing:hover {
+	background-color: $color-digital-marketing;
+	.fa-signal {
+		color: $color-icon;
+	}
+}
+
+.fa-signal {
+	color: $color-digital-marketing;
+}
+
+.btn-cyber-security:hover {
+	background-color: $color-cyber-security;
+	.fa-shield-alt {
+		color: $color-icon;
+	}
+}
+
+.fa-shield-alt {
+	color: $color-cyber-security;
+}

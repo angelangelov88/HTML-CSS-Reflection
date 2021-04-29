@@ -1,0 +1,87 @@
+// CLIENT LOGOS
+
+.clients {
+
+	border: 2px yellow solid;
+	display: none;
+	padding: 2.5rem 18rem;
+	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+	height: 150px;
+	@media only screen and (min-width: $break-m) {
+		display: flex;
+		justify-content: space-around;	
+
+	}
+}
+
+.client-logo {
+	transform: scale(0.7);
+  filter: grayscale(100%);
+	margin: 0 -10px;
+	@media only screen and (min-width: $break-l) {
+		transform: scale(1);
+		margin: 0 15px;
+	}
+}
+
+.client-logo:hover {
+	filter: none;
+	.text-holder {
+		visibility: visible;
+	}
+	#beat-text {
+		margin-left: -120px;
+		@media only screen and (min-width: $break-l) {
+			margin-left: -85px;
+		}
+		}
+	#diver-text {
+		margin-left: 0px;
+		@media only screen and (min-width: $break-l) {
+			margin-left: 20px;
+		}
+	}
+}
+
+.text-holder {
+	visibility: hidden;
+	width: 350px;
+	background-color: #333645;
+	color: white;
+	text-align: center;
+	padding: 0 1rem;
+	position: absolute;
+	z-index: 1;
+	bottom: 205%;
+	margin-left: -35px;
+	font-weight: 400;
+	font-size: 1.3rem; 
+	@media only screen and (min-width: $break-l) {
+		font-size: 0.9rem;
+		bottom: 160%;
+		margin-left: -35px;
+		width: 250px;
+	}
+}
+
+.client-logo-text {
+	text-transform: capitalize;
+	padding: 1rem 0 0 0;
+}
+
+.text-holder::after {
+	content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  margin-left: -5px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+	@media only screen and (min-width: $break-l) {
+		margin-left: 15px;
+		border-width: 30px;
+		left: 30%;
+
+	}
+}
