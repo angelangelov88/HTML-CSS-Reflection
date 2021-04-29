@@ -1163,15 +1163,15 @@ h2 {
 // CLIENTS LOGOS
 
 .clients {
+
+	border: 2px yellow solid;
 	display: none;
-	padding: 1rem 18rem;
+	padding: 2.5rem 18rem;
 	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
 	height: 150px;
-	padding-top: 3rem;
 	@media only screen and (min-width: $break-m) {
 		display: flex;
 		justify-content: space-around;	
-		height: 170px;
 
 	}
 }
@@ -1193,29 +1193,42 @@ h2 {
 	}
 	#beat-text {
 		margin-left: -120px;
-	}
+		@media only screen and (min-width: $break-l) {
+			margin-left: -85px;
+		}
+		}
 	#diver-text {
 		margin-left: 0px;
+		@media only screen and (min-width: $break-l) {
+			margin-left: 20px;
+		}
 	}
 }
 
 .text-holder {
 	visibility: hidden;
-	width: 340px;
+	width: 350px;
 	background-color: #333645;
 	color: white;
 	text-align: center;
-	padding: 1rem 2rem;
+	padding: 0 1rem;
 	position: absolute;
 	z-index: 1;
-	bottom: 190%;
-	margin-left: -60px;
-	font-weight: 600;
-	font-size: 1.1rem; 
+	bottom: 205%;
+	margin-left: -35px;
+	font-weight: 400;
+	font-size: 1.3rem; 
+	@media only screen and (min-width: $break-l) {
+		font-size: 0.9rem;
+		bottom: 160%;
+		margin-left: -35px;
+		width: 250px;
+	}
 }
 
 .client-logo-text {
 	text-transform: capitalize;
+	padding: 1rem 0 0 0;
 }
 
 .text-holder::after {
@@ -1227,6 +1240,12 @@ h2 {
   border-width: 50px;
   border-style: solid;
   border-color: #333645 transparent transparent transparent;
+	@media only screen and (min-width: $break-l) {
+		margin-left: 15px;
+		border-width: 30px;
+		left: 30%;
+
+	}
 }
 
 
