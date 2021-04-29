@@ -1,0 +1,61 @@
+//Mixins
+@mixin search-md-screen{
+	max-width: 20vw;
+		height: 45px;
+		font-size: 0.9rem;
+		color: $color-button-gray;
+		border: 1px $color-button-gray solid;
+		border-radius: 1%;
+		background-color: white;
+		position: absolute;
+		left: 27rem;
+}
+
+@mixin navbar-flexbox-container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 0px;
+	height: 45px;
+	width: 100%;
+	z-index: 100;
+
+}
+
+@mixin navbar-flexbox-items {
+	margin: 5px;
+	padding: 5px;
+	display: block;
+	}
+	
+@mixin btn {
+	border: none;
+	border-radius: 2%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	margin: 5px 8px;
+	}
+
+@mixin cards {
+	border: 1px rgb(187, 187, 187) solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 80%;
+	margin: 1rem auto;
+	text-align: center;
+	padding: 2rem;
+	}
+
+@mixin news-title-style {
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 30px;
+}
+
+@mixin button-news-colour {
+	color: white;
+	margin: 30px;
+	width: 190px;
+}
