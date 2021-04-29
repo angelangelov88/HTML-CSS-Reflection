@@ -1345,3 +1345,89 @@ input[type=submit] {
 .asterix {
 	color: red;
 }
+
+
+
+
+//CONTACT US FOOTER
+
+.footer-container {
+	border: 2px fuchsia solid;
+	background-color: #333645;
+	color: white;
+	padding-left: .8rem;
+	display: flex;
+	flex-wrap: wrap;
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+h4 {
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	padding-top: 1.5rem;
+}
+
+.footer-content {
+	border: 2px #2ECC71 solid;
+	padding: -1rem;
+	display: flex;
+	flex-direction: column;
+	@media only screen and (min-width: $break-m) {
+	flex-wrap: wrap;
+	}
+}
+
+.contact-us {
+	border: 2px khaki solid;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.about-netmatters {
+	border: 2px red solid;
+	list-style-type: none;
+	padding-left: 0;
+}
+.website {
+	border: 2px rgb(0, 140, 255) solid;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.social-media {
+	border: 2px rgb(250, 95, 255) solid;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+max-width: 635px;
+}
+
+.social-media-logos {
+	border: 1px rgb(38, 40, 52) solid;
+	transform: scale(2);
+	margin: 3rem;
+	padding: 0.1rem 3.1rem;
+	background-color: darken($color: #333645, $amount: 8%);
+}
+
+.social-media-logos-fb:hover {
+	background-color: #4064AC;
+}
+
+
+.social-media-logos-twitter:hover {
+	background-color: #1C9CEA;
+}
+
+.social-media-logos-insta:hover {
+	background-color: #E1306C;
+}
+
+.social-media-logos-linkedin:hover {
+	background-color: #2867B2;
+}
+.social-logo {
+	color: white;
+}

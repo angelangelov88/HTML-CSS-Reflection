@@ -1408,4 +1408,104 @@ input[type=submit] {
 .asterix {
   color: red;
 }
+
+.footer-container {
+  border: 2px fuchsia solid;
+  background-color: #333645;
+  color: white;
+  padding-left: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+
+.footer-content {
+  border: 2px #2ECC71 solid;
+  padding: -1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.contact-us {
+  border: 2px khaki solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-netmatters {
+  border: 2px red solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.website {
+  border: 2px #008cff solid;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-media {
+  border: 2px #fa5fff solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 635px;
+}
+
+.social-media-logos {
+  border: 1px #262834 solid;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 3rem;
+  padding: 0.1rem 3.1rem;
+  background-color: #22242e;
+}
+
+.social-media-logos-fb:hover {
+  background-color: #4064AC;
+}
+
+.social-media-logos-twitter:hover {
+  background-color: #1C9CEA;
+}
+
+.social-media-logos-insta:hover {
+  background-color: #E1306C;
+}
+
+.social-media-logos-linkedin:hover {
+  background-color: #2867B2;
+}
+
+.social-logo {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
