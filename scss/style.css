@@ -223,6 +223,8 @@ i {
   line-height: 0.3;
   text-transform: uppercase;
   border-right: 2px gray solid;
+  font-weight: 600;
+  font-weight: 600;
 }
 @media only screen and (min-width: 1200px) {
   .btn-navbar {
@@ -265,6 +267,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #79539a;
 }
 .web-design:hover .li-web-design {
@@ -285,6 +288,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #286abd;
 }
 .it:hover .li-it {
@@ -305,6 +309,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #bc2c28;
 }
 .telecoms:hover .li-telecoms {
@@ -325,6 +330,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #526781;
 }
 .software:hover .li-software {
@@ -345,6 +351,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #25a25a;
 }
 .digital-marketing:hover .li-digital-marketing {
@@ -365,6 +372,7 @@ i {
   height: 45px;
   width: 100%;
   z-index: 100;
+  font-weight: 600;
   background-color: #de093f;
 }
 .cyber-security:hover .li-cyber-security {
@@ -456,8 +464,6 @@ small {
 
 .main-photo-container {
   display: flex;
-  position: relative;
-  bottom: -25rem;
 }
 .main-photo {
   background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
@@ -919,6 +925,7 @@ h3 {
   background-color: #333645;
   padding-left: 1rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 992px) {
   .brand-content {
@@ -933,6 +940,7 @@ h3 {
   font-size: 1.063rem;
   width: 14rem;
   border-radius: 3px;
+  margin-left: 0;
 }
 
 .btn-culture:hover {

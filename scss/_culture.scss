@@ -5,9 +5,11 @@
 	background-color: #333645;
 	padding-left: 1rem;
 	padding-top: 2rem;
+	padding-bottom: 2rem ;
 	@media only screen and (min-width: $break-l) {
 		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
 		padding: 2rem 5rem;
+
 	}
 }
 
@@ -17,6 +19,7 @@
 	font-size: 1.063rem;
 	width: 14rem;
 	border-radius: 3px;
+	margin-left: 0;
 }
 
 .btn-culture:hover {

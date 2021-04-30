@@ -20,12 +20,14 @@
 	height: 45px;
 	width: 100%;
 	z-index: 100;
+	font-weight: 600;
 }
 
 @mixin navbar-flexbox-items {
 	margin: 5px;
 	padding: 5px;
 	display: block;
+
 	}
 	
 @mixin btn {
