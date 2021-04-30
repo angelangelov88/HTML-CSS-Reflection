@@ -1,47 +1,68 @@
 // CARDS
-
-
+.main-cards-container {
+	display: flex;
+	justify-content: center;
+}
 
 .card {
-	border: 5px rgb(238, 50, 106) solid;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	@media only screen and (min-width: $break-m) {
+	
+	}
 	@media only screen and (min-width: $break-l) {
-		border: 5px rgb(37, 22, 248) solid;
 		padding: 1rem 0.2rem;
+		max-width: 1170px;
 		.card-text {
-			max-width: 250px;
+			max-width: 370px;
+			font-size: .85rem;
+			line-height: 1.375rem;
+			letter-spacing: 1px;
 		}
 	}
 	@media only screen and (min-width: $break-xl) {
-	
-	
+		.card-text {
+			max-width: 270px;
+		}
+		border: none;
+	}
+}
+
+.card-text {
+	min-height: 6rem;
+	@media only screen and (min-width: $break-m) {
+	}
+	@media only screen and (min-width: $break-l) {
+		min-width: initial;
 	}
 }
 
 .card-container {
 	@include cards;
+	min-width: 90%;
 	//height: 312px;
 	//width: 370px;
+	@media only screen and (min-width: $break-m) {
+		min-width: 90%;
+	}
+	@media only screen and (min-width: $break-l) {
+		min-width: initial;
+	}
+		@media only screen and (min-width: $break-xl) {
+			min-height: 20rem;
+	}
 }
-
-
-// @mixin cards {
-// 	border: 1px rgb(187, 187, 187) solid;
-// 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-// 	max-width: 80%;
-// 	margin: auto;
-// 	text-align: center;
-// 	padding: 2rem;
-// 	}
 
 .btn-card {
 	max-width: 12rem;
+	//font-family: ;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
-
+//CARDS COLOURS
 
 //Software card
 
@@ -361,4 +382,5 @@
 h3 {
 	color: black;
 	padding-top: 1rem;
+	font-size: 1.2rem;
 }

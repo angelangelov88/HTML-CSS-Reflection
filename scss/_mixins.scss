@@ -42,10 +42,10 @@
 @mixin cards {
 	border: 1px rgb(187, 187, 187) solid;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 80%;
-	margin: 1rem auto;
+	max-width: 90%;
+	margin: 1rem 0;
 	text-align: center;
-	padding: 2rem;
+	padding: 0.8rem;
 	}
 
 @mixin news-title-style {

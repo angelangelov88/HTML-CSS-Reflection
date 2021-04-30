@@ -1,8 +1,6 @@
 // CLIENT LOGOS
 
 .clients {
-
-	border: 2px yellow solid;
 	display: none;
 	padding: 2.5rem 18rem;
 	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
@@ -67,6 +65,11 @@
 .client-logo-text {
 	text-transform: capitalize;
 	padding: 1rem 0 0 0;
+	//font-weight: 600;
+	font-size: 1.6rem;
+	@media only screen and (min-width: $break-l) {
+		font-size: 1.3rem;
+	}
 }
 
 .text-holder::after {
