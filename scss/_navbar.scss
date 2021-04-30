@@ -11,106 +11,9 @@
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
-		border: 2px #eb64ae solid;
+		border: 4px #eb64ae solid;
 
 	}
-}
-
-.container {
-	border: 2px #2ECC71 solid;
-	display: flex;
-	justify-content: center;
-	//min-width: 1400px;
-
-}
-
-.li-main {
-	display: inline-table;
-	margin: 0 -5px;
-}
-
-.li-sub {
-	display: none;
-	font-size: 1rem;
-	@media screen and (min-width: $break-xl) {
-		font-size: 0.9rem;
-	}
-}
-
-.li-sub:hover {
-	.li-main {
-		background-color: $color-web-design;
-	}
-}
-
-.web-design:hover {
-	.web-design-ul { //flexbox container
-		@include navbar-flexbox-container;
-		background-color: $color-web-design;
-	
-
-	}
-	.li-web-design { //flexbox items
-		@include navbar-flexbox-items;
-		
-		}
-	}
-
-.it:hover {
-	.it-ul {
-		@include navbar-flexbox-container;
-		background-color: $color-it;
-	}
-	.li-it {
-		@include navbar-flexbox-items;	
-		}
-}
-
-.telecoms:hover {
-	.telecoms-ul {
-		@include navbar-flexbox-container;
-		background-color: $color-telecoms;
-
-	}
-	.li-telecoms {
-		@include navbar-flexbox-items;
-		}
-}
-
-.software:hover {
-	.software-ul {
-		@include navbar-flexbox-container;
-		background-color: $color-software;
-
-	}
-	.li-software {
-		@include navbar-flexbox-items;
-		
-		}
-}
-
-.digital-marketing:hover {
-	.digital-marketing-ul {
-		@include navbar-flexbox-container;
-		background-color: $color-digital-marketing;
-
-	}
-	.li-digital-marketing {
-		@include navbar-flexbox-items;
-		
-		}
-}
-
-.cyber-security:hover {
-	.cyber-security-ul {
-		@include navbar-flexbox-container;
-		background-color: $color-cyber-security;
-
-	}
-	.li-cyber-security {
-		@include navbar-flexbox-items;
-		
-		}
 }
 
 .btn-navbar {
@@ -123,6 +26,135 @@
 	@media only screen and (min-width: $break-xl ) {
 		width: 195px;
 	}
+}
+
+.container {
+	border: 4px #2ECC71 solid;
+	display: flex;
+	justify-content: center;
+	min-width: 1400px;
+
+}
+
+.li-main {
+	display: inline-table;
+	margin: 0 -5px;
+}
+
+.li-sub {
+	display: none;
+	font-size: 0.8rem;
+	@media screen and (min-width: $break-xl) {
+		font-size: 0.9rem;
+	}
+}
+
+.li-web-design:hover { 
+	.btn-web-design {
+		background-color: greenyellow !important;
+	}
+}
+
+.web-design:hover {
+	.web-design-ul { //flexbox container
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-web-design, $amount: 10%);
+
+
+	}
+
+
+	.li-web-design { //flexbox items
+		@include navbar-flexbox-items;
+		
+		}
+		.dash-2 {
+			display: block;
+		}
+	
+	}
+
+
+
+
+
+
+
+.it:hover {
+	.it-ul {
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-it, $amount: 10%);
+	}
+	.li-it {
+		@include navbar-flexbox-items;	
+		}
+		.dash-2 {
+			display: block;
+		}
+	
+}
+
+.telecoms:hover {
+	.telecoms-ul {
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-telecoms, $amount: 10%);
+
+	}
+	.li-telecoms {
+		@include navbar-flexbox-items;
+		}
+		.dash-2 {
+			display: block;
+		}
+	
+}
+
+.software:hover {
+	.software-ul {
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-software, $amount: 10%);
+
+	}
+	.li-software {
+		@include navbar-flexbox-items;
+		
+		}
+		.dash-2 {
+			display: block;
+		}
+	
+}
+
+.digital-marketing:hover {
+	.digital-marketing-ul {
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-digital-marketing, $amount: 10%);
+
+	}
+	.li-digital-marketing {
+		@include navbar-flexbox-items;
+		
+		}
+		.dash-2 {
+			display: block;
+		}
+	
+}
+
+.cyber-security:hover {
+	.cyber-security-ul {
+		@include navbar-flexbox-container;
+		background-color: darken($color: $color-cyber-security, $amount: 10%);
+
+	}
+	.li-cyber-security {
+		@include navbar-flexbox-items;
+		
+		}
+		.dash-2 {
+			display: block;
+		}
+	
 }
 
 
@@ -193,4 +225,16 @@
 
 .fa-shield-alt {
 	color: $color-cyber-security;
+}
+
+.dash-2 {
+	display: none;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	padding: 8px 17px;
+}
+
+small {
+	font-size: .6rem;
 }

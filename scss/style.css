@@ -213,129 +213,8 @@ i {
   .main-navigation {
     display: flex;
     justify-content: center;
-    border: 2px #eb64ae solid;
+    border: 4px #eb64ae solid;
   }
-}
-
-.container {
-  border: 2px #2ECC71 solid;
-  display: flex;
-  justify-content: center;
-}
-
-.li-main {
-  display: inline-table;
-  margin: 0 -5px;
-}
-
-.li-sub {
-  display: none;
-  font-size: 1rem;
-}
-@media screen and (min-width: 1200px) {
-  .li-sub {
-    font-size: 0.9rem;
-  }
-}
-
-.li-sub:hover .li-main {
-  background-color: #926FB1;
-}
-
-.web-design:hover .web-design-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #926FB1;
-}
-.web-design:hover .li-web-design {
-  margin: 5px;
-  padding: 5px;
-  display: block;
-}
-
-.it:hover .it-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #4183D7;
-}
-.it:hover .li-it {
-  margin: 5px;
-  padding: 5px;
-  display: block;
-}
-
-.telecoms:hover .telecoms-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #D64541;
-}
-.telecoms:hover .li-telecoms {
-  margin: 5px;
-  padding: 5px;
-  display: block;
-}
-
-.software:hover .software-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #67809F;
-}
-.software:hover .li-software {
-  margin: 5px;
-  padding: 5px;
-  display: block;
-}
-
-.digital-marketing:hover .digital-marketing-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #2ECC71;
-}
-.digital-marketing:hover .li-digital-marketing {
-  margin: 5px;
-  padding: 5px;
-  display: block;
-}
-
-.cyber-security:hover .cyber-security-ul {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0px;
-  height: 45px;
-  width: 100%;
-  z-index: 100;
-  background-color: #F62459;
-}
-.cyber-security:hover .li-cyber-security {
-  margin: 5px;
-  padding: 5px;
-  display: block;
 }
 
 .btn-navbar {
@@ -349,6 +228,152 @@ i {
   .btn-navbar {
     width: 195px;
   }
+}
+
+.container {
+  border: 4px #2ECC71 solid;
+  display: flex;
+  justify-content: center;
+  min-width: 1400px;
+}
+
+.li-main {
+  display: inline-table;
+  margin: 0 -5px;
+}
+
+.li-sub {
+  display: none;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1200px) {
+  .li-sub {
+    font-size: 0.9rem;
+  }
+}
+
+.li-web-design:hover .btn-web-design {
+  background-color: greenyellow !important;
+}
+
+.web-design:hover .web-design-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #79539a;
+}
+.web-design:hover .li-web-design {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.web-design:hover .dash-2 {
+  display: block;
+}
+
+.it:hover .it-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #286abd;
+}
+.it:hover .li-it {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.it:hover .dash-2 {
+  display: block;
+}
+
+.telecoms:hover .telecoms-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #bc2c28;
+}
+.telecoms:hover .li-telecoms {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.telecoms:hover .dash-2 {
+  display: block;
+}
+
+.software:hover .software-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #526781;
+}
+.software:hover .li-software {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.software:hover .dash-2 {
+  display: block;
+}
+
+.digital-marketing:hover .digital-marketing-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #25a25a;
+}
+.digital-marketing:hover .li-digital-marketing {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.digital-marketing:hover .dash-2 {
+  display: block;
+}
+
+.cyber-security:hover .cyber-security-ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 13.9rem;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  background-color: #de093f;
+}
+.cyber-security:hover .li-cyber-security {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+}
+.cyber-security:hover .dash-2 {
+  display: block;
 }
 
 .btn-web-design:hover {
@@ -417,8 +442,22 @@ i {
   color: #F62459;
 }
 
+.dash-2 {
+  display: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 8px 17px;
+}
+
+small {
+  font-size: 0.6rem;
+}
+
 .main-photo-container {
   display: flex;
+  position: relative;
+  bottom: -25rem;
 }
 .main-photo {
   background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
@@ -935,6 +974,9 @@ h2 {
   }
 }
 
+.news-cards-content {
+  font-family: Poppins, sans-serif;
+}
 @media only screen and (min-width: 768px) {
   .news-cards-content {
     display: flex;
@@ -1539,7 +1581,6 @@ h4 {
 }
 
 body {
-  font-family: Poppins, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
