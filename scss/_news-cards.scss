@@ -54,8 +54,6 @@
 		height: 38rem;
 }
 }
-	
-
 
 .image-caption-1, 
 .image-caption-2, 
@@ -64,12 +62,24 @@
 	font-weight: 600;
 	font-size: 0.8rem;
 	padding: 3px 10px 3px 10px;
-	width: 85px;
 	margin: 20px 0 0 370px;
 	background-color: $color-news-3;
-	display: flex;
-	justify-content: center;
+	position: relative;
+	bottom: 275px;
+	float: right;
+	
+	@media only screen and (min-width: $break-s) {
+		bottom: 320px;
+	}
+
+	@media only screen and (min-width: $break-m) {
+		bottom: 220px;	
+	}
+	@media only screen and (min-width: $break-l) {
+		bottom: 275px;
+	}
 }
+
 .image-caption-1 {
 	background-color: $color-news-1;
 }
@@ -77,8 +87,6 @@
 .image-caption-2 {
 	background-color: $color-news-2;
 }
-
-
 
 .image-caption-1:hover, 
 .image-caption-2:hover, 

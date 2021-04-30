@@ -937,11 +937,32 @@ h2 {
   font-weight: 600;
   font-size: 0.8rem;
   padding: 3px 10px 3px 10px;
-  width: 85px;
   margin: 20px 0 0 370px;
   background-color: #566C88;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  bottom: 275px;
+  float: right;
+}
+@media only screen and (min-width: 576px) {
+  .image-caption-1,
+.image-caption-2,
+.image-caption-3 {
+    bottom: 320px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .image-caption-1,
+.image-caption-2,
+.image-caption-3 {
+    bottom: 220px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .image-caption-1,
+.image-caption-2,
+.image-caption-3 {
+    bottom: 275px;
+  }
 }
 
 .image-caption-1 {
