@@ -23,6 +23,8 @@
 }
 
 .news-cards-content {
+	border: 2px rgb(57, 57, 255) solid;
+	max-width: 100%;
 	font-family: Poppins, sans-serif;
 	@media only screen and (min-width: $break-m) {
 		display: flex;
@@ -30,11 +32,14 @@
 }
 
 .news-card {
+	border: 2px red solid !important;
+
 	border: 1px $color-button-gray solid;
 	width: 452px;
 	margin: 1rem 1rem;
 	background-color: white;
 	height: 38rem;
+	max-width: 95%;
 	@media only screen and (min-width: $break-s) {
 		max-width: 90%;
 		width: auto;
@@ -82,6 +87,10 @@
 	}
 }
 
+.caption-link {
+	color: white;
+}
+
 .image-caption-1 {
 	background-color: $color-news-1;
 }
@@ -125,6 +134,18 @@
 	color: $color-news-1;
 	padding: 30px;
 	@include news-title-style;
+}
+
+a, link-news-1 {
+	color: $color-news-1;
+}
+
+.link-news-1:hover {
+	color: $color-news-1;
+}
+
+a, link-news-1:hover {
+	color: $color-news-1;
 }
 
 #news-2-title {
