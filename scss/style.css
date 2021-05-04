@@ -1288,46 +1288,34 @@ h2 {
   }
 }
 
-#news-1-title {
+a.news-1-title {
   color: #7E57A0;
   padding: 30px;
   font-size: 1rem;
   font-weight: 600;
 }
 
-a, link-news-1 {
-  color: #7E57A0;
-}
-
-.link-news-1:hover {
-  color: #7E57A0;
-}
-
-a, link-news-1:hover {
-  color: #7E57A0;
-}
-
-#news-2-title {
-  color: #2A6EC6;
+a.news-2-title {
+  color: #2A6EC6 !important;
   padding: 30px 30px 15px;
   font-size: 1rem;
   font-weight: 600;
 }
 
-#news-3-title {
+a.news-3-title {
   color: #566C88;
   padding: 30px 30px 0;
   font-size: 1rem;
   font-weight: 600;
 }
 
-#news-1-title:hover,
-#news-2-title:hover,
-#news-3-title:hover {
+.news-1-title:hover,
+.news-2-title:hover,
+.news-3-title:hover {
   text-decoration: underline;
 }
 
-#news-text {
+.news-text {
   color: black;
   padding-left: 30px;
   font-size: 0.9rem;
