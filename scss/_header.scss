@@ -57,6 +57,16 @@
       left: 12rem;
 }
 }
+
+.phone-icon {
+  color: black !important;
+  position: relative;
+  top: -2rem;
+  left: -9rem;
+  float: right;
+  z-index: 100;
+ }
+ 
   
 .btn-menu:hover {
   background-color: darken($color: #333645, $amount: 10%)
@@ -69,8 +79,8 @@
   max-height: 100px;
   max-width: 100%;
   width: 100%;
-
   @media only screen and (min-width: $break-m ) {
+    position: relative;
   }
 
   @media only screen and (min-width: $break-l ) {
@@ -151,6 +161,7 @@ i {
   }
 }
 
+
 .form-control {
   background-color: #e5e5e5;
   border: 10px green solid;
@@ -182,4 +193,3 @@ i {
       background-color: white;
 }
 }
-
