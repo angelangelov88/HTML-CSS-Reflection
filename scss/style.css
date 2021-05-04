@@ -280,7 +280,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 1400px;
+  min-width: 100%;
 }
 
 .li-main {
@@ -1150,7 +1150,6 @@ h2 {
 }
 
 .news-cards-content {
-  border: 2px #3939ff solid;
   max-width: 100%;
   font-family: Poppins, sans-serif;
 }
@@ -1164,7 +1163,6 @@ h2 {
 }
 
 .news-card {
-  border: 2px red solid !important;
   border: 1px #999aa2 solid;
   width: 452px;
   margin: 1rem 1rem;
@@ -1295,11 +1293,35 @@ a.news-1-title {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 576px) {
+  a.news-1-title {
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  a.news-1-title {
+    padding-left: 30px;
+  }
+}
+
 a.news-2-title {
-  color: #2A6EC6 !important;
+  color: #2A6EC6;
   padding: 30px 30px 15px;
   font-size: 1rem;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 576px) {
+  a.news-2-title {
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  a.news-2-title {
+    padding-left: 30px;
+  }
 }
 
 a.news-3-title {
@@ -1507,7 +1529,6 @@ a.news-3-title {
 }
 
 .newsletter {
-  border: 2px #030000 solid;
   padding: 1.5rem;
   background-color: #DDDDDD;
   font-weight: 600;
@@ -1519,19 +1540,12 @@ a.news-3-title {
           justify-content: center;
 }
 
-.form-content {
-  border: 2px #4183D7 solid;
-}
-
 @media only screen and (min-width: 992px) {
   .form-content {
     height: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 }
 
@@ -1541,39 +1555,69 @@ a.news-3-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: pink;
 }
 
 @media only screen and (min-width: 992px) {
   .name {
     min-width: 20rem;
     position: relative;
-    left: 13rem;
     height: 1rem;
   }
 }
 
-input[type=text],
-input[type=email] {
-  width: 100%;
-  height: 50px;
-  border: 1px #DDDDDD solid;
-}
-
 @media only screen and (min-width: 992px) {
-  input[type=text],
-  input[type=email] {
-    position: relative;
-    top: 2rem;
-    right: 7rem;
-    width: 11000px;
-    background-color: plum;
+  .email-field {
+    margin-left: 130px;
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .email-field {
+    margin-left: 250px;
+  }
+}
+
+.input {
+  height: 40px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  -webkit-transition: .5s;
+  transition: .5s;
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .input {
+    width: 130%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .input {
+    width: 170%;
+  }
+}
+
+.input:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 198, 255, 0.77);
+  box-shadow: 0px 0px 5px 1px rgba(0, 198, 255, 0.77);
+}
+
 .newsletter-content {
-  border: 2px #fffb1b solid;
-  max-width: 850px;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .newsletter-content {
+    margin: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .newsletter-content {
+    margin: 2rem 2rem;
+  }
 }
 
 .privacy-text {
@@ -1586,12 +1630,10 @@ input[type=email] {
 }
 
 .submit-container {
-  border: 2px red solid;
   margin-left: -37px;
 }
 
 .form-container {
-  border: 2px #2ECC71 solid;
   font-size: 2rem;
   padding: 0.5rem;
 }
@@ -1602,7 +1644,7 @@ input[type=email] {
   position: relative;
   bottom: 2.5rem;
   left: 2.2rem;
-  width: 80%;
+  width: 95%;
 }
 
 .checkbox {
@@ -1618,6 +1660,7 @@ input[type=submit] {
   padding: 10px;
   font-weight: 600;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .asterix {

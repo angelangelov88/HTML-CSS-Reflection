@@ -1,7 +1,7 @@
 // NEWSLETTER FORM
 
 .newsletter {
-	border: 2px #030000 solid;
+	//border: 2px #030000 solid;
 	padding: 1.5rem;
 	background-color: #DDDDDD;
 	font-weight: 600;
@@ -10,14 +10,10 @@
 }
 
 .form-content {
-	border: 2px #4183D7 solid;
+	//border: 2px #4183D7 solid;
 	@media only screen and (min-width: $break-l) {
 	height: 100px;
 	display: flex;
-	justify-content: flex-end;
-}
-@media only screen and (min-width: $break-l) {
-
 }
 }
 
@@ -25,37 +21,55 @@
 	margin-bottom: 3px;
 	margin-top: 10px;
 	display: flex;
-	background-color: pink;
-
+	//background-color: pink;
 	@media only screen and (min-width: $break-l) {
 		 min-width: 20rem;
 		 position: relative;
-		 left: 13rem;
 		 height: 1rem;
 		}
 }
 
-input[type=text],
-input[type=email] {
-	width: 100%;
-	height: 50px;
-	border: 1px #DDDDDD solid;
+.email-field {
+	//border: 2px greenyellow solid;
 	@media only screen and (min-width: $break-l) {
-		position: relative;
-		top: 2rem;
-		right: 7rem;
-		width: 11000px;
-		background-color: plum;
+		//border: 2px orangered solid;
+		margin-left: 130px;
 	}
 	@media only screen and (min-width: $break-xl) {
-
+		margin-left: 250px;
 	}
 }
 
+.input {
+	height: 40px;
+	margin-top: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	transition: .5s;
+	outline: none;
+	@media only screen and (min-width: $break-l) {
+	width: 130%;
+	}
+	@media only screen and (min-width: $break-xl) {
+		width: 170%;
+}
+}
+
+.input:focus {
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,198,255,0.77); 
+	box-shadow: 0px 0px 5px 1px rgba(0,198,255,0.77);
+}
 
 .newsletter-content {
-	border: 2px #fffb1b solid;
-	max-width: 850px;
+	//border: 2px #fffb1b solid;
+	max-width: 100%;
+	
+	@media only screen and (min-width: $break-l) {
+	margin: 2rem 1rem;
+	}
+	@media only screen and (min-width: $break-xl) {
+		margin: 2rem 2rem;
+}	
 }
 
 .privacy-text {
@@ -67,12 +81,12 @@ input[type=email] {
 }
 
 .submit-container {
-	border: 2px red solid;
+	//border: 2px red solid;
 	margin-left: -37px;
 }
 
 .form-container {
-	border: 2px #2ECC71 solid;
+	//border: 2px #2ECC71 solid;
 	font-size: 2rem;
 	padding: 0.5rem;
 }
@@ -83,14 +97,13 @@ input[type=email] {
 	position: relative;
 	bottom: 2.5rem;
 	left: 2.2rem;
-	width: 80%;
+	width: 95%;
 }
 
 .checkbox {
 	height: 32px;
 	width: 32px;
 	margin-top: 10px;
-
 }
 
 
@@ -101,6 +114,7 @@ input[type=submit] {
 	padding: 10px;
 	font-weight: 600;
 	border-radius: 5px;
+	margin-top: 20px;
 
 }
 
