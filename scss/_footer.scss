@@ -1,87 +1,94 @@
 //CONTACT US FOOTER
 
 .footer-container {
-	border: 2px fuchsia solid;
 	background-color: #333645;
 	color: white;
 	padding-left: .8rem;
 	a:hover {
 		text-decoration: underline;
 	}
+}
+
+.footer-content {
 	@media only screen and (min-width: $break-m) {
 		max-width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	@media only screen and (min-width: $break-xl) {
-		padding: 2rem 15rem;
-	
-	
+	@media only screen and (min-width: $break-l) {
+		justify-content: space-evenly;
 	}
+	@media only screen and (min-width: $break-xl) {
+		display: flex;
+		flex-wrap: nowrap;
+		min-width: 1200px;
+		justify-content: center;
+}
 }
 
-
-// .footer-content {
-// 	border: 2px #2ECC71 solid;
-// 	display: flex;
-// 	flex-direction: column;
-// 	@media only screen and (min-width: $break-m) {
-
-
-
-// 	}
-// 	@media only screen and (min-width: $break-xl) {
-
-
-
-// 	}
-// }
-
 .contact-us {
-	border: 2px khaki solid;
 	list-style-type: none;
 	padding-left: 0;
-
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
-			}	
+	}	
+	@media only screen and (min-width: $break-l) {
+		margin-right: 15rem;
+	}
+	@media only screen and (min-width: $break-xl) {
+		max-width: 250px;
+		margin-right: 0;
+}
 }
 
 .about-netmatters {
-	border: 2px red solid;
 	list-style-type: none;
 	padding-left: 0;
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
 	}
+	@media only screen and (min-width: $break-xl) {
+		max-width: 250px;
+}
 }
 
 .website {
-	border: 2px rgb(0, 140, 255) solid;
 	list-style-type: none;
 	padding-left: 0;	
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
 	}
+	@media only screen and (min-width: $break-xl) {
+		max-width: 250px;
+}
 }
 
-.social-media {
-	border: 2px rgb(250, 95, 255) solid;
+.social-links {
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
-	max-width: 635px;
+	justify-content: space-around;
 	@media only screen and (min-width: $break-m) {
-		max-width: 400px;
+		justify-content: space-between;
+		max-width: 350px;
+}
+}
 
-		// position: relative;
-		// bottom: 7rem;
-		// left: 22rem;
+
+.social-media {
+	max-width: 640px;
+	@media only screen and (min-width: $break-s) {
+	}
+	@media only screen and (min-width: $break-m) {
+	max-width: 455px;
 	}
 	@media only screen and (min-width: $break-l) {
-		
-	
+	margin-left: 15rem;
+	}
+	@media only screen and (min-width: $break-xl) {
+	min-width: 8rem;
+	margin-left: 1rem;
+	max-width: 420px;
 	}
 }
 
@@ -89,38 +96,42 @@
 	border: 2px rgba(255, 255, 255, 0) solid;
 	transform: scale(2);
 	margin: 3rem;
-	padding: 0.1rem 3.1rem;
+	padding: 0.1rem 2rem;
 	background-color: darken($color: #333645, $amount: 8%);
+	@media only screen and (min-width: $break-s) {
+		padding: 0.1rem 2.8rem;
+		margin: 3.5rem;
+	}
 	@media only screen and (min-width: $break-m) {
-		margin: 50px;
-		padding: 0.1rem 2rem;
+		margin: 15px;
+		padding: 0.1rem 1.8rem;
+		margin: 2rem;
 	}
 }
 
 .social-media-text {
-	border: 3px mediumspringgreen solid;
 	@media only screen and (min-width: $break-m) {
-	position: relative;
-	right: 11.5rem;
-	height: 0.1px;
-	}
+		position: relative;
+		right: 11.5rem;
+		height: 0.1px;
+	}	
 	@media only screen and (min-width: $break-xl) {
 		position: relative;
 		right: 300.5rem;
 		height: 0.1px;
-	
-}}
+}
+}
 
 h4 {
 	text-transform: uppercase;
 	padding-bottom: 1rem;
 	padding-top: 1.5rem;
+	font-size: 1rem;
 }
 
 .social-media-logos-fb:hover {
 	background-color: #4064AC;
 }
-
 
 .social-media-logos-twitter:hover {
 	background-color: #1C9CEA;
@@ -136,4 +147,3 @@ h4 {
 .social-logo {
 	color: white;
 }
-
