@@ -12,6 +12,7 @@
 }
 
 @mixin navbar-flexbox-container {
+	//border: 2px greenyellow solid;
 	display: flex;
 	justify-content: center;
 	position: absolute;
@@ -27,7 +28,6 @@
 	margin: 5px;
 	padding: 5px;
 	display: block;
-
 	}
 	
 @mixin btn {
