@@ -21,10 +21,6 @@
       @media only screen and (min-width: $break-l) {
         display: flex;
       }
-      @media only screen and (min-width: $break-xl) {
-      
-      
-      }
   }
     &-contact {
       background-color: $color-button-gray;
@@ -32,10 +28,6 @@
       @media only screen and (min-width: $break-l) {
         display: flex;
       }
-  
-    @media only screen and (min-width: $break-xl) {
-
-    }
     }
   }
 
@@ -62,7 +54,6 @@
     top: 0.3rem;
     height: 60px;
     width: 60px;
-
   }
   @media only screen and (min-width: $break-xl ) {
     position: relative;
@@ -82,7 +73,6 @@
     display: none;
   }
  }
- 
   
 .btn-menu:hover {
   background-color: darken($color: #333645, $amount: 10%)
@@ -92,25 +82,21 @@
   display: flex;
   justify-content: flex-start;
   max-height: 100px;
-  //max-width: 100%;
   width: 105%;
   position: relative;
   top: -0.3rem;
-
-  @media only screen and (min-width: $break-m ) {
+  @media only screen and (min-width: $break-m) {
     position: relative;
   }
-
-  @media only screen and (min-width: $break-l ) {
+  @media only screen and (min-width: $break-l) {
     position: relative;
     left: 10rem;
 }
-
-    @media only screen and (min-width: $break-xl) {
-      height: 6rem;
-      width: 45rem;
-      position: relative;
-      left: 2rem;
+  @media only screen and (min-width: $break-xl) {
+    height: 6rem;
+    width: 45rem;
+    position: relative;
+    left: 2rem;
   }
   }
 
@@ -121,6 +107,7 @@
 .btn-contact:hover{
   background-color: darken($color: $color-button-gray, $amount: 10%);
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -140,30 +127,18 @@ i {
   @media only screen and (min-width: $break-m) {
     max-width: 160%;
   }
-  @media only screen and (min-width: $break-xl) {
-  }
 }
 
 .logo {
   padding: 15px 0 0 15px;
   margin-left: .1rem;
   z-index: 100;
-  @media only screen and (min-width: $break-m ) {
- 
   }
-  @media only screen and (min-width: $break-l ) {
-    
-}
-  @media only screen and (min-width: $break-xl ) {
-    }
-  }
-
 
 .fas {
   padding: 5px;
   }
   
-
 .fa-search {
   color: black;
   background-color: #E5E5E5;
@@ -192,18 +167,18 @@ i {
     padding-top: 20px;
     margin-left: 0;
   }
-    @media only screen and (min-width: $break-xl) {
-      color: white;
-      background-color: $color-button-gray;
-      top: -0.3rem;
-      left: -2.5rem;
-      border-radius: 2px;
+  @media only screen and (min-width: $break-xl) {
+    color: white;
+    background-color: $color-button-gray;
+    top: -0.3rem;
+    left: -2.5rem;
+    border-radius: 2px;
+  }
+  }
 
-  }
-  }
 .fa-search:hover {
-    @media only screen and (min-width: $break-m ) { 
-      background-color: darken($color: $color-button-gray, $amount: 10%);
+  @media only screen and (min-width: $break-m ) { 
+    background-color: darken($color: $color-button-gray, $amount: 10%);
   }
 }
 
@@ -211,33 +186,29 @@ i {
 .form-control {
   background-color: #e5e5e5;
   border: none;
-
-    @media only screen and (min-width: $break-m) {
-      width: 20vw;
-      height: 55px;
-      font-size: 0.9rem;
-      color: $color-button-gray;
-      border: 1px #DCDCDC solid;
-      border-radius: 1%;
-      background-color: white;
-      position: relative;
-      top: -0.15rem;
-      left: 7rem;
-
+  @media only screen and (min-width: $break-m) {
+    width: 20vw;
+    height: 55px;
+    font-size: 0.9rem;
+    color: $color-button-gray;
+    border: 1px #DCDCDC solid;
+    border-radius: 1%;
+    background-color: white;
+    position: relative;
+    top: -0.15rem;
+    left: 7rem;
   }
-    @media only screen and (min-width: $break-l) {
-      display: none;
-      position: inherit;
+  @media only screen and (min-width: $break-l) {
+    display: none;
+    position: inherit;
   }
-    @media only screen and (min-width: $break-xl) {
-      display: flex;
-      height: 60px;
-      position: relative;
-      left: -2rem;
-      top: -0.25rem;
-
+  @media only screen and (min-width: $break-xl) {
+    display: flex;
+    height: 60px;
+    position: relative;
+    left: -2rem;
+    top: -0.25rem;
   }
-
 }
 
 .form-control:focus {
@@ -257,10 +228,10 @@ i {
   margin-right: -180px;
   border: 3px #DCDCDC solid;
   background-color: #E5E5E5;
-    @media only screen and (min-width: $break-m) {
-      max-width: 300px;
-      margin-left: 2rem;
-      background-color: white;
-      border: none;
+  @media only screen and (min-width: $break-m) {
+    max-width: 300px;
+    margin-left: 2rem;
+    background-color: white;
+    border: none;
 }
 }

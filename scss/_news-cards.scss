@@ -129,32 +129,28 @@
 
 a.news-1-title {
 	color: $color-news-1;
-	padding: 30px;
 	@include news-title-style;
 	@media only screen and (min-width: $break-s) {
 		padding: 0px;
 	}
 	@media only screen and (min-width: $break-m) {
-		padding-left: 30px;
 	}
 }
 
 a.news-2-title {
 	color: $color-news-2;
-	padding: 30px 30px 15px;
+	//padding: 30px 30px 15px;
 	@include news-title-style;
 	@media only screen and (min-width: $break-s) {
 		padding: 0px;
-
 	}
 	@media only screen and (min-width: $break-m) {
-		padding-left: 30px;
 	}
 }
 
 a.news-3-title {
 	color: $color-news-3;
-	padding: 30px 30px 0;
+	padding: 30px 0;
 	@include news-title-style;
 }
 
@@ -229,5 +225,9 @@ a.news-3-title {
 	position: relative;
 	bottom: 4.3rem;
 	padding-bottom: 0;
+}
+
+h3 {
+	padding-left: 30px;
 }
 
