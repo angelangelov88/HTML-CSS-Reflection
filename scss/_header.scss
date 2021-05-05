@@ -19,13 +19,18 @@
     &-support {
       background-color: $color-button-blue;
       display: none;
+      border-radius: 5px;
+      font-weight: 600;
       @media only screen and (min-width: $break-l ) {
         display: flex;
+        
       }
   }
     &-contact {
       background-color: $color-button-gray;
       display: none;
+      border-radius: 5px;
+      font-weight: 600;
       @media only screen and (min-width: $break-l ) {
         display: flex;
       }
@@ -47,24 +52,29 @@
   position: relative;
   bottom: 5.7rem;
   left: 2rem;
-    @media only screen and (min-width: $break-m ) {
-      float: right;
-      position: inherit;
+  @media only screen and (min-width: $break-m ) {
+    float: right;
+    position: relative;
+    top: 0.3rem;
+    left: 6rem;
 }
-    @media only screen and (min-width: $break-xl ) {
-      position: relative;
-      top: 0.1rem;
-      left: 12rem;
+  @media only screen and (min-width: $break-l) {
+    left: -3.2rem;
+  }
+  @media only screen and (min-width: $break-xl ) {
+    position: relative;
+    top: 0.1rem;
+    left: 12rem;
 }
 }
 
 .phone-icon {
   color: black !important;
   position: relative;
-  top: -2rem;
-  left: -9rem;
+  top: -2.5rem;
+  left: -8rem;
   float: right;
-  z-index: 100;
+  z-index: 10000;
  }
  
   
@@ -77,14 +87,18 @@
   justify-content: space-around;
   border: 2px black solid;
   max-height: 100px;
-  max-width: 100%;
-  width: 100%;
+  //max-width: 100%;
+  width: 105%;
+  position: relative;
+  top: -0.3rem;
+
   @media only screen and (min-width: $break-m ) {
     position: relative;
   }
 
   @media only screen and (min-width: $break-l ) {
-    
+    position: relative;
+    left: 6rem;
 }
 
     @media only screen and (min-width: $break-xl ) {
@@ -114,17 +128,25 @@ i {
   color: white;
   }
   
+.netmatters-logo {
+  height: auto;
+  max-width: 60%;
+  @media only screen and (min-width: $break-m) {
+    max-width: 160%;
+    
+  }
+}
+
 .logo {
   padding: 15px 0 0 15px;
   margin-left: .1rem;
   @media only screen and (min-width: $break-m ) {
+ 
   }
-
   @media only screen and (min-width: $break-l ) {
     
 }
-
-    @media only screen and (min-width: $break-xl ) {
+  @media only screen and (min-width: $break-xl ) {
 
     }
   }
@@ -141,14 +163,24 @@ i {
   height: 20px;
   padding: 11px;
   margin-left: -9px;
-    @media only screen and (min-width: $break-m ) {
-      color: white;
-      background-color: $color-button-gray;
-      padding: 15px;
-      height: 2.8rem;
-      
+  @media only screen and (min-width: $break-m) {
+    color: white;
+    background-color: $color-button-gray;
+    padding: 15px;
+    height: 2.8rem;
+    position: relative;
+    left: 15rem;
   }
-    @media only screen and (min-width: $break-xl ) {
+  @media only screen and (min-width: $break-l) {
+    position: relative;
+    left: -1.5rem;
+    top: -0.11rem;
+    border-radius: 5px;
+    height: 55px;
+    width: 55px;
+    padding-top: 17px;
+  }
+    @media only screen and (min-width: $break-xl) {
       color: white;
       background-color: $color-button-gray;
       padding: 15px;
@@ -164,10 +196,18 @@ i {
 
 .form-control {
   background-color: #e5e5e5;
-  border: 10px green solid;
-    @media only screen and (min-width: $break-m ) {
-      @include search-md-screen ();
+  border: none;
 
+    @media only screen and (min-width: $break-m ) {
+      width: 20vw;
+      height: 45px;
+      font-size: 0.9rem;
+      color: $color-button-gray;
+      border: 1px #DCDCDC solid;
+      border-radius: 1%;
+      background-color: white;
+      position: absolute;
+      left: 12.5rem;
 
   }
     @media only screen and (min-width: $break-l ) {
@@ -181,15 +221,28 @@ i {
 
 }
 
+.form-control:focus {
+  background-color: #E5E5E5;
+  border-color:  #E5E5E5;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(229, 229, 229);
+  @media only screen and (min-width: $break-m ) {
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0,198,255,0.77);
+    border-color: #CCCCCC;
+  }
+}
+
 .container-search {
   width: 100%;
   margin-left: -80px;
   margin-right: -180px;
-
+  border: 2px #DCDCDC solid;
   background-color: #E5E5E5;
     @media only screen and (min-width: $break-m ) {
       max-width: 300px;
-      margin-left: 1rem;
+      margin-left: 2rem;
       background-color: white;
+      border: none;
 }
 }
