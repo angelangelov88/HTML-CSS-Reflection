@@ -388,16 +388,20 @@ i {
   }
 }
 
+.main-ul {
+  position: relative;
+  border: 2px orange solid;
+}
+
+.second-nav-background {
+  background-color: orchid;
+}
+
 .web-design:hover .web-design-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -406,8 +410,8 @@ i {
 }
 
 .web-design:hover .li-web-design {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 
@@ -427,12 +431,7 @@ li.web-design:hover button .fa-code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -441,8 +440,8 @@ li.web-design:hover button .fa-code {
 }
 
 .it:hover .li-it {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 
@@ -462,12 +461,7 @@ li.it:hover button .fa-tv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -476,8 +470,8 @@ li.it:hover button .fa-tv {
 }
 
 .telecoms:hover .li-telecoms {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 
@@ -497,12 +491,7 @@ li.telecoms:hover button .fa-phone-alt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -511,8 +500,8 @@ li.telecoms:hover button .fa-phone-alt {
 }
 
 .software:hover .li-software {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 
@@ -532,12 +521,7 @@ li.software:hover button .fa-th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -546,8 +530,8 @@ li.software:hover button .fa-th {
 }
 
 .digital-marketing:hover .li-digital-marketing {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 
@@ -567,12 +551,7 @@ li.digital-marketing:hover button .fa-signal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 13.9rem;
-  left: 0;
   height: 45px;
   width: 100%;
   z-index: 100;
@@ -581,8 +560,8 @@ li.digital-marketing:hover button .fa-signal {
 }
 
 .cyber-security:hover .li-cyber-security {
-  margin: 5px;
-  padding: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
   display: block;
 }
 

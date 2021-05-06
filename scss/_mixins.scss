@@ -14,9 +14,7 @@
 @mixin navbar-flexbox-container {
 	//border: 2px greenyellow solid;
 	display: flex;
-	justify-content: center;
 	position: absolute;
-	top: 13.9rem;
 	left: 0;
 	height: 45px;
 	width: 100%;
@@ -25,8 +23,8 @@
 }
 
 @mixin navbar-flexbox-items {
-	margin: 5px;
-	padding: 5px;
+	margin-top: 5px;
+	padding-top: 5px;
 	display: block;
 	}
 	
