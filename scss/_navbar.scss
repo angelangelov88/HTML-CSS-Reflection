@@ -7,11 +7,12 @@
   text-transform: uppercase;
   max-height: 95px;
   width: 100%;
+	position: relative;
 
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
-		border: 4px #eb64ae solid;
+		//border: 4px #eb64ae solid;
 
 	}
 }
@@ -19,11 +20,12 @@
 .btn-navbar {
 	background-color: $color-navbar;
 	width: 150px;
+	height: 94px;
 	line-height: 0.3;
 	text-transform: uppercase;
 	border-right: 2px gray solid;
 	font-weight: 600;
-	font-weight: 600;
+	border-bottom: none;
 
 	@media only screen and (min-width: $break-xl ) {
 		width: 190px;
@@ -31,7 +33,7 @@
 }
 
 .container {
-	border: 4px #2ECC71 solid;
+	//border: 4px #2ECC71 solid;
 	display: flex;
 	justify-content: center;
 	min-width: 100%;
@@ -48,23 +50,15 @@
 	font-size: 0.8rem;
 	@media screen and (min-width: $break-xl) {
 		font-size: 0.9rem;
-	}
-	
+	}	
 }
 
-.main-ul {
-	position: relative;
-	border: 2px orange solid;
-}
-
-.second-nav-background {
-	width: 100vw;
-	background-color: orchid;
-	position: absolute;
-
-
-
-
+@mixin second-nav-background {
+width: 100vw;
+height: 45px;
+position: absolute;
+left: 0;
+z-index: 100;
 }
 
 //NAV BAR COLOURS
@@ -74,6 +68,10 @@
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-web-design, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-web-design, $amount: 10%);
+		}
 	.li-web-design { //flexbox items
 		@include navbar-flexbox-items;
 		}
@@ -88,12 +86,16 @@
 			color: $color-icon;
 		}
 	}
-	
+
 .it:hover {
 	.it-ul {
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-it, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-it, $amount: 10%);
+		}
 	.li-it {
 		@include navbar-flexbox-items;	
 		}
@@ -114,6 +116,10 @@ li.it:hover button {
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-telecoms, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-telecoms, $amount: 10%);
+		}
 	.li-telecoms {
 		@include navbar-flexbox-items;
 		}
@@ -134,6 +140,10 @@ li.telecoms:hover button {
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-software, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-software, $amount: 10%);
+		}
 	.li-software {
 		@include navbar-flexbox-items;
 		}
@@ -154,6 +164,10 @@ li.software:hover button {
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-digital-marketing, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-digital-marketing, $amount: 10%);
+		}
 	.li-digital-marketing {
 		@include navbar-flexbox-items;
 		}
@@ -174,6 +188,10 @@ li.digital-marketing:hover button {
 		@include navbar-flexbox-container;
 		background-color: darken($color: $color-cyber-security, $amount: 10%);
 	}
+	.second-nav-background {
+		@include second-nav-background;
+		background-color: darken($color: $color-cyber-security, $amount: 10%);
+		}
 	.li-cyber-security {
 		@include navbar-flexbox-items;
 		}

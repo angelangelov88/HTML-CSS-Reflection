@@ -14,12 +14,19 @@
 @mixin navbar-flexbox-container {
 	//border: 2px greenyellow solid;
 	display: flex;
-	position: absolute;
-	left: 0;
+	// position: absolute;
+	// left: 0;
 	height: 45px;
-	width: 100%;
 	z-index: 100;
 	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (min-width: $break-l) {
+		width: 850px;
+	}
+	@media screen and (min-width: $break-xl) {
+	width: 1100px;
+}
 }
 
 @mixin navbar-flexbox-items {

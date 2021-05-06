@@ -331,6 +331,7 @@ i {
   text-transform: uppercase;
   max-height: 95px;
   width: 100%;
+  position: relative;
 }
 
 @media screen and (min-width: 992px) {
@@ -341,18 +342,18 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 4px #eb64ae solid;
   }
 }
 
 .btn-navbar {
   background-color: #333645;
   width: 150px;
+  height: 94px;
   line-height: 0.3;
   text-transform: uppercase;
   border-right: 2px gray solid;
   font-weight: 600;
-  font-weight: 600;
+  border-bottom: none;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -362,7 +363,6 @@ i {
 }
 
 .container {
-  border: 4px #2ECC71 solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,27 +388,36 @@ i {
   }
 }
 
-.main-ul {
-  position: relative;
-  border: 2px orange solid;
-}
-
-.second-nav-background {
-  width: 100vw;
-  background-color: orchid;
-  position: absolute;
-}
-
 .web-design:hover .web-design-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #79539a;
+}
+
+@media screen and (min-width: 992px) {
+  .web-design:hover .web-design-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .web-design:hover .web-design-ul {
+    width: 1100px;
+  }
+}
+
+.web-design:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #79539a;
 }
 
@@ -434,12 +443,32 @@ li.web-design:hover button .fa-code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #286abd;
+}
+
+@media screen and (min-width: 992px) {
+  .it:hover .it-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .it:hover .it-ul {
+    width: 1100px;
+  }
+}
+
+.it:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #286abd;
 }
 
@@ -465,12 +494,32 @@ li.it:hover button .fa-tv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bc2c28;
+}
+
+@media screen and (min-width: 992px) {
+  .telecoms:hover .telecoms-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telecoms:hover .telecoms-ul {
+    width: 1100px;
+  }
+}
+
+.telecoms:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #bc2c28;
 }
 
@@ -496,12 +545,32 @@ li.telecoms:hover button .fa-phone-alt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #526781;
+}
+
+@media screen and (min-width: 992px) {
+  .software:hover .software-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .software:hover .software-ul {
+    width: 1100px;
+  }
+}
+
+.software:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #526781;
 }
 
@@ -527,12 +596,32 @@ li.software:hover button .fa-th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #25a25a;
+}
+
+@media screen and (min-width: 992px) {
+  .digital-marketing:hover .digital-marketing-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .digital-marketing:hover .digital-marketing-ul {
+    width: 1100px;
+  }
+}
+
+.digital-marketing:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #25a25a;
 }
 
@@ -558,12 +647,32 @@ li.digital-marketing:hover button .fa-signal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 0;
   height: 45px;
-  width: 100%;
   z-index: 100;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #de093f;
+}
+
+@media screen and (min-width: 992px) {
+  .cyber-security:hover .cyber-security-ul {
+    width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cyber-security:hover .cyber-security-ul {
+    width: 1100px;
+  }
+}
+
+.cyber-security:hover .second-nav-background {
+  width: 100vw;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
   background-color: #de093f;
 }
 
