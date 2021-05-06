@@ -2,6 +2,7 @@
 .main-cards-container {
 	display: flex;
 	justify-content: center;
+	border: 5px yellow solid;
 }
 
 .card {
@@ -9,6 +10,8 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	border: 2px green solid !important;
+
 	@media only screen and (min-width: $break-m) {
 	
 	}
@@ -42,6 +45,8 @@
 .card-container {
 	@include cards;
 	min-width: 90%;
+	border: 5px red solid;
+
 	//height: 312px;
 	//width: 370px;
 	@media only screen and (min-width: $break-m) {

@@ -828,6 +828,7 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 5px yellow solid;
 }
 
 .card {
@@ -843,6 +844,7 @@ h5 {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border: 2px green solid !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -886,6 +888,7 @@ h5 {
   text-align: center;
   padding: 0.8rem;
   min-width: 90%;
+  border: 5px red solid;
 }
 
 @media only screen and (min-width: 768px) {
