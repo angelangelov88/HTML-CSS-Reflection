@@ -66,3 +66,12 @@
 	margin: 30px;
 	width: 190px;
 }
+
+@mixin second-nav-background {
+	width: 100vw;
+	height: 45px;
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	}
+	

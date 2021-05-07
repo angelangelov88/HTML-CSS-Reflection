@@ -21,9 +21,10 @@
 		//display: -ms-flexbox;
 		// justify-content: space-around;	
 		justify-content: center;
-		padding: 2rem;
+		padding: 2.5rem;
 	}
 	@media only screen and (min-width: $break-l) {
+		padding: 2.5rem;
 
 	}
 	@media only screen and (min-width: $break-xl) {
@@ -43,7 +44,9 @@ img.colour {
   //filter: grayscale(100%);
 	display: flex;
 	flex-basis: auto;
+
 	margin: 0 -10px;
+
 	@media only screen and (min-width: $break-m) {
 		margin-left: -1.5rem;
 	}
@@ -92,11 +95,14 @@ img.colour {
 	padding: 0 1rem;
 	position: absolute;
 	z-index: 1;
-	bottom: 170%;
+	bottom: 200%;
 	left: 0;
 	margin-left: -35px;
 	font-weight: 400;
 	font-size: 1.3rem; 
+	border: 2px #333645 solid;
+	@media only screen and (min-width: $break-m) {
+	}
 	@media only screen and (min-width: $break-l) {
 		font-size: 0.9rem;
 		bottom: 156%;

@@ -2,13 +2,13 @@
 
 .main-navigation {
   background: #333645;
-  border-bottom: solid 1px white;
+  border-bottom: 1px rgb(155, 155, 155) solid;
   display: none;
   text-transform: uppercase;
   max-height: 95px;
   width: 100%;
 	position: relative;
-
+	z-index: 100;
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
@@ -23,9 +23,11 @@
 	height: 94px;
 	line-height: 0.3;
 	text-transform: uppercase;
-	border-right: 2px gray solid;
 	font-weight: 600;
 	border-bottom: none;
+	border-top: none;
+	border-right: 1px solid rgba(163, 163, 163, 0.3);
+	border-left: 1px solid rgba(163, 163, 163, 0.3);
 
 	@media only screen and (min-width: $break-xl ) {
 		width: 190px;
@@ -53,13 +55,6 @@
 	}	
 }
 
-@mixin second-nav-background {
-width: 100vw;
-height: 45px;
-position: absolute;
-left: 0;
-z-index: 100;
-}
 
 //NAV BAR COLOURS
 
