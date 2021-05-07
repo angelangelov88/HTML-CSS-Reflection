@@ -1563,15 +1563,26 @@ h3 {
 }
 
 .clients-container {
-  border: 2px #28c1fd solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+  background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .clients-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .clients {
-  border: 2px red solid;
   display: none;
   padding: 2.5rem 18rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
-  background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
   height: 150px;
 }
 
@@ -1580,8 +1591,17 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .clients {
+    max-width: 1400px;
+    padding: 2.5rem;
   }
 }
 
@@ -1592,7 +1612,18 @@ img.colour {
 .client-logo {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   margin: 0 -10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .client-logo {
+    margin-left: -1.5rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1600,6 +1631,12 @@ img.colour {
     -webkit-transform: scale(1);
             transform: scale(1);
     margin: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .client-logo {
+    margin: auto 2rem;
   }
 }
 
@@ -1644,7 +1681,8 @@ img.colour {
   padding: 0 1rem;
   position: absolute;
   z-index: 1;
-  bottom: 205%;
+  bottom: 170%;
+  left: 0;
   margin-left: -35px;
   font-weight: 400;
   font-size: 1.3rem;
@@ -1653,7 +1691,7 @@ img.colour {
 @media only screen and (min-width: 992px) {
   .text-holder {
     font-size: 0.9rem;
-    bottom: 160%;
+    bottom: 156%;
     margin-left: -35px;
     width: 250px;
   }

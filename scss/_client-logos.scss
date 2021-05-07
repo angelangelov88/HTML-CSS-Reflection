@@ -1,21 +1,36 @@
 // CLIENT LOGOS
 
 .clients-container {
-	border: 2px rgb(40, 193, 253) solid;
+	//border: 2px rgb(40, 193, 253) solid;
+	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
+	display: flex;
+	justify-content: center;
+	@media only screen and (min-width: $break-xl) {
 
+	justify-content: space-around;
+	}
 }
 
 .clients {
-	border: 2px red solid;
+	//border: 2px red solid;
 	display: none;
 	padding: 2.5rem 18rem;
-	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
 	height: 150px;
 	@media only screen and (min-width: $break-m) {
 		display: flex;
-		justify-content: space-around;	
+		//display: -ms-flexbox;
+		// justify-content: space-around;	
+		justify-content: center;
+		padding: 2rem;
+	}
+	@media only screen and (min-width: $break-l) {
 
 	}
+	@media only screen and (min-width: $break-xl) {
+		max-width: 1400px;
+		padding: 2.5rem;
+
+	}		
 }
 
 img.colour {
@@ -23,13 +38,22 @@ img.colour {
 }
 
 .client-logo {
+	//border: 2px green solid;
 	transform: scale(0.7);
   //filter: grayscale(100%);
-
+	display: flex;
+	flex-basis: auto;
 	margin: 0 -10px;
+	@media only screen and (min-width: $break-m) {
+		margin-left: -1.5rem;
+	}
 	@media only screen and (min-width: $break-l) {
 		transform: scale(1);
 		margin: 0 15px;
+	}
+	@media only screen and (min-width: $break-xl) {
+	margin: auto 2rem;
+	
 	}
 }
 
@@ -68,13 +92,14 @@ img.colour {
 	padding: 0 1rem;
 	position: absolute;
 	z-index: 1;
-	bottom: 205%;
+	bottom: 170%;
+	left: 0;
 	margin-left: -35px;
 	font-weight: 400;
 	font-size: 1.3rem; 
 	@media only screen and (min-width: $break-l) {
 		font-size: 0.9rem;
-		bottom: 160%;
+		bottom: 156%;
 		margin-left: -35px;
 		width: 250px;
 	}
