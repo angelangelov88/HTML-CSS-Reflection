@@ -86,11 +86,20 @@
   position: relative;
   top: -0.3rem;
   @media only screen and (min-width: $break-m) {
+    position: relative;  
+  @media screen and (-ms-high-contrast: none) {
     position: relative;
+    left: -9rem;
+  }
+  
   }
   @media only screen and (min-width: $break-l) {
     position: relative;
     left: 10rem;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    left: 0;
+  }
+   
 }
   @media only screen and (min-width: $break-xl) {
     height: 6rem;
@@ -173,6 +182,7 @@ i {
     top: -0.3rem;
     left: -2.5rem;
     border-radius: 2px;
+    min-width: 65px;
   }
   }
 
