@@ -17,16 +17,25 @@
 	max-width: 1000px;
 }
 
+
 .partners-section-item {
 	transform: scale(0.8);
-  filter: grayscale(100%);
 	@media only screen and (min-width: $break-l) {
 		transform: scale(1.1);
 	}
 }
 
+img.colour {
+	display: none;
+}
+
 .partners-section-item:hover {
-		filter: none;
+		img.colour {
+			display: block;
+		}
+		img.grey {
+			display: none;
+		}
 	}
 
 	.google {
@@ -43,12 +52,16 @@
 
 .awards-section-item {
 	transform: scale(0.8);
-  filter: grayscale(100%);
 	@media only screen and (min-width: $break-l) {
 		transform: scale(1.1);
 	}
 }	
 
 .awards-section-item:hover {
-	filter: none;
+	img.colour {
+		display: block;
+	}
+	img.grey {
+		display: none;
+	}
 }
