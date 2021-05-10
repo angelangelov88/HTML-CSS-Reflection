@@ -1315,9 +1315,7 @@ h3 {
 .brand-content {
   color: white;
   background-color: #333645;
-  padding-left: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 1rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1926,6 +1924,7 @@ img.colour {
   bottom: 2.5rem;
   left: 2.2rem;
   width: 95%;
+  cursor: pointer;
 }
 
 .checkbox {

@@ -3,9 +3,7 @@
 .brand-content {
 	color: white;
 	background-color: #333645;
-	padding-left: 1rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem ;
+	padding: 2rem 1rem;
 	@media only screen and (min-width: $break-l) {
 		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
 		padding: 2rem 5rem;
