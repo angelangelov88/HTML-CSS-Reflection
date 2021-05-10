@@ -51,17 +51,27 @@
     position: relative;
     top: 0.3rem;
     left: 16rem;
+    @media screen and (-ms-high-contrast: none) {
+      position: absolute;
+      top: 1.3rem;
+      left: 26rem;
+    }
 }
   @media only screen and (min-width: $break-l) {
     left: -3.2rem;
     top: 0.3rem;
-    height: 65px;
+    height: 60px;
     width: 65px;
+    @media screen and (-ms-high-contrast: none) {
+      position: relative;
+      top: 0.3rem;
+      left: -3rem;
+      }
   }
   @media only screen and (min-width: $break-xl ) {
     position: relative;
-    top: 0.2rem;
-    left: 10rem;
+    top: 0.2rem;    
+    left: 8rem;    
 }
 }
 
@@ -96,7 +106,7 @@
     position: relative;  
   @media screen and (-ms-high-contrast: none) {
     position: relative;
-    left: -9rem;
+    left: -10rem;
   }
   
   }
@@ -184,7 +194,7 @@ i {
     left: -1.5rem;
     top: -0.11rem;
     border-radius: 5px;
-    height: 65px;
+    height: 60px;
     width: 65px;
     padding-top: 22px;
     margin-left: 0;
@@ -210,7 +220,8 @@ i {
   background-color: #e5e5e5;
   border: none;
   @media only screen and (min-width: $break-m) {
-    width: 20vw;
+    display: flex;
+    width: 12rem;
     height: 55px;
     font-size: 0.9rem;
     color: $color-button-gray;
@@ -227,7 +238,7 @@ i {
   }
   @media only screen and (min-width: $break-xl) {
     display: flex;
-    height: 65px;
+    height: 60px;
     position: relative;
     left: -2rem;
     top: -0.25rem;
