@@ -15,4 +15,8 @@ body {
     font-size: 1rem;
 		font-weight: 400;
     //font-family: Lato,Helvetica,Arial,sans-serif;
+    @media screen and (-ms-high-contrast: none) {
+    font-family: Lato,Helvetica,Arial,sans-serif;
+
+    }
 }

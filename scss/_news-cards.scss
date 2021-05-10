@@ -37,6 +37,8 @@
 	background-color: white;
 	height: 38rem;
 	max-width: 95%;
+	position: relative;
+
 	@media only screen and (min-width: $break-s) {
 		max-width: 90%;
 		width: auto;
@@ -58,30 +60,33 @@
 }
 }
 
-.image-caption-1, 
-.image-caption-2, 
+
+
+.image-caption-1 {
+	@include image-caption;
+	background-color: $color-news-1;
+
+}
+
+.image-caption-2 {
+	@include image-caption;
+	background-color: $color-news-2;
+}
+
 .image-caption-3 {
-	color: white;
-	font-weight: 600;
-	font-size: 0.8rem;
-	padding: 3px 10px 3px 10px;
-	margin: 20px 0 0 370px;
+	@include image-caption;
 	background-color: $color-news-3;
-	position: relative;
-	bottom: 275px;
-	float: right;
-	
-	@media only screen and (min-width: $break-s) {
-		bottom: 320px;
+	position: absolute;
 
-	}
+}
 
+.news-card-3 {
 	@media only screen and (min-width: $break-m) {
-		bottom: 220px;	
-	}
-	@media only screen and (min-width: $break-l) {
-		bottom: 275px;
-	}
+		display: none;
+}
+	@media only screen and (min-width: $break-xl) {
+		display: block;
+}
 }
 
 .caption-link {
@@ -102,13 +107,7 @@
 	text-decoration: underline;
 }
 
-.news-card-3 {
-	@media only screen and (min-width: $break-m) {
-		display: none;
-}
-	@media only screen and (min-width: $break-xl) {
-		display: block;
-}}
+
 
 .photo-hiring,
 .photo-hand,
@@ -204,6 +203,7 @@ a.news-3-title {
 
 .photo-news {
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .photo-news-1 {

@@ -39,7 +39,7 @@
 	border: none;
 	border-radius: 5px;
 	color: white;
-	padding: 15px 10px 10px 1px;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.2rem;
@@ -75,3 +75,15 @@
 	z-index: 100;
 	}
 	
+	@mixin image-caption {
+		color: white;
+		font-weight: 600;
+		font-size: 0.8rem;
+		padding: 3px 10px 6px 10px;
+		margin: 20px 0 0 370px;
+		float: right;
+		position: absolute;
+		top: -.5rem;
+		right: 0rem;
+
+	}
