@@ -66,6 +66,9 @@
 	//font-family: ;
 	font-size: 1rem;
 	font-weight: 600;
+	@media screen and (-ms-high-contrast: none) {
+    font-weight: 400;
+  }
 }
 
 //CARDS COLOURS
