@@ -910,6 +910,7 @@ h5 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border: none;
 }
 
 @media only screen and (min-width: 992px) {
@@ -917,8 +918,16 @@ h5 {
     padding: 1rem 0.2rem;
     max-width: 1170px;
   }
+}
+
+@media only screen and (min-width: 992px) and (-ms-high-contrast: none) {
+  .card {
+    max-width: 978px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .card .card-text {
-    max-width: 370px;
     font-size: .85rem;
     line-height: 1.375rem;
     letter-spacing: 1px;
@@ -927,10 +936,13 @@ h5 {
 
 @media only screen and (min-width: 1200px) {
   .card {
-    border: none;
+    max-width: 1170px;
   }
-  .card .card-text {
-    max-width: 270px;
+}
+
+@media only screen and (min-width: 1200px) and (-ms-high-contrast: none) {
+  .card {
+    max-width: 1183px;
   }
 }
 
@@ -964,7 +976,7 @@ h5 {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 90%;
-  margin: 1rem 1rem;
+  margin: 1rem 0rem;
   text-align: center;
   padding: 0.8rem;
   width: 90%;
@@ -973,6 +985,12 @@ h5 {
 @media screen and (-ms-high-contrast: none) {
   .card-container {
     font-family: Lato,Helvetica,Arial,sans-serif;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-container {
+    margin: 1rem 1rem;
   }
 }
 
@@ -998,6 +1016,70 @@ h5 {
 @media screen and (-ms-high-contrast: none) {
   .btn-card {
     font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .software-container,
+  .it-container,
+  .digital-marketing-container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .software-container,
+  .it-container,
+  .digital-marketing-container {
+    max-width: 290px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .software-container,
+  .it-container,
+  .digital-marketing-container {
+    min-width: 355px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .telecoms-container,
+  .web-design-container,
+  .cyber-security-container,
+  .developer-training-container {
+    max-width: 342px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .telecoms-container,
+  .web-design-container,
+  .cyber-security-container,
+  .developer-training-container {
+    max-width: 452px;
+    min-width: 452px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .telecoms-container,
+  .web-design-container,
+  .cyber-security-container,
+  .developer-training-container {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    max-width: 258px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (-ms-high-contrast: none) {
+  .telecoms-container,
+  .web-design-container,
+  .cyber-security-container,
+  .developer-training-container {
+    min-width: 200px;
   }
 }
 
@@ -1091,6 +1173,18 @@ h5 {
 .btn-card-it {
   color: white;
   background-color: #4183D7;
+}
+
+@media only screen and (min-width: 992px) {
+  .btn-card-it {
+    margin-top: 27px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-card-it {
+    margin-top: 0;
+  }
 }
 
 .btn-card-it .a-cards-it {
@@ -1285,6 +1379,18 @@ h5 {
   background-color: #F62459;
 }
 
+@media only screen and (min-width: 768px) {
+  .btn-card-cyber-security {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-card-cyber-security {
+    margin-top: 0;
+  }
+}
+
 .btn-card-cyber-security .a-cards-cyber-security {
   color: white;
 }
@@ -1333,6 +1439,18 @@ h5 {
   background-color: #926FB1;
 }
 
+@media only screen and (min-width: 992px) {
+  .btn-card-developer-training {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-card-developer-training {
+    margin-top: 0;
+  }
+}
+
 .btn-card-developer-training .a-cards-developer-training {
   color: white;
 }
@@ -1342,10 +1460,11 @@ h5 {
   font-weight: bold;
 }
 
-h3 {
+.card h3 {
   color: black;
   padding-top: 1rem;
   font-size: 1.2rem;
+  padding-left: 0;
 }
 
 .brand-div {
@@ -1714,8 +1833,9 @@ a.news-3-title {
   color: #666666;
 }
 
-h3 {
+article h3 {
   padding-left: 30px;
+  padding-top: 10px;
 }
 
 .news-card hr {

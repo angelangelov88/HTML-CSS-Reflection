@@ -12,24 +12,26 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	//border: 2px green solid !important;
-
+	border: none;
 	@media only screen and (min-width: $break-m) {
 	}
 	@media only screen and (min-width: $break-l) {
 		padding: 1rem 0.2rem;
 		max-width: 1170px;
+    @media screen and (-ms-high-contrast: none) {
+			max-width: 978px;     
+		 }
 		.card-text {
-			max-width: 370px;
 			font-size: .85rem;
 			line-height: 1.375rem;
 			letter-spacing: 1px;
 		}
 	}
 	@media only screen and (min-width: $break-xl) {
-		.card-text {
-			max-width: 270px;
+		max-width: 1170px;
+    @media screen and (-ms-high-contrast: none) {
+			max-width: 1183px;      
 		}
-		border: none;
 	}
 }
 
@@ -44,9 +46,9 @@
 		@media only screen and (min-width: $break-s) {
 		padding-bottom: 3rem;
 		}
-	@media only screen and (min-width: $break-l) {
-		min-height: 6rem;
-		min-width: initial;
+		@media only screen and (min-width: $break-l) {
+			min-height: 6rem;
+			min-width: initial;
 	}
 }
 
@@ -83,6 +85,42 @@
     font-weight: 600;
   }
 }
+
+//ADJUSTED CONTAINER SIZES DEPENDING ON THE BREAKPOINT
+
+.software-container, 
+.it-container, 
+.digital-marketing-container {
+	@media only screen and (min-width: $break-m) {
+		@include m-size-width-first-child;
+}
+	@media only screen and (min-width: $break-l) {
+		@include l-size-width-first-child;
+}
+	@media only screen and (min-width: $break-xl) {
+		@include xl-size-width-first-child;
+}
+}
+
+.telecoms-container,
+.web-design-container, 
+.cyber-security-container, 
+.developer-training-container {
+	@media only screen and (min-width: $break-m) {
+		@include m-size-width-last-child;
+}
+	@media only screen and (min-width: $break-l) {
+		@include l-size-width-last-child;
+}
+	@media only screen and (min-width: $break-xl) {
+		@include xl-size-width-last-child;
+}
+}
+
+
+
+
+
 
 //CARDS COLOURS
 
@@ -139,7 +177,7 @@
 	}
 	.btn-card-it {
 		background-color: white;
-		color: $color-it;
+		color: $color-it;	
 		.a-cards-it {
 			color: $color-it;
 		}
@@ -168,6 +206,13 @@
 .btn-card-it {
 	color: white;
 	background-color: $color-it;
+	@media only screen and (min-width: $break-l) {
+		margin-top: 27px;
+	}
+	@media only screen and (min-width: $break-xl) {
+		margin-top: 0;
+	}
+
 	.a-cards-it {
 		color: white;
 	}
@@ -346,6 +391,13 @@
 .btn-card-cyber-security {
 	color: white;
 	background-color: $color-cyber-security;
+	@media only screen and (min-width: $break-m) {
+	margin-top: 25px;
+	}	
+	@media only screen and (min-width: $break-xl) {
+		margin-top: 0;
+	}
+
 	.a-cards-cyber-security {
 		color: white;
 	}
@@ -389,6 +441,12 @@
 .btn-card-developer-training {
 	color: white;
 	background-color: $color-web-design;
+	@media only screen and (min-width: $break-l) {
+		margin-top: 25px;
+	}
+	@media only screen and (min-width: $break-xl) {
+		margin-top: 0;
+	}
 	.a-cards-developer-training {
 		color: white;
 	}
@@ -401,8 +459,9 @@
 	font-weight: bold;
 }
 
-h3 {
+.card h3 {
 	color: black;
 	padding-top: 1rem;
 	font-size: 1.2rem;
+	padding-left: 0;
 }
