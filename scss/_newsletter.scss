@@ -92,13 +92,17 @@
 }
 
 .checkbox-text {
-	padding-left: 0;
+	display: inline;
+	padding-left: 15px;
 	line-height: 1.8;
-	position: relative;
-	bottom: 2.5rem;
-	left: 2.2rem;
+	// position: relative;
+	// bottom: 2.5rem;
+	// left: 2.2rem;
 	width: 95%;
 	cursor: pointer;
+	@media only screen and (min-width: $break-m) {
+		
+	}
 }
 
 .checkbox {
@@ -117,6 +121,7 @@ input[type=submit] {
 	border-radius: 5px;
 	margin-top: 20px;
 	border: none;
+	margin-left: 2rem;
 }
 
 input[type=submit]:hover {

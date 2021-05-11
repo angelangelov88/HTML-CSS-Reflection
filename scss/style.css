@@ -905,8 +905,9 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -948,9 +949,21 @@ h5 {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 90%;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   text-align: center;
   padding: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-container {
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-container {
+    max-width: none;
+  }
 }
 
 .btn-card {
@@ -1312,7 +1325,12 @@ h3 {
   font-size: 1.2rem;
 }
 
+.brand-div {
+  border: 2px green solid;
+}
+
 .brand-content {
+  border: 2px red solid;
   color: white;
   background-color: #333645;
   padding: 2rem 1rem;
@@ -1321,7 +1339,16 @@ h3 {
 @media only screen and (min-width: 992px) {
   .brand-content {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brand-content {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 3rem;
+    padding-left: 24rem;
   }
 }
 
@@ -1342,13 +1369,9 @@ h2 {
   text-transform: uppercase;
 }
 
-.brand-text {
-  max-width: 680px;
-}
-
 @media only screen and (min-width: 1200px) {
   .brand-text {
-    max-width: 560px;
+    max-width: 35rem;
   }
 }
 
@@ -1363,6 +1386,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .news-cards-container {
@@ -1392,6 +1418,7 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 1170px;
   }
 }
 
@@ -1548,6 +1575,7 @@ a.news-3-title {
 .news-text {
   color: black;
   padding-left: 30px;
+  padding-right: 30px;
   font-size: 0.9rem;
 }
 
@@ -1918,11 +1946,9 @@ img.colour {
 }
 
 .checkbox-text {
-  padding-left: 0;
+  display: inline;
+  padding-left: 15px;
   line-height: 1.8;
-  position: relative;
-  bottom: 2.5rem;
-  left: 2.2rem;
   width: 95%;
   cursor: pointer;
 }
@@ -1942,6 +1968,7 @@ input[type=submit] {
   border-radius: 5px;
   margin-top: 20px;
   border: none;
+  margin-left: 2rem;
 }
 
 input[type=submit]:hover {

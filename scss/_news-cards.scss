@@ -10,10 +10,11 @@
 	margin-left: 10px;
 	margin-top: 40px;
 	display: flex;
-
+	justify-content: center;
 }
 
 .news-cards-container {
+	//border: 2px green solid;
 	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
 	padding-top: 3rem;
 	@media only screen and (min-width: $break-m) {
@@ -27,6 +28,7 @@
 	font-family: Poppins, sans-serif;
 	@media only screen and (min-width: $break-m) {
 		display: flex;
+		max-width: 1170px;
 	}
 }
 
@@ -157,6 +159,7 @@ a.news-3-title {
 .news-text {
 	color: black;
 	padding-left: 30px;
+	padding-right: 30px;
 	font-size: 0.9rem;
 }
 
