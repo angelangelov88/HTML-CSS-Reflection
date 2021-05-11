@@ -3,9 +3,9 @@
 .awards {
 	display: none;
 @media only screen and (min-width: $break-m) {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	display: block;
+	// justify-content: center;
+	// flex-wrap: wrap;
 }
 }
 
@@ -15,6 +15,8 @@
 	width: 100%;
 	padding: 2rem 0;
 	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -48,6 +50,9 @@ img.colour {
 	width: 100%;
 	padding: 2rem;
 	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 .awards-section-item {
