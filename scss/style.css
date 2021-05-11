@@ -935,11 +935,26 @@ h5 {
 }
 
 .card-text {
-  min-height: 6rem;
+  margin-bottom: -2rem;
+  min-height: 100px;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .card-text {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .card-text {
+    padding-bottom: 3rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .card-text {
+    min-height: 6rem;
     min-width: initial;
   }
 }
@@ -952,6 +967,13 @@ h5 {
   margin: 1rem 1rem;
   text-align: center;
   padding: 0.8rem;
+  width: 90%;
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .card-container {
+    font-family: Lato,Helvetica,Arial,sans-serif;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -963,6 +985,7 @@ h5 {
 @media only screen and (min-width: 992px) {
   .card-container {
     max-width: none;
+    width: auto;
   }
 }
 
@@ -974,7 +997,7 @@ h5 {
 
 @media screen and (-ms-high-contrast: none) {
   .btn-card {
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
@@ -1326,29 +1349,41 @@ h3 {
 }
 
 .brand-div {
-  border: 2px green solid;
+  background-color: #333645;
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-div {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+  }
 }
 
 .brand-content {
-  border: 2px red solid;
   color: white;
-  background-color: #333645;
   padding: 2rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .brand-content {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .brand-content {
-    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
     padding: 2rem 2rem;
+    font-size: 1.2rem;
+    width: 1000px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .brand-content {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 3rem;
-    padding-left: 24rem;
+    width: 1200px;
   }
 }
 
@@ -1375,6 +1410,27 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .news-latest-container {
+    width: 739px;
+    margin-left: auto;
+    padding-left: 0px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .news-latest-container {
+    width: 950px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-latest-container {
+    width: 1200px;
+  }
+}
+
 .news-latest {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -1389,6 +1445,12 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-latest {
+    margin-left: 30px;
+  }
 }
 
 .news-cards-container {

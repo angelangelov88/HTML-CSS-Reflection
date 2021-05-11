@@ -1,5 +1,22 @@
 // NEWS CARDS
 
+.news-latest-container {
+
+	@media only screen and (min-width: $break-m) {
+	width: 739px;
+	margin-left: auto;
+	padding-left: 0px;
+	margin-right: auto;
+	}
+
+	@media only screen and (min-width: $break-l) {
+	width: 950px;
+	}
+	@media only screen and (min-width: $break-xl) {
+
+	width: 1200px;
+	}
+}
 
 .news-latest {
 	text-transform: uppercase;
@@ -11,6 +28,10 @@
 	margin-top: 40px;
 	display: flex;
 	justify-content: center;
+	@media only screen and (min-width: $break-xl) {
+
+	margin-left: 30px;
+	}
 }
 
 .news-cards-container {

@@ -34,10 +34,18 @@
 }
 
 .card-text {
-	min-height: 6rem;
-	@media only screen and (min-width: $break-m) {
-	}
+		margin-bottom: -2rem;
+		min-height: 100px;
+		padding-bottom: 3rem;	
+
+		@media only screen and (min-width: $break-s) {
+			padding-bottom: 1rem;
+		}
+		@media only screen and (min-width: $break-s) {
+		padding-bottom: 3rem;
+		}
 	@media only screen and (min-width: $break-l) {
+		min-height: 6rem;
 		min-width: initial;
 	}
 }
@@ -49,6 +57,7 @@
 
 	//height: 312px;
 	//width: 370px;
+	width: 90%;
 	@media only screen and (min-width: $break-m) {
 		//min-width: 90%;
 		max-width: 20rem;
@@ -56,7 +65,7 @@
 	}
 	@media only screen and (min-width: $break-l) {
 		max-width: none;
-
+		width: auto;
 	}
 		@media only screen and (min-width: $break-xl) {
 			//min-height: 20rem;
@@ -71,7 +80,7 @@
 	font-size: 1rem;
 	font-weight: 600;
 	@media screen and (-ms-high-contrast: none) {
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
