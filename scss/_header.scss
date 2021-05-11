@@ -58,19 +58,19 @@
     }
 }
   @media only screen and (min-width: $break-l) {
-    left: -3.2rem;
+    left: 10.2rem;
     top: 0.3rem;
     height: 60px;
     width: 65px;
     @media screen and (-ms-high-contrast: none) {
       position: relative;
-      top: 0.3rem;
-      left: -3rem;
+      top: 0.25rem;
+      left: 10rem;
       }
   }
   @media only screen and (min-width: $break-xl ) {
     position: relative;
-    top: 0.2rem;    
+    top: 0.3rem;    
     left: 8rem;    
 }
 }
@@ -108,22 +108,23 @@
     position: relative;
     left: -10rem;
   }
-  
-  }
+    }
   @media only screen and (min-width: $break-l) {
     position: relative;
-    left: 10rem;
+    left: 5rem;
+    max-width: 37rem;
+
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     left: 0;
 
   }
-   
 }
+
   @media only screen and (min-width: $break-xl) {
     height: 6rem;
     width: 45rem;
     position: relative;
-    left: 2rem;
+    left: -1rem;
   }
   }
 
@@ -165,6 +166,11 @@ i {
   padding: 15px 0 0 15px;
   margin-left: .1rem;
   z-index: 100;
+  @media only screen and (min-width: $break-xl) {
+
+  position: relative;
+  left: -4rem;
+  }
   }
 
 .fas {
@@ -192,7 +198,7 @@ i {
   @media only screen and (min-width: $break-l) {
     position: relative;
     left: -1.5rem;
-    top: -0.11rem;
+    top: -0.25rem;
     border-radius: 5px;
     height: 60px;
     width: 65px;
@@ -267,5 +273,26 @@ i {
     margin-left: 2rem;
     background-color: white;
     border: none;
+}
+  @media only screen and (min-width: $break-l) {
+    max-width: 85px;
+
+}
+@media only screen and (min-width: $break-xl) {
+  max-width: 300px;
+
+}
+}
+
+
+form {
+//border: 2px red solid;
+@media only screen and (min-width: $break-l) {
+  max-width: 10rem;
+}
+@media only screen and (min-width: $break-xl) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  max-width: 25rem;
+}
 }
 }
