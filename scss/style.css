@@ -75,7 +75,7 @@
   height: 3.5rem;
   font-size: 12px;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #333645;
   border-radius: 7%;
   border: 2px black solid;
   position: relative;
@@ -138,6 +138,7 @@
   left: -7rem;
   float: right;
   z-index: 10000;
+  border-bottom: 3px solid transparent;
 }
 
 @media only screen and (max-width: 576px) {
@@ -150,6 +151,10 @@
   .phone-icon {
     display: none;
   }
+}
+
+.phone-icon:hover {
+  border-bottom: 3px solid black;
 }
 
 .btn-menu:hover {
@@ -172,6 +177,7 @@
 @media only screen and (min-width: 768px) {
   .btn-top {
     position: relative;
+    top: 1rem;
   }
 }
 
@@ -450,7 +456,7 @@ i {
 
 @media only screen and (min-width: 1200px) {
   .btn-navbar {
-    width: 190px;
+    width: 199px;
   }
 }
 
@@ -1000,6 +1006,7 @@ h5 {
   margin-bottom: -2rem;
   min-height: 100px;
   padding-bottom: 3rem;
+  font-family: sans-serif;
 }
 
 @media only screen and (min-width: 576px) {
@@ -1524,6 +1531,9 @@ h5 {
 @media only screen and (min-width: 992px) {
   .brand-div {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
   }
 }
 
@@ -1818,6 +1828,24 @@ a.news-3-title:hover {
   background-color: #7E57A0;
 }
 
+@media only screen and (min-width: 768px) {
+  .btn-news-card-1 {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .btn-news-card-1 {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn-news-card-1 {
+    margin-top: 63px;
+  }
+}
+
 .btn-news-card-2 {
   color: white;
   margin: 30px;
@@ -1990,13 +2018,50 @@ img.colour {
   visibility: visible;
 }
 
+@media only screen and (min-width: 768px) {
+  .client-logo:hover #busseys-text {
+    left: -51px;
+    margin-left: -12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo:hover #busseys-text {
+    margin-left: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (-ms-high-contrast: none) {
+  .client-logo:hover #busseys-text {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .client-logo:hover #busseys-text {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo:hover #crane-text {
+    margin-left: 7px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .client-logo:hover #crane-text {
+    margin-left: 15px;
+  }
+}
+
 .client-logo:hover #beat-text {
-  margin-left: -120px;
+  margin-left: -127px;
 }
 
 @media only screen and (min-width: 992px) {
   .client-logo:hover #beat-text {
-    margin-left: -85px;
+    margin-left: -78px;
   }
 }
 
@@ -2006,7 +2071,7 @@ img.colour {
 
 @media only screen and (min-width: 992px) {
   .client-logo:hover #diver-text {
-    margin-left: 20px;
+    margin-left: 45px;
   }
 }
 

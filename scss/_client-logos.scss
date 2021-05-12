@@ -72,16 +72,43 @@ img.colour {
 	.text-holder {
 		visibility: visible;
 	}
-	#beat-text {
-		margin-left: -120px;
+
+	#busseys-text {
+		@media only screen and (min-width: $break-m) {
+			left: -51px;
+			margin-left: -12px;
+		}
+
 		@media only screen and (min-width: $break-l) {
-			margin-left: -85px;
+			margin-left: 21px;
+		@media screen and (-ms-high-contrast: none) {
+			margin-left: 15px;
+			}
+	}
+		@media only screen and (min-width: $break-xl) {
+			margin-left: 20px;
+	}
+}
+
+	#crane-text {
+		@media only screen and (min-width: $break-l) {
+			margin-left: 7px;
+		}
+		@media only screen and (min-width: $break-xl) {
+			margin-left: 15px;
+		}
+	}
+
+	#beat-text {
+		margin-left: -127px;
+		@media only screen and (min-width: $break-l) {
+			margin-left: -78px;
 		}
 		}
 	#diver-text {
 		margin-left: 0px;
 		@media only screen and (min-width: $break-l) {
-			margin-left: 20px;
+			margin-left: 45px;
 		}
 	}
 }

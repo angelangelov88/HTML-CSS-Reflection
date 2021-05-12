@@ -140,7 +140,6 @@
 		transform: scale(1.1);
 		opacity: .7;
 		transition: 0.4s;
-
 	}
 }
 
@@ -187,6 +186,18 @@ a.news-3-title:hover {
 .btn-news-card-1 {
 	@include button-news-colour;
 	background-color: $color-news-1;
+	@media only screen and (min-width: $break-m) {
+		margin-top: 64px;
+	}
+	@media only screen and (min-width: $break-l) {
+		margin-top: 48px;
+
+	}
+	@media only screen and (min-width: $break-xl) {
+	
+
+	margin-top: 63px;
+	}
 }
 
 .btn-news-card-2 {

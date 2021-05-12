@@ -28,9 +28,8 @@
 	border-top: none;
 	border-right: 1px solid rgba(163, 163, 163, 0.3);
 	border-left: 1px solid rgba(163, 163, 163, 0.3);
-
 	@media only screen and (min-width: $break-xl ) {
-		width: 190px;
+		width: 199px;
 	}
 }
 
@@ -238,39 +237,3 @@ small {
 	font-size: .6rem;
 }
 
-// .btn-web-design:hover {
-// 	background-color: $color-web-design;
-// 	.fa-code {
-// 		color: $color-icon;
-// 	}
-// }
-// .btn-it:hover {
-// 	background-color: $color-it;
-// 	.fa-tv {
-// 		color: $color-icon;
-// 	}
-// }
-// .btn-telecoms:hover {
-// 	background-color: $color-telecoms;
-// 	.fa-phone-alt {
-// 		color: $color-icon;
-// 	}
-// }
-// .btn-software:hover {
-// 	background-color: $color-software;
-// 	.fa-th {
-// 		color: $color-icon;
-// 	}
-// }
-// .btn-digital-marketing:hover {
-// 	background-color: $color-digital-marketing;
-// 	.fa-signal {
-// 		color: $color-icon;
-// 	}
-// }
-// .btn-cyber-security:hover {
-// 	background-color: $color-cyber-security;
-// 	.fa-shield-alt {
-// 		color: $color-icon;
-// 	}
-// }

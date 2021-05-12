@@ -6,6 +6,9 @@
 
 	@media only screen and (min-width: $break-l) {
 		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+		background-position: 100%;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
 	}
 	@media only screen and (min-width: $break-xl) {
 }
