@@ -1797,9 +1797,9 @@ a.news-3-title {
   font-weight: 600;
 }
 
-.news-1-title:hover,
-.news-2-title:hover,
-.news-3-title:hover {
+a.news-1-title:hover,
+a.news-2-title:hover,
+a.news-3-title:hover {
   text-decoration: underline;
 }
 
