@@ -2186,17 +2186,23 @@ img.colour {
 
 .checkbox-text {
   display: inline;
-  padding-left: 15px;
+  padding-left: 10px;
   line-height: 1.8;
   width: 95%;
   cursor: pointer;
   font-size: 18px;
+  position: relative;
+  top: -0.5rem;
 }
 
 .checkbox {
   height: 32px;
   width: 32px;
   margin-top: 10px;
+  -webkit-transform: scale();
+          transform: scale();
+  -moz-transform: scale(1.5);
+  /* FF */
 }
 
 input[type=submit] {
