@@ -157,6 +157,8 @@ i {
 .netmatters-logo {
   height: auto;
   max-width: 60%;
+  position: relative;
+  top: 1rem;
   @media only screen and (min-width: $break-m) {
     max-width: 160%;
   }

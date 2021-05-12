@@ -9,6 +9,7 @@
 	justify-content: center;
 }
 
+
 .form-content {
 	//border: 2px #4183D7 solid;
 	@media only screen and (min-width: $break-l) {
@@ -69,6 +70,7 @@
 	}
 	@media only screen and (min-width: $break-xl) {
 		margin: 2rem 2rem;
+		max-width: 70rem;
 }	
 }
 
@@ -100,6 +102,7 @@
 	// left: 2.2rem;
 	width: 95%;
 	cursor: pointer;
+	font-size: 18px;
 	@media only screen and (min-width: $break-m) {
 		
 	}

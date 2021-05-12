@@ -3,6 +3,19 @@
 	display: flex;
 	justify-content: center;
 	//border: 5px yellow solid;
+	@media only screen and (min-width: $break-l) {
+	@media screen and (-ms-high-contrast: none) {
+		display: block;
+		margin: auto;
+		width: 975px;
+	}
+}
+	@media only screen and (min-width: $break-xl) {
+
+		display: block;
+		margin: auto;
+		width: 1168px;
+	}
 }
 
 .card {

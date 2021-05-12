@@ -234,6 +234,8 @@ i {
 .netmatters-logo {
   height: auto;
   max-width: 60%;
+  position: relative;
+  top: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -927,6 +929,22 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 992px) and (-ms-high-contrast: none) {
+  .main-cards-container {
+    display: block;
+    margin: auto;
+    width: 975px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-cards-container {
+    display: block;
+    margin: auto;
+    width: 1168px;
+  }
 }
 
 .card {
@@ -2138,6 +2156,7 @@ img.colour {
 @media only screen and (min-width: 1200px) {
   .newsletter-content {
     margin: 2rem 2rem;
+    max-width: 70rem;
   }
 }
 
@@ -2165,6 +2184,7 @@ img.colour {
   line-height: 1.8;
   width: 95%;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .checkbox {
