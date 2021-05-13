@@ -42,7 +42,7 @@
 .email-field {
 	//border: 2px greenyellow solid;
 	@media only screen and (min-width: $break-l) {
-		margin-left: 130px;
+		margin-left: 120px;
 	}
 	@media only screen and (min-width: $break-xl) {
 		margin-left: 250px;
@@ -134,13 +134,13 @@
   left: 0;
   height: 35px;
   width: 35px;
-  border: 3px black solid;
+  border: 3px #333645 solid;
   border-radius: 3px;
 }
 
 //When the checkbox is checked, add a black background
 .checkbox-container input:checked ~ .checkmark {
-  background-color: black;
+  background-color: #333645;
 }
 
 //Create the checkmark/indicator (hidden when not checked)
@@ -157,7 +157,7 @@
 
 //Style the checkmark/indicator
 .checkbox-container .checkmark:after {
-  left: 9px;
+  left: 10px;
   top: 3px;
   width: 9px;
   height: 19px;

@@ -901,13 +901,14 @@ small {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 61rem;
+    width: 60rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .text-block {
     width: 75rem;
+    max-width: 100%;
   }
 }
 
@@ -1561,6 +1562,7 @@ h5 {
 .brand-content {
   color: white;
   padding: 2rem 1rem;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1627,6 +1629,7 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
   .news-latest-container {
+    max-width: 100%;
     width: 1200px;
   }
 }
@@ -1980,19 +1983,7 @@ article h3 {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .clients {
-    padding: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .clients {
-    max-width: 1400px;
-    padding: 2.5rem;
+    max-width: 100%;
   }
 }
 
@@ -2019,14 +2010,16 @@ img.colour {
 
 @media only screen and (min-width: 992px) {
   .client-logo {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
     margin: 0 15px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .client-logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     margin: auto 2rem;
   }
 }
@@ -2201,7 +2194,7 @@ img.colour {
 
 @media only screen and (min-width: 992px) {
   .email-field {
-    margin-left: 130px;
+    margin-left: 120px;
   }
 }
 
@@ -2309,12 +2302,12 @@ img.colour {
   left: 0;
   height: 35px;
   width: 35px;
-  border: 3px black solid;
+  border: 3px #333645 solid;
   border-radius: 3px;
 }
 
 .checkbox-container input:checked ~ .checkmark {
-  background-color: black;
+  background-color: #333645;
 }
 
 .checkmark:after {
@@ -2328,7 +2321,7 @@ img.colour {
 }
 
 .checkbox-container .checkmark:after {
-  left: 9px;
+  left: 10px;
   top: 3px;
   width: 9px;
   height: 19px;

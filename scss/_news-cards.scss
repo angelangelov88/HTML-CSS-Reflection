@@ -7,13 +7,14 @@
 	margin-left: auto;
 	padding-left: 0px;
 	margin-right: auto;
+
 	}
 
 	@media only screen and (min-width: $break-l) {
 	width: 950px;
 	}
 	@media only screen and (min-width: $break-xl) {
-
+		max-width: 100%;
 	width: 1200px;
 	}
 }

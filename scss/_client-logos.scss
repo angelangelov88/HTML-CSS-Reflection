@@ -22,14 +22,13 @@
 		// justify-content: space-around;	
 		justify-content: center;
 		padding: 2.5rem;
+		max-width: 100%;
+
 	}
 	@media only screen and (min-width: $break-l) {
-		padding: 2.5rem;
 
 	}
 	@media only screen and (min-width: $break-xl) {
-		max-width: 1400px;
-		padding: 2.5rem;
 
 	}		
 }
@@ -51,10 +50,12 @@ img.colour {
 		margin-left: -1.5rem;
 	}
 	@media only screen and (min-width: $break-l) {
-		transform: scale(1);
+		transform: scale(0.85);
 		margin: 0 15px;
 	}
 	@media only screen and (min-width: $break-xl) {
+		transform: scale(1);
+
 	margin: auto 2rem;
 	
 	}
