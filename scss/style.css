@@ -2380,31 +2380,17 @@ input[type=submit]:hover {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .footer-content {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .footer-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    min-width: 1200px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -2428,7 +2414,7 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1200px) {
   .contact-us {
     max-width: 250px;
-    margin-right: 0;
+    margin-right: 1rem;
   }
 }
 
@@ -2446,6 +2432,7 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1200px) {
   .about-netmatters {
     max-width: 250px;
+    margin-right: 1rem;
   }
 }
 
@@ -2460,10 +2447,27 @@ input[type=submit]:hover {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .website {
+    width: 591px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .website {
     max-width: 250px;
+    margin-right: 1rem;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .social-media {
+    width: 350px;
+  }
+}
+
+.social-media h4 {
+  padding-bottom: 23px;
 }
 
 .social-links {
@@ -2472,81 +2476,32 @@ input[type=submit]:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-  .social-links {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 350px;
-  }
+.social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.social-media {
-  max-width: 640px;
+.social-links a .social-logo {
+  font-size: 28px;
 }
 
-@media only screen and (min-width: 768px) {
-  .social-media {
-    max-width: 455px;
-  }
+.social-links a:hover {
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 992px) {
-  .social-media {
-    margin-left: 15rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .social-media {
-    min-width: 8rem;
-    margin-left: 1rem;
-    max-width: 420px;
-  }
-}
-
-.social-media-logos {
-  border: 2px rgba(255, 255, 255, 0) solid;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  margin: 3rem;
-  padding: 0.1rem 2rem;
-  background-color: #22242e;
-}
-
-@media only screen and (min-width: 576px) {
-  .social-media-logos {
-    padding: 0.1rem 2.8rem;
-    margin: 3.5rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .social-media-logos {
-    margin: 15px;
-    padding: 0.1rem 1.8rem;
-    margin: 2rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .social-media-text {
-    position: relative;
-    right: 11.5rem;
-    height: 0.1px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .social-media-text {
-    position: relative;
-    right: 300.5rem;
-    height: 0.1px;
-  }
+.gap {
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  max-width: 30px;
 }
 
 h4 {
@@ -2556,24 +2511,32 @@ h4 {
   font-size: 1rem;
 }
 
-.social-media-logos-fb:hover {
+.facebook:hover {
   background-color: #4064AC;
 }
 
-.social-media-logos-twitter:hover {
+.twitter:hover {
   background-color: #1C9CEA;
 }
 
-.social-media-logos-insta:hover {
+.instagram:hover {
   background-color: #E1306C;
 }
 
-.social-media-logos-linkedin:hover {
+.linkedin:hover {
   background-color: #2867B2;
 }
 
-.social-logo {
-  color: white;
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 13.5px 0;
+  margin-bottom: 30px;
 }
 
 .awards {

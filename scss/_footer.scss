@@ -9,24 +9,22 @@
 	}
 }
 
+//Footer content container
 .footer-content {
 	@media only screen and (min-width: $break-m) {
 		max-width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-	@media only screen and (min-width: $break-l) {
-		justify-content: space-evenly;
+		justify-content: center;
 	}
 	@media only screen and (min-width: $break-xl) {
-		display: flex;
-		flex-wrap: nowrap;
-		min-width: 1200px;
-		justify-content: center;
-}
+		width: 73rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
+//Contact Us div
 .contact-us {
 	list-style-type: none;
 	padding-left: 0;
@@ -38,10 +36,11 @@
 	}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
-		margin-right: 0;
+		margin-right: 1rem;
 }
 }
 
+//About div
 .about-netmatters {
 	list-style-type: none;
 	padding-left: 0;
@@ -50,76 +49,60 @@
 	}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
+		margin-right: 1rem;
 }
 }
 
+//Website div
 .website {
 	list-style-type: none;
 	padding-left: 0;	
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
 	}
+	@media only screen and (min-width: $break-l) {
+		width: 591px;
+	}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
+		margin-right: 1rem;
 }
 }
 
-.social-links {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	@media only screen and (min-width: $break-m) {
-		justify-content: space-between;
-		max-width: 350px;
-}
-}
-
-
+//Social media 
 .social-media {
-	max-width: 640px;
-	@media only screen and (min-width: $break-s) {
-	}
 	@media only screen and (min-width: $break-m) {
-	max-width: 455px;
-	}
-	@media only screen and (min-width: $break-l) {
-	margin-left: 15rem;
-	}
-	@media only screen and (min-width: $break-xl) {
-	min-width: 8rem;
-	margin-left: 1rem;
-	max-width: 420px;
-	}
+	width: 350px;
+}
 }
 
-.social-media-logos {
-	border: 2px rgba(255, 255, 255, 0) solid;
-	transform: scale(2);
-	margin: 3rem;
-	padding: 0.1rem 2rem;
-	background-color: darken($color: #333645, $amount: 8%);
-	@media only screen and (min-width: $break-s) {
-		padding: 0.1rem 2.8rem;
-		margin: 3.5rem;
-	}
-	@media only screen and (min-width: $break-m) {
-		margin: 15px;
-		padding: 0.1rem 1.8rem;
-		margin: 2rem;
-	}
+.social-media h4 {
+  padding-bottom: 23px;
+ }
+
+ //Social media logos positioning
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.social-media-text {
-	@media only screen and (min-width: $break-m) {
-		position: relative;
-		right: 11.5rem;
-		height: 0.1px;
-	}	
-	@media only screen and (min-width: $break-xl) {
-		position: relative;
-		right: 300.5rem;
-		height: 0.1px;
+.social-links a {
+	display: flex;
+  justify-content: center;
 }
+
+.social-links a .social-logo {
+	font-size: 28px;
+}
+
+.social-links a:hover {
+	text-decoration: none;
+}
+
+.gap {
+	flex-basis: 30px;
+  max-width: 30px;
 }
 
 h4 {
@@ -129,21 +112,29 @@ h4 {
 	font-size: 1rem;
 }
 
-.social-media-logos-fb:hover {
+//Social media colours on hover
+.facebook:hover {
 	background-color: #4064AC;
 }
 
-.social-media-logos-twitter:hover {
+.twitter:hover {
 	background-color: #1C9CEA;
 }
 
-.social-media-logos-insta:hover {
+.instagram:hover {
 	background-color: #E1306C;
 }
 
-.social-media-logos-linkedin:hover {
+.linkedin:hover {
 	background-color: #2867B2;
 }
-.social-logo {
-	color: white;
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  flex: 1 0 40%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 13.5px 0;
+  margin-bottom: 30px;
 }
