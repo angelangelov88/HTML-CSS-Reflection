@@ -1,27 +1,22 @@
 //MAIN PHOTO
 
 .main-photo-container {
-	//width: 100%;
 	display: flex;
-	@media only screen and (min-width: $break-xl ) {
-
-}	
+	margin-bottom: 25px;
 }
 
 
 .main-photo {
 	background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
 	width: 100%;
-	//height: 550px;
-	height: 650px;
-	
+	height: calc(100vh - 209px);
+	min-height: 650px;
 	background-size: cover;
-
-	@media only screen and (min-width: $break-xl ) {
-		// position: absolute;
-		// top: 14rem;
-		//max-width: 1910px;
-
+	@media only screen and (min-width: $break-m ) {
+		height: calc(100vh - 140px);
+}
+@media only screen and (min-width: $break-l) {
+	height: calc(100vh - 209px);
 }
 }
 
@@ -30,14 +25,18 @@
 	top: 12rem;
 	width: inherit;
 	//height: 550px;
-	height: 650px;
+	height: calc(100vh - 209px);
+	min-height: 650px;
 	z-index: 10;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
 	@media only screen and (min-width: $break-m ) {
 		top: 8rem;
+		height: calc(100vh - 140px);
 	}
 	@media only screen and (min-width: $break-l ) {
 		top: 13.9rem;
+		height: calc(100vh - 209px);
+
 	}
 }
 
@@ -49,16 +48,17 @@
 	top: 10rem;
 	@media only screen and (min-width: $break-l ) {
 		position: relative;
-		margin: 1rem;
-		top: 30%; /* Adjust this value to move the positioned div up and down */
+		top: 22%; /* Adjust this value to move the positioned div up and down */
 		text-align: left;
 		width: 60%; /* Set the width of the positioned div */
 		padding-left: 50px;
 		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		width: 61rem;
 	}
 	@media only screen and (min-width: $break-xl ) {
-		left: 300px;
-		
+		width: 75rem;
 	}
 }
 
@@ -66,6 +66,7 @@
 	@include btn;
 	background-color: $color-web-design;
 	max-width: 250px;
+	margin-left: 0;
 }
 
 .btn-photo:hover {
@@ -79,5 +80,5 @@ h1 {
 
 h5 {
 	line-height: 2.1rem;
-	padding: 15px;
+	padding: 15px 0;
 }

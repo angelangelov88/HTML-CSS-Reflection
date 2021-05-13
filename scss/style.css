@@ -443,21 +443,25 @@ i {
 
 .btn-navbar {
   background-color: #333645;
-  width: 150px;
+  width: 159px;
   height: 94px;
   line-height: 0.3;
   text-transform: uppercase;
   font-weight: 600;
   border-bottom: none;
   border-top: none;
-  border-right: 1px solid rgba(163, 163, 163, 0.3);
-  border-left: 1px solid rgba(163, 163, 163, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media only screen and (min-width: 1200px) {
   .btn-navbar {
-    width: 199px;
+    width: 194px;
   }
+}
+
+.btn-cyber-security {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container {
@@ -468,6 +472,7 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 100%;
+  margin-left: -1rem;
 }
 
 .li-main {
@@ -500,13 +505,13 @@ i {
 
 @media screen and (min-width: 992px) {
   .web-design:hover .web-design-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .web-design:hover .web-design-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -551,13 +556,13 @@ li.web-design:hover button .fa-code {
 
 @media screen and (min-width: 992px) {
   .it:hover .it-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .it:hover .it-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -602,13 +607,13 @@ li.it:hover button .fa-tv {
 
 @media screen and (min-width: 992px) {
   .telecoms:hover .telecoms-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .telecoms:hover .telecoms-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -653,13 +658,13 @@ li.telecoms:hover button .fa-phone-alt {
 
 @media screen and (min-width: 992px) {
   .software:hover .software-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .software:hover .software-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -704,13 +709,13 @@ li.software:hover button .fa-th {
 
 @media screen and (min-width: 992px) {
   .digital-marketing:hover .digital-marketing-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .digital-marketing:hover .digital-marketing-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -755,13 +760,13 @@ li.digital-marketing:hover button .fa-signal {
 
 @media screen and (min-width: 992px) {
   .cyber-security:hover .cyber-security-ul {
-    width: 850px;
+    width: 1003px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cyber-security:hover .cyber-security-ul {
-    width: 1100px;
+    width: 1211px;
   }
 }
 
@@ -832,20 +837,35 @@ small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .main-photo {
   background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
   width: 100%;
-  height: 650px;
+  height: calc(100vh - 209px);
+  min-height: 650px;
   background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-photo {
+    height: calc(100vh - 140px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-photo {
+    height: calc(100vh - 209px);
+  }
 }
 
 .gradient-div {
   position: absolute;
   top: 12rem;
   width: inherit;
-  height: 650px;
+  height: calc(100vh - 209px);
+  min-height: 650px;
   z-index: 10;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(transparent));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
@@ -854,12 +874,14 @@ small {
 @media only screen and (min-width: 768px) {
   .gradient-div {
     top: 8rem;
+    height: calc(100vh - 140px);
   }
 }
 
 @media only screen and (min-width: 992px) {
   .gradient-div {
     top: 13.9rem;
+    height: calc(100vh - 209px);
   }
 }
 
@@ -874,20 +896,22 @@ small {
 @media only screen and (min-width: 992px) {
   .text-block {
     position: relative;
-    margin: 1rem;
-    top: 30%;
+    top: 22%;
     /* Adjust this value to move the positioned div up and down */
     text-align: left;
     width: 60%;
     /* Set the width of the positioned div */
     padding-left: 50px;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 61rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .text-block {
-    left: 300px;
+    width: 75rem;
   }
 }
 
@@ -903,6 +927,7 @@ small {
   margin: 5px 8px;
   background-color: #926FB1;
   max-width: 250px;
+  margin-left: 0;
 }
 
 @media screen and (-ms-high-contrast: none) {
@@ -925,7 +950,7 @@ h1 {
 
 h5 {
   line-height: 2.1rem;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .main-cards-container {
@@ -1692,6 +1717,10 @@ h2 {
   }
 }
 
+.img-container {
+  overflow: hidden;
+}
+
 .image-caption-1 {
   color: white;
   font-weight: 600;
@@ -1836,13 +1865,13 @@ a.news-3-title:hover {
 
 @media only screen and (min-width: 992px) {
   .btn-news-card-1 {
-    margin-top: 48px;
+    margin-top: 47px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .btn-news-card-1 {
-    margin-top: 63px;
+    margin-top: 64px;
   }
 }
 

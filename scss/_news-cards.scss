@@ -83,6 +83,10 @@
 }
 }
 
+.img-container {
+	overflow: hidden
+}
+
 .image-caption-1 {
 	@include image-caption;
 	background-color: $color-news-1;
@@ -190,13 +194,10 @@ a.news-3-title:hover {
 		margin-top: 64px;
 	}
 	@media only screen and (min-width: $break-l) {
-		margin-top: 48px;
-
+		margin-top: 47px;
 	}
 	@media only screen and (min-width: $break-xl) {
-	
-
-	margin-top: 63px;
+	margin-top: 64px;
 	}
 }
 
