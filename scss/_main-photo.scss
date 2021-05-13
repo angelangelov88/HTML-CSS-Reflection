@@ -45,12 +45,10 @@
 	color: white;
 	z-index: 12;
 	position: relative;
-	top: 10rem;
+	top: 26%;
 	@media only screen and (min-width: $break-l ) {
-		position: relative;
-		top: 22%; /* Adjust this value to move the positioned div up and down */
 		text-align: left;
-		width: 60%; /* Set the width of the positioned div */
+		width: 60%;
 		padding-left: 50px;
 		text-align: left;
 		margin-left: auto;
