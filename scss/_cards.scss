@@ -3,6 +3,10 @@
 	display: flex;
 	justify-content: center;
 	//border: 5px yellow solid;
+	margin-top: -7rem;
+	@media only screen and (min-width: $break-l) {
+		margin-top: 0;
+	}
 	@media only screen and (min-width: $break-l) {
 	@media screen and (-ms-high-contrast: none) {
 		display: block;

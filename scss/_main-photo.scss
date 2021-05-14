@@ -3,6 +3,12 @@
 .main-photo-container {
 	display: flex;
 	margin-bottom: 25px;
+	position: relative;
+	top: -6rem;
+	@media only screen and (min-width: $break-m ) {
+	position: relative;
+	top: 0;
+	}
 }
 
 
@@ -22,7 +28,7 @@
 
 .gradient-div {
 	position: absolute;
-	top: 12rem;
+	top: 0rem;
 	width: inherit;
 	//height: 550px;
 	height: calc(100vh - 209px);
@@ -30,12 +36,14 @@
 	z-index: 10;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
 	@media only screen and (min-width: $break-m ) {
-		top: 8rem;
+		top: 0rem;
 		height: calc(100vh - 140px);
+		min-height: 563px;
 	}
 	@media only screen and (min-width: $break-l ) {
-		top: 13.9rem;
+		top: 0;
 		height: calc(100vh - 209px);
+		min-height: 650px;
 
 	}
 }
