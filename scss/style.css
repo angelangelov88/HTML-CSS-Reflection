@@ -967,7 +967,7 @@ small {
 @media only screen and (min-width: 768px) {
   .gradient-div {
     top: 0rem;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 227px);
     min-height: 563px;
   }
 }
