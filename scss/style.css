@@ -149,7 +149,7 @@
 .phone-icon {
   color: black !important;
   position: relative;
-  top: .5rem;
+  top: 0.5rem;
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
   margin-right: 1rem;
@@ -164,6 +164,13 @@
 @media only screen and (min-width: 768px) {
   .phone-icon {
     display: none !important;
+  }
+}
+
+@-moz-document url-prefix() {
+  .phone-icon {
+    position: relative;
+    top: -0.5rem !important;
   }
 }
 
@@ -244,6 +251,10 @@
   }
 }
 
+.btn-menu-xs:hover {
+  background-color: #1d1f28;
+}
+
 .btn-menu {
   color: white;
   width: 4.2rem;
@@ -297,6 +308,10 @@
   }
 }
 
+.btn-menu:hover {
+  background-color: #1d1f28;
+}
+
 .btn {
   border: none;
   border-radius: 5px;
@@ -339,10 +354,6 @@
   .btn-contact {
     display: block;
   }
-}
-
-.btn-menu:hover {
-  background-color: #1d1f28;
 }
 
 .fa-paper-plane,

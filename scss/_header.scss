@@ -111,10 +111,12 @@ font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   margin: 10px 10px 0;
 }
 
+
+
 .phone-icon {
   color: black !important;
   position: relative;
-  top: .5rem;
+  top: 0.5rem;
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
   margin-right: 1rem;
@@ -126,6 +128,14 @@ font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   }
   }  
 
+//Mozilla hack to change the position of the phone icon as it did not follow the main rule
+@-moz-document url-prefix() { 
+  .phone-icon {
+      position: relative;
+      top: -0.5rem !important;
+  }
+}
+  
   .phone-icon:hover {
     border-bottom: 3px solid black;
 } 
@@ -183,6 +193,9 @@ font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   display: none;
   }
 }
+.btn-menu-xs:hover {
+  background-color: darken($color: #333645, $amount: 10%)
+}
 
 .btn-menu {
   //border: 2px orange solid !important;
@@ -228,7 +241,11 @@ font-family: "Poppins", "Helvetica", "Arial", sans-serif;
     left: 8rem;    
 }
 }
-    
+
+.btn-menu:hover {
+  background-color: darken($color: #333645, $amount: 10%)
+  }
+
 .btn {
   @include btn;
     &-support {
@@ -250,9 +267,6 @@ font-family: "Poppins", "Helvetica", "Arial", sans-serif;
 
 
 
-.btn-menu:hover {
-  background-color: darken($color: #333645, $amount: 10%)
-  }
 
 
 .fa-paper-plane,
