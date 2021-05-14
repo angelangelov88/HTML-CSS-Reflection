@@ -22,8 +22,9 @@
 	width: 159px;
 	height: 94px;
 	line-height: 0.3;
+	font-size: 18px;
 	text-transform: uppercase;
-	font-weight: 600;
+	//font-weight: 600;
 	border-bottom: none;
 	border-top: none;
 	border-right: 1px solid rgba(0, 0, 0, 0.25);
@@ -31,6 +32,10 @@
 	@media only screen and (min-width: $break-xl ) {
 		width: 194px;
 	}
+}
+
+p {
+	margin-top: -5px;
 }
 
 .btn-cyber-security {
@@ -54,7 +59,7 @@ margin-left: -1rem;
 	display: none;
 	font-size: 0.8rem;
 	@media screen and (min-width: $break-xl) {
-		font-size: 0.9rem;
+		font-size: 16px;
 	}	
 }
 
@@ -208,26 +213,32 @@ li.cyber-security:hover button {
 
 .fa-code {
 	color: $color-web-design;
+	margin-top: 5px;
 }
 
 .fa-tv {
 	color: $color-it;
+	margin-top: 5px;
 }
 
 .fa-phone-alt {
 	color: $color-telecoms;
+	margin-top: 5px;
 }
 
 .fa-th {
-	color: $color-software;
+	color: $color-software;	
+	margin-top: 5px;
 }
 
 .fa-signal {
 	color: $color-digital-marketing;
+	margin-top: 5px;
 }
 
 .fa-shield-alt {
 	color: $color-cyber-security;
+	margin-top: 5px;
 }
 
 .dash-2 {

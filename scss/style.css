@@ -88,20 +88,12 @@
   padding: 0;
 }
 
-.fa-search {
-  color: black;
-  background-color: #E5E5E5;
-  height: 20px;
-  margin-left: -9px;
-  padding: 10px;
-}
-
 @media only screen and (min-width: 768px) {
   .fa-search {
     color: white;
     background-color: #999aa2;
-    padding: 16px;
-    padding-top: 20px;
+    padding: 20px 16px 16px;
+    margin-left: -9px;
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 2px;
@@ -117,17 +109,15 @@
     left: -1.5rem;
     top: -0.25rem;
     border-radius: 5px;
-    height: 60px;
+    height: 55px;
     width: 65px;
-    padding-top: 22px;
+    padding-top: 20px;
     margin-left: 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .fa-search {
-    color: white;
-    background-color: #999aa2;
     top: -0.25rem;
     left: -2.5rem;
     border-radius: 2px;
@@ -179,15 +169,7 @@
 }
 
 .btn-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  max-height: 100px;
   width: 100%;
-  position: relative;
   top: -0.3rem;
   display: none;
 }
@@ -205,14 +187,12 @@
 
 @media only screen and (min-width: 768px) and (-ms-high-contrast: none) {
   .btn-top {
-    position: relative;
-    left: -9rem;
+    left: -10rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .btn-top {
-    position: relative;
     left: 5rem;
     max-width: 33rem;
   }
@@ -242,7 +222,7 @@
   text-transform: uppercase;
   background-color: #333645;
   border-radius: 7%;
-  border: 2px black solid;
+  border: 2px #333645 solid;
 }
 
 @media only screen and (min-width: 768px) {
@@ -263,12 +243,11 @@
   text-transform: uppercase;
   background-color: #333645;
   border-radius: 7%;
-  border: 2px black solid;
+  border: 2px #333645 solid;
 }
 
 @media only screen and (min-width: 768px) {
   .btn-menu {
-    float: right;
     position: relative;
     top: 0.3rem;
     left: 15.9rem;
@@ -286,8 +265,8 @@
 @media only screen and (min-width: 992px) {
   .btn-menu {
     left: 10.2rem;
-    top: 0.3rem;
-    height: 60px;
+    top: 0.25rem;
+    height: 55px;
     width: 65px;
   }
 }
@@ -303,8 +282,8 @@
 @media only screen and (min-width: 1200px) {
   .btn-menu {
     position: relative;
-    top: 0.3rem;
-    left: 8rem;
+    top: 0.2rem;
+    left: 9rem;
   }
 }
 
@@ -320,9 +299,10 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 5px 8px;
-  height: 60px;
+  height: 55px;
+  padding-top: 13px;
 }
 
 @media screen and (-ms-high-contrast: none) {
@@ -359,6 +339,7 @@
 .fa-paper-plane,
 .fa-mouse {
   display: inline;
+  line-height: 1px;
 }
 
 .btn-support:hover {
@@ -415,27 +396,16 @@ i {
 }
 
 .form-control {
-  background-color: #e5e5e5;
-  border: none;
-  border: 2px blue solid;
-}
-
-@media only screen and (min-width: 768px) {
-  .form-control {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 12rem;
-    height: 55px;
-    font-size: 0.9rem;
-    color: #999aa2;
-    border: 1px #DCDCDC solid;
-    border-radius: 1%;
-    background-color: white;
-    position: relative;
-    top: -0.15rem;
-    left: 7rem;
-  }
+  width: 12rem;
+  height: 55px;
+  font-size: 0.9rem;
+  color: #999aa2;
+  border: 1px #DCDCDC solid;
+  border-radius: 1%;
+  background-color: white;
+  position: relative;
+  top: -0.15rem;
+  left: 7rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -450,19 +420,12 @@ i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60px;
+    height: 55px;
+    width: 238px;
     position: relative;
     left: -2rem;
     top: -0.25rem;
   }
-}
-
-.form-control:focus {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem #e5e5e5;
-          box-shadow: 0 0 0 0.25rem #e5e5e5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,16 +440,12 @@ i {
 .container-search {
   width: 95%;
   margin-right: -180px;
-  border: 2px springgreen solid;
-  background-color: #E5E5E5;
 }
 
 @media only screen and (min-width: 768px) {
   .container-search {
     max-width: 300px;
     margin-left: 2rem;
-    background-color: white;
-    border: none;
   }
 }
 
@@ -499,18 +458,6 @@ i {
 @media only screen and (min-width: 1200px) {
   .container-search {
     max-width: 300px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  form {
-    max-width: 10rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (-ms-high-contrast: active), only screen and (min-width: 1200px) and (-ms-high-contrast: none) {
-  form {
-    max-width: 25rem;
   }
 }
 
@@ -541,8 +488,8 @@ i {
   width: 159px;
   height: 94px;
   line-height: 0.3;
+  font-size: 18px;
   text-transform: uppercase;
-  font-weight: 600;
   border-bottom: none;
   border-top: none;
   border-right: 1px solid rgba(0, 0, 0, 0.25);
@@ -553,6 +500,10 @@ i {
   .btn-navbar {
     width: 194px;
   }
+}
+
+p {
+  margin-top: -5px;
 }
 
 .btn-cyber-security {
@@ -582,7 +533,7 @@ i {
 
 @media screen and (min-width: 1200px) {
   .li-sub {
-    font-size: 0.9rem;
+    font-size: 16px;
   }
 }
 
@@ -592,7 +543,6 @@ i {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #79539a;
@@ -643,7 +593,6 @@ li.web-design:hover button .fa-code {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #286abd;
@@ -694,7 +643,6 @@ li.it:hover button .fa-tv {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #bc2c28;
@@ -745,7 +693,6 @@ li.telecoms:hover button .fa-phone-alt {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #526781;
@@ -796,7 +743,6 @@ li.software:hover button .fa-th {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #25a25a;
@@ -847,7 +793,6 @@ li.digital-marketing:hover button .fa-signal {
   display: flex;
   height: 45px;
   z-index: 100;
-  font-weight: 600;
   margin-left: auto;
   margin-right: auto;
   background-color: #de093f;
@@ -894,26 +839,32 @@ li.cyber-security:hover button .fa-shield-alt {
 
 .fa-code {
   color: #926FB1;
+  margin-top: 5px;
 }
 
 .fa-tv {
   color: #4183D7;
+  margin-top: 5px;
 }
 
 .fa-phone-alt {
   color: #D64541;
+  margin-top: 5px;
 }
 
 .fa-th {
   color: #67809F;
+  margin-top: 5px;
 }
 
 .fa-signal {
   color: #2ECC71;
+  margin-top: 5px;
 }
 
 .fa-shield-alt {
   color: #F62459;
+  margin-top: 5px;
 }
 
 .dash-2 {
@@ -1026,9 +977,10 @@ small {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 5px 8px;
-  height: 60px;
+  height: 55px;
+  padding-top: 13px;
   background-color: #926FB1;
   max-width: 250px;
   margin-left: 0;
@@ -1658,6 +1610,7 @@ h5 {
   padding-top: 1rem;
   font-size: 1.2rem;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .brand-div {
@@ -1723,6 +1676,7 @@ h2 {
 @media only screen and (min-width: 1200px) {
   .brand-text {
     max-width: 35rem;
+    font-size: 16px;
   }
 }
 
@@ -2734,6 +2688,7 @@ img.colour {
 body {
   font-size: 1rem;
   font-weight: 400;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
 }
 
 @media screen and (-ms-high-contrast: none) {

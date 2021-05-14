@@ -18,7 +18,7 @@
 	// left: 0;
 	height: 45px;
 	z-index: 100;
-	font-weight: 600;
+	//font-weight: 600;
 	margin-left: auto;
 	margin-right: auto;
 	@media screen and (min-width: $break-l) {
@@ -43,9 +43,10 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	font-weight: 600;
+	font-weight: 500;
 	margin: 5px 8px;
-	height: 60px;
+	height: 55px;
+	padding-top: 13px;
   @media screen and (-ms-high-contrast: none) {
 		font-weight: 600;	
 		padding: 15px 7px;
@@ -53,6 +54,21 @@
 		font-size: 1rem;
 	}
 	}
+
+@mixin menu-btn-basic {
+	color: white;
+  width: 4.2rem;
+  height: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #333645;
+  border-radius: 7%;
+  border: 2px #333645 solid;
+}
+
+@mixin menu-btn-hover {
+	background-color: darken($color: #333645, $amount: 10%)
+}
 
 @mixin cards {
 	border: 1px rgb(187, 187, 187) solid;
