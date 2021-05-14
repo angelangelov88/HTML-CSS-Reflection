@@ -257,7 +257,7 @@
 @media only screen and (min-width: 768px) and (-ms-high-contrast: none) {
   .btn-menu {
     position: absolute;
-    top: 1.3rem;
+    top: 1rem;
     left: 26rem;
   }
 }
@@ -309,7 +309,6 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 500;
   margin: 5px 8px;
   height: 55px;
   padding-top: 13px;
@@ -317,8 +316,7 @@
 
 @media screen and (-ms-high-contrast: none) {
   .btn {
-    font-weight: 600;
-    padding: 15px 7px;
+    padding: 11px 7px;
     font-family: Poppins,sans-serif;
     font-size: 1rem;
   }
@@ -987,7 +985,6 @@ small {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 500;
   margin: 5px 8px;
   height: 55px;
   padding-top: 13px;
@@ -998,8 +995,7 @@ small {
 
 @media screen and (-ms-high-contrast: none) {
   .btn-photo {
-    font-weight: 600;
-    padding: 15px 7px;
+    padding: 11px 7px;
     font-family: Poppins,sans-serif;
     font-size: 1rem;
   }
@@ -1169,12 +1165,6 @@ h5 {
   height: 50px;
 }
 
-@media screen and (-ms-high-contrast: none) {
-  .btn-card {
-    font-weight: 600;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .software-container,
   .it-container,
@@ -1339,7 +1329,7 @@ h5 {
 
 @media only screen and (min-width: 1200px) {
   .btn-card-it {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 
@@ -1537,13 +1527,13 @@ h5 {
 
 @media only screen and (min-width: 768px) {
   .btn-card-cyber-security {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .btn-card-cyber-security {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 
@@ -1603,7 +1593,7 @@ h5 {
 
 @media only screen and (min-width: 1200px) {
   .btn-card-developer-training {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
@@ -1938,7 +1928,7 @@ a.news-3-title:hover {
   color: white;
   margin: 30px;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 130px;
   height: 50px;
   background-color: #7E57A0;
@@ -1946,19 +1936,19 @@ a.news-3-title:hover {
 
 @media only screen and (min-width: 768px) {
   .btn-news-card-1 {
-    margin-top: 64px;
+    margin-top: 74px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .btn-news-card-1 {
-    margin-top: 47px;
+    margin-top: 52px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .btn-news-card-1 {
-    margin-top: 64px;
+    margin-top: 74px;
   }
 }
 
@@ -1966,7 +1956,7 @@ a.news-3-title:hover {
   color: white;
   margin: 30px;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 130px;
   height: 50px;
   background-color: #2A6EC6;
@@ -1976,7 +1966,7 @@ a.news-3-title:hover {
   color: white;
   margin: 30px;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 130px;
   height: 50px;
   background-color: #566C88;
@@ -2021,6 +2011,7 @@ a.news-3-title:hover {
 .posted-by {
   color: black;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .author {
@@ -2029,6 +2020,8 @@ a.news-3-title:hover {
 
 .news-date {
   color: #666666;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 article h3 {

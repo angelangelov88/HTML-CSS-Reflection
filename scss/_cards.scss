@@ -100,10 +100,6 @@
 	font-size: 1rem;
 	//font-weight: 600;
 	@include btn-cards-newscards;
-
-	@media screen and (-ms-high-contrast: none) {
-    font-weight: 600;
-  }
 }
 
 //ADJUSTED CONTAINER SIZES DEPENDING ON THE BREAKPOINT
@@ -230,7 +226,7 @@
 		margin-top: 27px;
 	}
 	@media only screen and (min-width: $break-xl) {
-		margin-top: 0;
+		margin-top: 5px;
 	}
 
 	.a-cards-it {
@@ -412,10 +408,10 @@
 	color: white;
 	background-color: $color-cyber-security;
 	@media only screen and (min-width: $break-m) {
-	margin-top: 25px;
+	margin-top: 20px;
 	}	
 	@media only screen and (min-width: $break-xl) {
-		margin-top: 0;
+		margin-top: 5px;
 	}
 
 	.a-cards-cyber-security {
@@ -465,7 +461,7 @@
 		margin-top: 25px;
 	}
 	@media only screen and (min-width: $break-xl) {
-		margin-top: 0;
+		margin-top: 10px;
 	}
 	.a-cards-developer-training {
 		color: white;

@@ -197,13 +197,13 @@ a.news-3-title:hover {
 	background-color: $color-news-1;
 
 	@media only screen and (min-width: $break-m) {
-		margin-top: 64px;
+		margin-top: 74px;
 	}
 	@media only screen and (min-width: $break-l) {
-		margin-top: 47px;
+		margin-top: 52px;
 	}
 	@media only screen and (min-width: $break-xl) {
-	margin-top: 64px;
+	margin-top: 74px;
 	}
 }
 
@@ -256,6 +256,7 @@ a.news-3-title:hover {
 .posted-by {
 	color: black;
 	font-weight: 600;
+	font-size: 14px;
 	// position: relative;
 	// bottom: 4.4rem;
 	// padding-left: 5.4rem;
@@ -267,6 +268,8 @@ a.news-3-title:hover {
 
 .news-date {
 	color: #666666;
+	font-size: 14px;
+	margin-top: 0;
 	// padding-left: 5.4rem;
 	// position: relative;
 	// bottom: 4.3rem;
