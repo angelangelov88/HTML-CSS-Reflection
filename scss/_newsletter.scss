@@ -15,6 +15,7 @@
 	//border: 2px #2ECC71 solid;
 	font-size: 2rem;
 	padding: 0.5rem 0.5rem 0.5rem 0;
+	font-weight: 400;
 }
 
 //Name and email div container
@@ -178,8 +179,9 @@ input[type=submit] {
 	background-color: #333645;
 	color: white;
 	text-transform: uppercase;
-	padding: 10px;
-	font-weight: 600;
+	padding: 10px 15px;
+	font-size: 1.063rem;
+	//font-weight: 600;
 	border-radius: 5px;
 	margin-top: 20px;
 	border: none;

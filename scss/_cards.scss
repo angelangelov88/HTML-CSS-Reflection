@@ -98,7 +98,9 @@
 	max-width: 12rem;
 	//font-family: ;
 	font-size: 1rem;
-	font-weight: 600;
+	//font-weight: 600;
+	@include btn-cards-newscards;
+
 	@media screen and (-ms-high-contrast: none) {
     font-weight: 600;
   }

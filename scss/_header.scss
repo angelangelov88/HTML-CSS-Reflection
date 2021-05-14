@@ -224,9 +224,20 @@
   @media only screen and (min-width: $break-xl) {
     position: relative;
     top: 0.2rem;    
-    left: 9rem;    
+    left: 9rem;   
 }
 }
+
+//Fix for Firefox as it did not follow the main rule for position
+@-moz-document url-prefix() { 
+  .btn-menu {
+    @media only screen and (min-width: $break-xl) {
+      position: relative;
+      top: 0.25rem;
+      left: 11rem;
+}
+}
+}    
 
 .btn-menu:hover {
   @include menu-btn-hover;
