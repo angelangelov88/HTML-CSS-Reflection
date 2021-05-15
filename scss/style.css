@@ -312,6 +312,7 @@
   margin: 5px 8px;
   height: 55px;
   padding-top: 13px;
+  cursor: default;
 }
 
 @media screen and (-ms-high-contrast: none) {
@@ -342,6 +343,11 @@
   .btn-contact {
     display: block;
   }
+}
+
+#btn-top-ie-issue {
+  -webkit-box-shadow: 10px 10px 10px white;
+          box-shadow: 10px 10px 10px white;
 }
 
 .fa-paper-plane,
@@ -1105,12 +1111,6 @@ h5 {
 
 @media only screen and (min-width: 576px) {
   .card-text {
-    padding-bottom: 1rem;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .card-text {
     padding-bottom: 3rem;
   }
 }
@@ -1657,6 +1657,18 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .brand-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brand-text {
+    max-width: 35rem;
+  }
+}
+
 .btn-culture {
   background-color: white;
   color: black;
@@ -1673,18 +1685,6 @@ h5 {
 
 h2 {
   text-transform: uppercase;
-}
-
-@media only screen and (min-width: 768px) {
-  .brand-text {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .brand-text {
-    max-width: 35rem;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -2046,13 +2046,6 @@ article h3 {
           justify-content: center;
 }
 
-@media only screen and (min-width: 1200px) {
-  .clients-container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
 .clients {
   display: none;
   padding: 2.5rem 18rem;
@@ -2204,18 +2197,6 @@ img.colour {
   }
 }
 
-.client-logo-text {
-  text-transform: capitalize;
-  padding: 1rem 0 0 0;
-  font-size: 1.6rem;
-}
-
-@media only screen and (min-width: 992px) {
-  .client-logo-text {
-    font-size: 1.3rem;
-  }
-}
-
 .text-holder::after {
   content: "";
   position: absolute;
@@ -2232,6 +2213,18 @@ img.colour {
     margin-left: 15px;
     border-width: 30px;
     left: 30%;
+  }
+}
+
+.client-logo-text {
+  text-transform: capitalize;
+  padding: 1rem 0 0 0;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo-text {
+    font-size: 1.3rem;
   }
 }
 
@@ -2335,7 +2328,7 @@ img.colour {
 
 @media only screen and (min-width: 1200px) {
   .newsletter-content {
-    margin: 2rem 2rem;
+    margin: 2rem;
     max-width: 70rem;
   }
 }
@@ -2707,7 +2700,7 @@ img.colour {
 .google-img {
   width: 210px;
   height: 70px;
-  cursor: initial;
+  cursor: default;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }

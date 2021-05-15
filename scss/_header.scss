@@ -246,6 +246,7 @@
 //Styling of the 2 buttons in the header
 .btn {
   @include btn;
+    cursor: default;
     &-support {
       background-color: $color-button-blue;
       display: none;
@@ -260,6 +261,11 @@
         display: block;
 }
 }
+}
+
+//IE issue fixed. There was a box-shadow appearing only on IE
+#btn-top-ie-issue {
+  box-shadow: 10px 10px 10px white;
 }
 
 //Styling of the fa elements in the header buttons - support and contact

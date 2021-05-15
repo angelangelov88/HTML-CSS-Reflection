@@ -1,4 +1,6 @@
 // CARDS
+
+//The main container
 .main-cards-container {
 	display: flex;
 	justify-content: center;
@@ -6,22 +8,20 @@
 	margin-top: -7rem;
 	@media only screen and (min-width: $break-l) {
 		margin-top: 0;
-	}
-	@media only screen and (min-width: $break-l) {
-	@media screen and (-ms-high-contrast: none) {
-		display: block;
-		margin: auto;
-		width: 975px;
-	}
+		@media screen and (-ms-high-contrast: none) {
+			display: block;
+			margin: auto;
+			width: 975px;
+}
 }
 	@media only screen and (min-width: $break-xl) {
-
 		display: block;
 		margin: auto;
 		width: 1168px;
-	}
+}
 }
 
+//Content container
 .card {
 	display: flex;
 	flex-direction: row;
@@ -30,80 +30,76 @@
 	flex-wrap: wrap;
 	//border: 2px green solid !important;
 	border: none;
-	@media only screen and (min-width: $break-m) {
-	}
 	@media only screen and (min-width: $break-l) {
 		padding: 1rem 0.2rem;
 		max-width: 1170px;
     @media screen and (-ms-high-contrast: none) {
 			max-width: 978px;     
-		 }
+}
 		.card-text {
 			font-size: .85rem;
 			line-height: 1.375rem;
 			letter-spacing: 1px;
-		}
-	}
+}
+}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 1170px;
     @media screen and (-ms-high-contrast: none) {
 			max-width: 1183px;      
-		}
-	}
+}
+}
 }
 
+//Text in the cards
 .card-text {
-		margin-bottom: -2rem;
-		min-height: 100px;
-		padding-bottom: 3rem;	
-		font-family: sans-serif;
-
-		@media only screen and (min-width: $break-s) {
-			padding-bottom: 1rem;
-		}
-		@media only screen and (min-width: $break-s) {
+	margin-bottom: -2rem;
+	min-height: 100px;
+	padding-bottom: 3rem;	
+	font-family: sans-serif;
+// 	@media only screen and (min-width: $break-s) {
+// 		padding-bottom: 1rem;
+// }
+	@media only screen and (min-width: $break-s) {
 		padding-bottom: 3rem;
-		}
-		@media only screen and (min-width: $break-l) {
-			min-height: 6rem;
-			min-width: initial;
-	}
+}
+	@media only screen and (min-width: $break-l) {
+		min-height: 6rem;
+		min-width: initial;
+}
 }
 
+//Card container style
 .card-container {
 	@include cards;
 	//min-width: 20rem;
 	//border: 5px red solid;
-
 	//height: 312px;
 	//width: 370px;
 	width: 90%;
 	@media only screen and (min-width: $break-m) {
 		//min-width: 90%;
-		max-width: 20rem;
 		//  flex: 1 0 30%; 
-	}
+		max-width: 20rem;
+}
 	@media only screen and (min-width: $break-l) {
 		max-width: none;
 		width: auto;
-	}
-		@media only screen and (min-width: $break-xl) {
-			//min-height: 20rem;
-			//flex: 1 0 19%;
-
-	}
+}
+// 		@media only screen and (min-width: $break-xl) {
+// 			//min-height: 20rem;
+// 			//flex: 1 0 19%;
+// }
 }
 
 .btn-card {
 	max-width: 12rem;
-	//font-family: ;
 	font-size: 1rem;
+	//font-family: ;
 	//font-weight: 600;
 	@include btn-cards-newscards;
 }
 
 //ADJUSTED CONTAINER SIZES DEPENDING ON THE BREAKPOINT
-
 .software-container, 
 .it-container, 
 .digital-marketing-container {
@@ -133,37 +129,32 @@
 }
 }
 
-
-
-
-
-
 //CARDS COLOURS
 
 //Software card
-
 .software-container:hover {
 	background-color: $color-software;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-software {
 		background-color: white;
 		color: $color-software;
 		.a-cards-software {
 			color: $color-software;
-		}
-	}
+}
+}
 	.fa-software-card {
 		color: $color-software;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-software {
 		color: white;
-	}
 }
+}
+
 .a-cards-software {
 	color: black;
 }
@@ -180,34 +171,34 @@
 	background-color: $color-software;
 	.a-cards-software {
 		color: white;
-	}
+}
 }
 
 //IT card
-
 .it-container:hover {
 	background-color: $color-it;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-it {
 		background-color: white;
 		color: $color-it;	
 		.a-cards-it {
 			color: $color-it;
-		}
-	}
+}
+}
 	.fa-it-card {
 		color: $color-it;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-it {
 		color: white;
 	
-	}
 }
+}
+
 .a-cards-it {
 	color: black;
 }
@@ -224,42 +215,39 @@
 	background-color: $color-it;
 	@media only screen and (min-width: $break-l) {
 		margin-top: 27px;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		margin-top: 5px;
-	}
-
+}
 	.a-cards-it {
 		color: white;
-	}
+}
 }
 
-
 //Digital Marketing card
-
 .digital-marketing-container:hover {
 	background-color: $color-digital-marketing;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-digital-marketing {
 		background-color: white;
 		color: $color-digital-marketing;
 		.a-cards-digital-marketing {
 			color: $color-digital-marketing;
-		}
-	}
+}
+}
 	.fa-digital-marketing-card {
 		color: $color-digital-marketing;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-digital-marketing {
 		color: white;
-	
-	}
 }
+}
+
 .a-cards-digital-marketing {
 	color: black;
 }
@@ -276,35 +264,33 @@
 	background-color: $color-digital-marketing;
 	.a-cards-digital-marketing {
 		color: white;
-	}
+}
 }
 
-
 //Telecoms card
-
 .telecoms-container:hover {
 	background-color: $color-telecoms;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-telecoms {
 		background-color: white;
 		color: $color-telecoms;
 		.a-cards-telecoms {
 			color: $color-telecoms;
-		}
-	}
+}
+}
 	.fa-telecoms-card {
 		color: $color-telecoms;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-telecoms {
 		color: white;
-	
-	}
 }
+}
+
 .a-cards-telecoms {
 	color: black;
 }
@@ -321,34 +307,33 @@
 	background-color: $color-telecoms;
 	.a-cards-telecoms {
 		color: white;
-	}
+}
 }
 
 //Web design card
-
 .web-design-container:hover {
 	background-color: $color-web-design;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-web-design {
 		background-color: white;
 		color: $color-web-design;
 		.a-cards-web-design {
 			color: $color-web-design;
-		}
-	}
+}
+}
 	.fa-web-design-card {
 		color: $color-web-design;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-web-design {
 		color: white;
-	
-	}
 }
+}
+
 .a-cards-web-design {
 	color: black;
 }
@@ -365,34 +350,33 @@
 	background-color: $color-web-design;
 	.a-cards-web-design {
 		color: white;
-	}
+}
 }
 
 //Cyber security card
-
 .cyber-security-container:hover {
 	background-color: $color-cyber-security;
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-cyber-security {
 		background-color: white;
 		color: $color-cyber-security;
 		.a-cards-cyber-security {
 			color: $color-cyber-security;
-		}
-	}
+}
+}
 	.fa-cyber-security-card {
 		color: $color-cyber-security;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-cyber-security {
 		color: white;
-	
-	}
 }
+}
+
 .a-cards-cyber-security {
 	color: black;
 }
@@ -408,15 +392,14 @@
 	color: white;
 	background-color: $color-cyber-security;
 	@media only screen and (min-width: $break-m) {
-	margin-top: 20px;
-	}	
+		margin-top: 20px;
+}	
 	@media only screen and (min-width: $break-xl) {
 		margin-top: 5px;
-	}
-
+}
 	.a-cards-cyber-security {
 		color: white;
-	}
+}
 }
 
 // Developer training card
@@ -425,24 +408,24 @@
 	color: white; 
 	h3 {
 		color: white;
-	}
+}
 	.btn-card-developer-training {
 		background-color: white;
 		color: $color-web-design;
 		.a-cards-it {
 			color: $color-web-design;
-		}
-	}
+}
+}
 	.fa-developer-training-card {
 		color: $color-web-design;
 		background-color: white;
 		border: 15px white solid;
-	}
+}
 	.a-cards-developer-training {
 		color: white;
-	
-	}
 }
+}
+
 .a-cards-developer-training {
 	color: black;
 }
@@ -459,16 +442,14 @@
 	background-color: $color-web-design;
 	@media only screen and (min-width: $break-l) {
 		margin-top: 25px;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		margin-top: 10px;
-	}
+}
 	.a-cards-developer-training {
 		color: white;
-	}
 }
-
-
+}
 
 .dash {
 	font-size: 1.5rem;
