@@ -54,6 +54,7 @@
 	border-radius: 3px;
 	margin-left: 0;
 	padding-top: 15px;
+	cursor: pointer; // Added cursor property because otherwise it gets the default from the btn
 }
 
 .btn-culture:hover {

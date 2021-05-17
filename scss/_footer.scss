@@ -1,12 +1,13 @@
 //CONTACT US FOOTER
 
+//Main footer container
 .footer-container {
 	background-color: #333645;
 	color: white;
 	padding-left: .8rem;
 	a:hover {
 		text-decoration: underline;
-	}
+}
 }
 
 //Footer content container
@@ -16,12 +17,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		width: 73rem;
 		margin-left: auto;
 		margin-right: auto;
-	}
+}
 }
 
 //Contact Us div
@@ -30,10 +31,10 @@
 	padding-left: 0;
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
-	}	
+}	
 	@media only screen and (min-width: $break-l) {
 		margin-right: 15rem;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
 		margin-right: 1rem;
@@ -46,7 +47,7 @@
 	padding-left: 0;
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
 		margin-right: 1rem;
@@ -59,10 +60,10 @@
 	padding-left: 0;	
 	@media only screen and (min-width: $break-m) {
 		width: 350px;
-	}
+}
 	@media only screen and (min-width: $break-l) {
 		width: 591px;
-	}
+}
 	@media only screen and (min-width: $break-xl) {
 		max-width: 250px;
 		margin-right: 1rem;
@@ -78,7 +79,7 @@
 
 .social-media h4 {
   padding-bottom: 23px;
- }
+}
 
  //Social media logos positioning
 .social-links {
@@ -100,6 +101,7 @@
 	text-decoration: none;
 }
 
+//Added gat between the logos in order to make them look the same as the main website after consultation with a coleague
 .gap {
 	flex-basis: 30px;
   max-width: 30px;
