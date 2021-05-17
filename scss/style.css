@@ -1792,10 +1792,6 @@ h2 {
   }
 }
 
-.img-container {
-  overflow: hidden;
-}
-
 .image-caption-1 {
   color: white;
   font-weight: 600;
@@ -1832,18 +1828,6 @@ h2 {
   background-color: #566C88;
 }
 
-@media only screen and (min-width: 768px) {
-  .news-card-3 {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .news-card-3 {
-    display: block;
-  }
-}
-
 .caption-link {
   color: white;
 }
@@ -1860,6 +1844,22 @@ h2 {
 .image-caption-2:hover,
 .image-caption-3:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-card-3 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-card-3 {
+    display: block;
+  }
+}
+
+.img-container {
+  overflow: hidden;
 }
 
 .photo-hiring,
@@ -2711,11 +2711,5 @@ body {
   font-weight: 400;
   font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   letter-spacing: .4px;
-}
-
-@media screen and (-ms-high-contrast: none) {
-  body {
-    font-family: Lato,Helvetica,Arial,sans-serif;
-  }
 }
 /*# sourceMappingURL=style.css.map */
