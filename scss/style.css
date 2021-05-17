@@ -88,6 +88,10 @@
   padding: 0;
 }
 
+.fa-search {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .fa-search {
     color: white;
@@ -318,7 +322,6 @@
 @media screen and (-ms-high-contrast: none) {
   .btn {
     padding: 11px 7px;
-    font-family: Poppins,sans-serif;
     font-size: 1rem;
   }
 }
@@ -1002,7 +1005,6 @@ small {
 @media screen and (-ms-high-contrast: none) {
   .btn-photo {
     padding: 11px 7px;
-    font-family: Poppins,sans-serif;
     font-size: 1rem;
   }
 }
@@ -1131,12 +1133,6 @@ h5 {
   text-align: center;
   padding: 0.8rem;
   width: 90%;
-}
-
-@media screen and (-ms-high-contrast: none) {
-  .card-container {
-    font-family: Lato,Helvetica,Arial,sans-serif;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1631,6 +1627,7 @@ h5 {
   color: white;
   padding: 2rem 1rem;
   max-width: 100%;
+  line-height: 1.875rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2443,6 +2440,10 @@ input[type=submit]:hover {
 
 .footer-container a:hover {
   text-decoration: underline;
+}
+
+.footer-content {
+  font-size: 13px;
 }
 
 @media only screen and (min-width: 768px) {

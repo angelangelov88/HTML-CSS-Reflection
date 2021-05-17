@@ -36,7 +36,6 @@
 
 //Newscards container div
 .news-cards-container {
-	//border: 2px green solid;
 	background: linear-gradient(to bottom, #F0F0F0, #FFFFFF);
 	padding-top: 3rem;
 	margin-bottom: 2rem;
@@ -59,30 +58,19 @@
 //Each newscard container div
 .news-card {
 	border: 1px $color-button-gray solid;
-	//width: 452px;
 	margin: 1rem 1rem;
 	background-color: white;
-	//height: 38rem;
 	max-width: 95%;
 	position: relative; // Position relative in order to make the element ancestor of the caption and be able to position the caption absolutely
 	@media only screen and (min-width: $break-s) {
-		//max-width: 90%;
 		width: auto;
-		//height: 45rem;
 }
 	@media only screen and (min-width: $break-m) {
-		// display: flex;
-		// justify-content: center;
 		max-width: 350px;
-		//height: 34rem;
 }
 	@media only screen and (min-width: $break-l) {
 		max-width: 450px;
 		overflow: hidden;
-		//height: 38rem;
-}
-	@media only screen and (min-width: $break-xl) {
-		//height: 38rem;
 }
 }
 
@@ -159,19 +147,14 @@ a.news-1-title {
 	@media only screen and (min-width: $break-s) {
 		padding: 0px;
 }
-// 	@media only screen and (min-width: $break-m) {
-// }
 }
 
 a.news-2-title {
 	color: $color-news-2;
-	//padding: 30px 30px 15px;
 	@include news-title-style;
 	@media only screen and (min-width: $break-s) {
 		padding: 0px;
 }
-	// @media only screen and (min-width: $break-m) {
-	// }
 }
 
 a.news-3-title {
@@ -240,18 +223,14 @@ a.news-3-title:hover {
 
 //Newscard's date, posted by and image
 .news-card-footer {
-	//border: 2px red solid;
 	display: flex;
 	align-items: center;
 	margin: 1rem 0;
 }
 
 .photo-news {
-	//border: 2px solid yellow;
 	margin: 1rem;
 	display: flex;
-	// flex: 0 0 47px;
-  // align-items: center;
 }
 
 .photo-news-1 {
@@ -262,9 +241,6 @@ a.news-3-title:hover {
 	color: black;
 	font-weight: 600;
 	font-size: 14px;
-	// position: relative;
-	// bottom: 4.4rem;
-	// padding-left: 5.4rem;
 }
 
 .author {
@@ -275,10 +251,6 @@ a.news-3-title:hover {
 	color: #666666;
 	font-size: 14px;
 	margin-top: 0;
-	// padding-left: 5.4rem;
-	// position: relative;
-	// bottom: 4.3rem;
-	// padding-bottom: 0;
 }
 
 article h3 {

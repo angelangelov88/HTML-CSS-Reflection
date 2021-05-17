@@ -12,6 +12,7 @@
 
 //Footer content container
 .footer-content {
+	font-size: 13px;
 	@media only screen and (min-width: $break-m) {
 		max-width: 100%;
 		display: flex;

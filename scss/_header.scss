@@ -1,7 +1,7 @@
 .header-container {
   height: 12rem;
   @media only screen and (min-width: $break-m ) {
-    //Moves the search bar and menu button to the right position for Chrome (IE position on line 147 btn-top)
+    //Moves the search bar and menu button to the right position for Chrome (IE position on line 181 btn-top)
     display: flex;
     justify-content: center;
     height: 8rem;
@@ -10,9 +10,6 @@
     max-width: 92%; //helping for correct positioning
   }
   @media only screen and (min-width: $break-xl ) {
-    // display: flex;
-    // justify-content: center;
-    // height: 8rem;
     max-width: 100%;
   }
   }
@@ -40,13 +37,9 @@
   background: none;
   padding-left: 15px;
   flex: 1 1 auto;
-  //width: 80%;
-  //max-width: 100%;
-  //height: 43px;
   border: none;
   font-size: 14px;
   font-family: "Poppins", "Helvetica", "Arial", sans-serif;
-  //color: #666;
 }
 
 .xs-search input[type="search"]:focus {
@@ -64,10 +57,7 @@
 }
 
 .fa-search {
-  // color: black;
-  // background-color: #E5E5E5;
-  // height: 20px;
-  // padding: 10px;
+  cursor: pointer;
   @media only screen and (min-width: $break-m) {
     color: white;
     background-color: $color-button-gray;
@@ -142,12 +132,7 @@
 
 //Main container for the buttons in header for screens bigger than S. 
 .btn-top {
-  //border: 2px red solid !important;
-  // display: flex;
-  // justify-content: flex-start;
-  //max-height: 100px;
   width: 100%;
-  //position: relative;
   top: -0.3rem;
   display: none;
   @media only screen and (min-width: $break-m) {
@@ -156,12 +141,10 @@
     top: 0.5rem;  
     left: -1rem;
   @media screen and (-ms-high-contrast: none) {
-    //position: relative;
     left: -10rem;
 }
 }
   @media only screen and (min-width: $break-l) {
-    //position: relative;
     left: 5rem;
     max-width: 33rem;
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -191,15 +174,7 @@
 //Menu button for all screens but small
 .btn-menu {
   @include menu-btn-basic;
-  //border: 2px orange solid !important;
-  // position: relative;
-  // bottom: 5.7rem;
-  // left: 7rem;
-//   @media only screen and (max-width: $break-s) {
-//     //bottom: 4.7rem;
-// }
   @media only screen and (min-width: $break-m ) {
-    //float: right;
     position: relative;
     top: 0.3rem;
     left: 15.9rem;
@@ -322,18 +297,8 @@ i {
 }
 }
 
-// .fas {
-//   //padding: 5px;
-//   }
-
 //Styling of the input area for all screens but small 
 .form-control {
-  // background-color: #e5e5e5;
-  // border: none;
-   //border: 2px blue solid;
-  //@media only screen and (min-width: $break-m) {
-    //display: flex;
-//}
     width: 12rem;
     height: 55px;
     font-size: 0.9rem;
@@ -359,10 +324,6 @@ i {
 }
 
 .form-control:focus {
-  // background-color: #E5E5E5;
-  // border-color:  #E5E5E5;
-  // outline: 0;
-  // box-shadow: 0 0 0 0.25rem rgb(229, 229, 229);
   @media only screen and (min-width: $break-m ) {
     background-color: white;
     box-shadow: 0px 0px 5px 1px rgba(0,198,255,0.77);
@@ -374,14 +335,9 @@ i {
 .container-search {
   width: 95%;
   margin-right: -180px;
-  //border: 3px #DCDCDC solid;
-  //border: 2px springgreen solid;
-  //background-color: #E5E5E5;
   @media only screen and (min-width: $break-m) {
     max-width: 300px;
     margin-left: 2rem;
-    //background-color: white;
-    //border: none;
 }
   @media only screen and (min-width: $break-l) {
     max-width: 85px;
@@ -390,16 +346,3 @@ i {
     max-width: 300px;
 }
 }
-
-
-// form {
-// border: 2px orange solid;
-// @media only screen and (min-width: $break-l) {
-//   //max-width: 10rem;
-// }
-// @media only screen and (min-width: $break-xl) {
-//   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-//   //max-width: 25rem;
-// }
-// }
-// }

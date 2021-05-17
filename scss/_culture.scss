@@ -2,7 +2,6 @@
 
 //Main brand container and stylining of the background image for bigger screens
 .brand-div {
-	//border: 2px green solid;
 	background-color: #333645;
 	@media only screen and (min-width: $break-l) {
 		background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
@@ -14,10 +13,10 @@
 
 //The content div
 .brand-content {
-	//border: 2px red solid;
 	color: white;
 	padding: 2rem 1rem;
 	max-width: 100%;
+	line-height: 1.875rem;
 	@media only screen and (min-width: $break-m) {
 		width: 750px;
 		margin-left: auto;

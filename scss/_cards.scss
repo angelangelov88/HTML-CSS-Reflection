@@ -4,7 +4,6 @@
 .main-cards-container {
 	display: flex;
 	justify-content: center;
-	//border: 5px yellow solid;
 	margin-top: -7rem;
 	@media only screen and (min-width: $break-l) {
 		margin-top: 0;
@@ -25,10 +24,8 @@
 .card {
 	display: flex;
 	flex-direction: row;
-	// justify-content: space-evenly;
 	justify-content: center;
 	flex-wrap: wrap;
-	//border: 2px green solid !important;
 	border: none;
 	@media only screen and (min-width: $break-l) {
 		padding: 1rem 0.2rem;
@@ -56,9 +53,6 @@
 	min-height: 100px;
 	padding-bottom: 3rem;	
 	font-family: sans-serif;
-// 	@media only screen and (min-width: $break-s) {
-// 		padding-bottom: 1rem;
-// }
 	@media only screen and (min-width: $break-s) {
 		padding-bottom: 3rem;
 }
@@ -71,31 +65,19 @@
 //Card container style
 .card-container {
 	@include cards;
-	//min-width: 20rem;
-	//border: 5px red solid;
-	//height: 312px;
-	//width: 370px;
 	width: 90%;
 	@media only screen and (min-width: $break-m) {
-		//min-width: 90%;
-		//  flex: 1 0 30%; 
 		max-width: 20rem;
 }
 	@media only screen and (min-width: $break-l) {
 		max-width: none;
 		width: auto;
 }
-// 		@media only screen and (min-width: $break-xl) {
-// 			//min-height: 20rem;
-// 			//flex: 1 0 19%;
-// }
 }
 
 .btn-card {
 	max-width: 12rem;
 	font-size: 1rem;
-	//font-family: ;
-	//font-weight: 600;
 	@include btn-cards-newscards;
 }
 
@@ -194,8 +176,7 @@
 		border: 15px white solid;
 }
 	.a-cards-it {
-		color: white;
-	
+		color: white;	
 }
 }
 

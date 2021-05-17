@@ -1,24 +1,9 @@
 //Mixins
-@mixin search-md-screen{
-	max-width: 20vw;
-	height: 45px;
-	font-size: 0.9rem;
-	color: $color-button-gray;
-	border: 1px $color-button-gray solid;
-	border-radius: 1%;
-	background-color: white;
-	position: absolute;
-	left: 27rem;
-}
 
 @mixin navbar-flexbox-container {
-	//border: 2px greenyellow solid;
 	display: flex;
-	// position: absolute;
-	// left: 0;
 	height: 45px;
 	z-index: 100;
-	//font-weight: 600;
 	margin-left: auto;
 	margin-right: auto;
 	@media screen and (min-width: $break-l) {
@@ -43,13 +28,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	//font-weight: 500;
 	margin: 5px 8px;
 	height: 55px;
 	padding-top: 13px;
   @media screen and (-ms-high-contrast: none) {
 		padding: 11px 7px;
-		font-family: Poppins,sans-serif;
 		font-size: 1rem;
 }
 }
@@ -81,14 +64,10 @@
 	margin: 1rem 0rem;
 	text-align: center;
 	padding: 0.8rem;
-	@media screen and (-ms-high-contrast: none) {
-		font-family: Lato,Helvetica,Arial,sans-serif;    
-	}
 	@media only screen and (min-width: $break-m) {
 		margin: 1rem 1rem;
-
-	}
-	}
+}
+}
 
 
 @mixin news-title-style {
@@ -109,47 +88,45 @@
 	position: absolute;
 	left: 0;
 	z-index: 100;
-	}
+}
 
-	@mixin image-caption {
-		color: white;
-		font-weight: 600;
-		font-size: 0.8rem;
-		padding: 3px 10px;
-		margin: 20px 0 0 370px;
-		position: absolute;
-		top: -.5rem;
-		right: 0rem;
+@mixin image-caption {
+	color: white;
+	font-weight: 600;
+	font-size: 0.8rem;
+	padding: 3px 10px;
+	margin: 20px 0 0 370px;
+	position: absolute;
+	top: -.5rem;
+	right: 0rem;
+}
 
-	}
-	@mixin m-size-width-first-child {
-		max-width: 720px;
-	}
+//Mixins for the cards sizes in order to make them appear as they do on the main website
+@mixin m-size-width-first-child {
+	max-width: 720px;
+}
 
-	@mixin m-size-width-last-child {
-		max-width: 342px;
-	}
+@mixin m-size-width-last-child {
+	max-width: 342px;
+}
 	
-	@mixin l-size-width-first-child {
-		max-width: 290px;
-	}
+@mixin l-size-width-first-child {
+	max-width: 290px;
+}
 
-	@mixin l-size-width-last-child {
-		max-width: 452px;
-		min-width: 452px;
-	}
+@mixin l-size-width-last-child {
+	max-width: 452px;
+	min-width: 452px;
+}
 
-	@mixin xl-size-width-first-child {
-		min-width: 355px;
-	}
+@mixin xl-size-width-first-child {
+	min-width: 355px;
+}
 
-	@mixin xl-size-width-last-child {
-		min-width: min-content;
-		@media screen and (-ms-high-contrast: none) {
-			min-width: 200px;
-		}	
-		max-width: 258px;
-	}
-
-
-
+@mixin xl-size-width-last-child {
+	min-width: min-content;
+	@media screen and (-ms-high-contrast: none) {
+		min-width: 200px;
+}	
+	max-width: 258px;
+}
