@@ -5,14 +5,14 @@
     display: flex;
     justify-content: center;
     height: 8rem;
-  }
+}
   @media only screen and (min-width: $break-l) {
     max-width: 92%; //helping for correct positioning
-  }
+}
   @media only screen and (min-width: $break-xl ) {
     max-width: 100%;
-  }
-  }
+}
+}
 
 // Extra piece of code for the small screen search bar
 .xs-search {
@@ -29,7 +29,7 @@
   margin: 11px;
   @media only screen and (min-width: $break-m) {
     display: none;
-  }  
+}  
 }
 
 // Styling the input field for small screen 
@@ -105,29 +105,29 @@
 .phone-icon {
   color: black !important;
   position: relative;
-  top: 0.5rem;
+  top: 10px;
+  left: -62px;
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
   margin-right: 1rem;
 //Special code for IE as the position property did not work as intended
   @media screen and (-ms-high-contrast: none) {
-  top: -0.5rem;
-  }
+    top: 0.5rem;
+}
   @media only screen and (min-width: $break-m) {
-  display: none !important; //important added because IE takes the value from another element and the phone icon stays for on bigger screens
-  }
-  }  
+    display: none !important; //important added because IE takes the value from another element and the phone icon stays on bigger screens
+}
+}  
 
 //Mozilla hack to change the position of the phone icon as it did not follow the main rule
 @-moz-document url-prefix() { 
   .phone-icon {
-      position: relative;
-      top: -0.5rem !important;
+    top: 0.5rem !important;
 }
 }
   
-  .phone-icon:hover {
-    border-bottom: 3px solid black;
+.phone-icon:hover {
+  border-bottom: 3px solid black;
 } 
 
 //Main container for the buttons in header for screens bigger than S. 
@@ -145,7 +145,7 @@
 }
 }
   @media only screen and (min-width: $break-l) {
-    left: 5rem;
+    left: 3rem;
     max-width: 33rem;
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       left: 4.55rem;
@@ -160,13 +160,17 @@
 }
 }
 
-//Menu button for small screens
+//Menu button for small screens as I could not work out how to use the same element in small screens. I created this workaround and it works well
 .btn-menu-xs {
   @include menu-btn-basic;
+  position: relative;
+  left: -2px;
+  top: -30px;  
   @media only screen and (min-width: $break-m ) {
-  display: none;
+    display: none;
 }
 }
+
 .btn-menu-xs:hover {
   @include menu-btn-hover;
 }
@@ -174,11 +178,11 @@
 //Menu button for all screens but small
 .btn-menu {
   @include menu-btn-basic;
-  @media only screen and (min-width: $break-m ) {
+  @media only screen and (min-width: $break-m) {
     position: relative;
     top: 0.3rem;
     left: 15.9rem;
-//IE specific code
+//IE specific code for the position of the menu button
     @media screen and (-ms-high-contrast: none) {
       position: absolute;
       top: 1rem;
@@ -190,6 +194,7 @@
     top: 0.25rem;
     height: 55px;
     width: 65px;
+//IE specific code for the position of the menu button
     @media screen and (-ms-high-contrast: none) {
       position: relative;
       top: 0.25rem;
@@ -217,6 +222,30 @@
 .btn-menu:hover {
   @include menu-btn-hover;
 }
+
+#menu-lines {
+  padding: 10px 0 4px 16px;
+  @media only screen and (min-width: $break-m) {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 33px;
+  margin: 10px auto 5px;
+}
+}
+
+.menu-line {
+  width: 33px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.menu-title {
+  font-size: 12px;
+  text-align: center;
+}
+
 
 //Styling of the 2 buttons in the header
 .btn {
@@ -250,8 +279,6 @@
   line-height: 1px;
 }
 
-
-
 .btn-support:hover{
   background-color: darken($color: $color-button-blue, $amount: 10%);    
 }
@@ -281,6 +308,9 @@ i {
   top: 1rem;
   @media only screen and (min-width: $break-m) {
     max-width: 160%;
+}
+  @media only screen and (min-width: $break-l) {
+    left: 2rem;
 }
   @media only screen and (min-width: $break-xl) {
     left: 4rem;

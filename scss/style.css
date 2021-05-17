@@ -20,7 +20,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .header-container {
     max-width: 100%;
   }
@@ -120,7 +120,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .fa-search {
     top: -0.25rem;
     left: -2.5rem;
@@ -143,7 +143,8 @@
 .phone-icon {
   color: black !important;
   position: relative;
-  top: 0.5rem;
+  top: 10px;
+  left: -62px;
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
   margin-right: 1rem;
@@ -151,7 +152,7 @@
 
 @media screen and (-ms-high-contrast: none) {
   .phone-icon {
-    top: -0.5rem;
+    top: 0.5rem;
   }
 }
 
@@ -163,8 +164,7 @@
 
 @-moz-document url-prefix() {
   .phone-icon {
-    position: relative;
-    top: -0.5rem !important;
+    top: 0.5rem !important;
   }
 }
 
@@ -197,7 +197,7 @@
 
 @media only screen and (min-width: 992px) {
   .btn-top {
-    left: 5rem;
+    left: 3rem;
     max-width: 33rem;
   }
 }
@@ -208,7 +208,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-top {
     height: 6rem;
     width: 45rem;
@@ -219,14 +219,13 @@
 }
 
 .btn-menu-xs {
-  color: white;
-  width: 4.2rem;
-  height: 3.5rem;
-  font-size: 12px;
-  text-transform: uppercase;
   background-color: #333645;
-  border-radius: 7%;
-  border: 2px #333645 solid;
+  height: 55px;
+  width: 65px;
+  border-radius: 4px;
+  position: relative;
+  left: -2px;
+  top: -30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -240,14 +239,10 @@
 }
 
 .btn-menu {
-  color: white;
-  width: 4.2rem;
-  height: 3.5rem;
-  font-size: 12px;
-  text-transform: uppercase;
   background-color: #333645;
-  border-radius: 7%;
-  border: 2px #333645 solid;
+  height: 55px;
+  width: 65px;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -283,7 +278,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-menu {
     position: relative;
     top: 0.2rem;
@@ -292,7 +287,7 @@
 }
 
 @-moz-document url-prefix() {
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1260px) {
     .btn-menu {
       position: relative;
       top: 0.25rem;
@@ -303,6 +298,37 @@
 
 .btn-menu:hover {
   background-color: #1d1f28;
+}
+
+#menu-lines {
+  padding: 10px 0 4px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-lines {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33px;
+    margin: 10px auto 5px;
+  }
+}
+
+.menu-line {
+  width: 33px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.menu-title {
+  font-size: 12px;
+  text-align: center;
 }
 
 .btn {
@@ -393,7 +419,13 @@ i {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
+  .netmatters-logo {
+    left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
   .netmatters-logo {
     left: 4rem;
   }
@@ -405,7 +437,7 @@ i {
   z-index: 100;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .logo {
     position: relative;
     left: -4rem;
@@ -432,7 +464,7 @@ i {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .form-control {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -472,7 +504,7 @@ i {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .container-search {
     max-width: 300px;
   }
@@ -513,7 +545,7 @@ i {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-navbar {
     width: 194px;
   }
@@ -548,7 +580,7 @@ p {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .li-sub {
     font-size: 16px;
   }
@@ -571,14 +603,14 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .web-design:hover .web-design-ul {
     width: 1211px;
   }
 }
 
 .web-design:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -587,7 +619,7 @@ p {
 }
 
 .web-design:hover .li-web-design {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -621,14 +653,14 @@ li.web-design:hover button .fa-code {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .it:hover .it-ul {
     width: 1211px;
   }
 }
 
 .it:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -637,7 +669,7 @@ li.web-design:hover button .fa-code {
 }
 
 .it:hover .li-it {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -671,14 +703,14 @@ li.it:hover button .fa-tv {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .telecoms:hover .telecoms-ul {
     width: 1211px;
   }
 }
 
 .telecoms:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -687,7 +719,7 @@ li.it:hover button .fa-tv {
 }
 
 .telecoms:hover .li-telecoms {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -721,14 +753,14 @@ li.telecoms:hover button .fa-phone-alt {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .software:hover .software-ul {
     width: 1211px;
   }
 }
 
 .software:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -737,7 +769,7 @@ li.telecoms:hover button .fa-phone-alt {
 }
 
 .software:hover .li-software {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -771,14 +803,14 @@ li.software:hover button .fa-th {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .digital-marketing:hover .digital-marketing-ul {
     width: 1211px;
   }
 }
 
 .digital-marketing:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -787,7 +819,7 @@ li.software:hover button .fa-th {
 }
 
 .digital-marketing:hover .li-digital-marketing {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -821,14 +853,14 @@ li.digital-marketing:hover button .fa-signal {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .cyber-security:hover .cyber-security-ul {
     width: 1211px;
   }
 }
 
 .cyber-security:hover .second-nav-background {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   position: absolute;
   left: 0;
@@ -837,7 +869,7 @@ li.digital-marketing:hover button .fa-signal {
 }
 
 .cyber-security:hover .li-cyber-security {
-  margin-top: 5px;
+  margin-top: 7px;
   padding-top: 5px;
   display: block;
 }
@@ -915,14 +947,14 @@ small {
 .main-photo {
   background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
   width: 100%;
-  height: calc(100vh - 209px);
+  height: calc(100vh - 165px);
   min-height: 650px;
   background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
   .main-photo {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 30px);
   }
 }
 
@@ -936,7 +968,7 @@ small {
   position: absolute;
   top: 0rem;
   width: inherit;
-  height: calc(100vh - 209px);
+  height: calc(100vh - 165px);
   min-height: 650px;
   z-index: 10;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(transparent));
@@ -946,7 +978,7 @@ small {
 @media only screen and (min-width: 768px) {
   .gradient-div {
     top: 0rem;
-    height: calc(100vh - 227px);
+    height: calc(100vh - 117px);
     min-height: 563px;
   }
 }
@@ -964,7 +996,7 @@ small {
   color: white;
   z-index: 12;
   position: relative;
-  top: 26%;
+  top: 33%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -979,7 +1011,7 @@ small {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .text-block {
     width: 75rem;
     max-width: 100%;
@@ -1047,7 +1079,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .main-cards-container {
     display: block;
     margin: auto;
@@ -1092,13 +1124,13 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .card {
     max-width: 1170px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .card {
     max-width: 1183px;
   }
@@ -1159,6 +1191,8 @@ h5 {
   font-size: 1rem;
   width: 130px;
   height: 50px;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1177,7 +1211,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .software-container,
   .it-container,
   .digital-marketing-container {
@@ -1204,7 +1238,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .telecoms-container,
   .web-design-container,
   .cyber-security-container,
@@ -1216,7 +1250,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) and (-ms-high-contrast: none) {
+@media only screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .telecoms-container,
   .web-design-container,
   .cyber-security-container,
@@ -1323,7 +1357,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-card-it {
     margin-top: 5px;
   }
@@ -1527,7 +1561,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-card-cyber-security {
     margin-top: 5px;
   }
@@ -1587,7 +1621,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-card-developer-training {
     margin-top: 10px;
   }
@@ -1648,7 +1682,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .brand-content {
     width: 1200px;
   }
@@ -1660,7 +1694,7 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .brand-text {
     max-width: 35rem;
   }
@@ -1700,7 +1734,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .news-latest-container {
     max-width: 100%;
     width: 1200px;
@@ -1724,7 +1758,7 @@ h2 {
           justify-content: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .news-latest {
     margin-left: 30px;
   }
@@ -1764,6 +1798,7 @@ h2 {
 
 .news-card {
   border: 1px #999aa2 solid;
+  border-radius: 4px;
   margin: 1rem 1rem;
   background-color: white;
   max-width: 95%;
@@ -1849,7 +1884,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .news-card-3 {
     display: block;
   }
@@ -1944,7 +1979,7 @@ a.news-3-title:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .btn-news-card-1 {
     margin-top: 74px;
   }
@@ -2092,7 +2127,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .client-logo {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -2131,7 +2166,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .client-logo:hover #busseys-text {
     margin-left: 20px;
   }
@@ -2143,7 +2178,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .client-logo:hover #crane-text {
     margin-left: 15px;
   }
@@ -2275,7 +2310,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .email-field {
     margin-left: 250px;
   }
@@ -2289,6 +2324,7 @@ img.colour {
   -webkit-transition: .5s;
   transition: .5s;
   outline: none;
+  padding-left: 12px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -2297,7 +2333,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .input {
     width: 170%;
   }
@@ -2324,7 +2360,7 @@ img.colour {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .newsletter-content {
     margin: 2rem;
     max-width: 70rem;
@@ -2460,7 +2496,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .footer-content {
     width: 73rem;
     margin-left: auto;
@@ -2485,7 +2521,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .contact-us {
     max-width: 250px;
     margin-right: 1rem;
@@ -2503,7 +2539,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .about-netmatters {
     max-width: 250px;
     margin-right: 1rem;
@@ -2527,7 +2563,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .website {
     max-width: 250px;
     margin-right: 1rem;

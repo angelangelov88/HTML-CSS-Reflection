@@ -16,11 +16,11 @@
 .main-photo {
 	background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
 	width: 100%;
-	height: calc(100vh - 209px);
+	height: calc(100vh - 165px);
 	min-height: 650px;
 	background-size: cover;
 	@media only screen and (min-width: $break-m) {
-		height: calc(100vh - 140px);
+		height: calc(100vh - 30px);
 }
 	@media only screen and (min-width: $break-l) {
 		height: calc(100vh - 209px);
@@ -32,13 +32,13 @@
 	position: absolute;
 	top: 0rem;
 	width: inherit;
-	height: calc(100vh - 209px);
+	height: calc(100vh - 165px);
 	min-height: 650px;
 	z-index: 10;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.85), transparent);
 	@media only screen and (min-width: $break-m) {
 		top: 0rem;
-		height: calc(100vh - 227px);
+		height: calc(100vh - 117px);
 		min-height: 563px;
 }
 	@media only screen and (min-width: $break-l) {
@@ -54,7 +54,7 @@
 	color: white;
 	z-index: 12;
 	position: relative;
-	top: 26%;
+	top: 33%;
 	@media only screen and (min-width: $break-l) {
 		text-align: left;
 		width: 60%;
