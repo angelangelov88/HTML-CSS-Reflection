@@ -7,10 +7,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	@media screen and (min-width: $break-l) {
-		width: 1003px;
+		width: 986px;
 }
 	@media screen and (min-width: $break-xl) {
-		width: 1211px;
+		width: 1200px;
 }
 }
 
@@ -28,7 +28,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	margin: 5px 8px;
+	margin: 5px 10px;
 	height: 55px;
 	padding-top: 13px;
   @media screen and (-ms-high-contrast: none) {
@@ -55,7 +55,7 @@
 
 @mixin cards {
 	border: 1px rgb(187, 187, 187) solid;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 35px rgba(0, 0, 0, 10%);
 	max-width: 90%;
 	margin: 1rem 0rem;
 	text-align: center;

@@ -6,17 +6,18 @@
 	justify-content: center;
 	margin-top: -7rem;
 	@media only screen and (min-width: $break-l) {
-		margin-top: 0;
-		@media screen and (-ms-high-contrast: none) {
-			display: block;
-			margin: auto;
-			width: 975px;
+		margin-top: -25px;
+	@media screen and (-ms-high-contrast: none) {
+		display: block;
+		margin: auto;
+		width: 975px;
 }
 }
 	@media only screen and (min-width: $break-xl) {
 		display: block;
 		margin: auto;
 		width: 1168px;
+		margin-top: -25px;
 }
 }
 

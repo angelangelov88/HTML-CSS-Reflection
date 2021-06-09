@@ -124,10 +124,12 @@
 	overflow: hidden
 }
 
+//I added the transition property here in order to make the hover effect smooth
 .photo-hiring,
 .photo-hand,
 .photo-rob {
 	width: 100%;
+	transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 //The effect on hovering over the image
@@ -242,6 +244,7 @@ a.news-3-title:hover {
 	color: black;
 	font-weight: 600;
 	font-size: 14px;
+	margin: 0;
 }
 
 .author {

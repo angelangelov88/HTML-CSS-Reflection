@@ -7,10 +7,10 @@
     height: 8rem;
 }
   @media only screen and (min-width: $break-l) {
-    max-width: 92%; //helping for correct positioning
+    //max-width: 92%; //helping for correct positioning
 }
   @media only screen and (min-width: $break-xl ) {
-    max-width: 100%;
+    max-width: 99%;
 }
 }
 
@@ -78,14 +78,18 @@
     height: 55px;
     width: 65px;
     padding-top: 20px;
-    margin-left: 0;
+    margin-left: -6px;
 }
   @media only screen and (min-width: $break-xl) {
     //color: white;
     //background-color: $color-button-gray;
     top: -0.25rem;
     left: -2.5rem;
-    border-radius: 2px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
     min-width: 65px;
 }
 }
@@ -106,7 +110,7 @@
   color: black !important;
   position: relative;
   top: 10px;
-  left: -62px;
+  left: -50px;
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
   margin-right: 1rem;
@@ -145,7 +149,7 @@
 }
 }
   @media only screen and (min-width: $break-l) {
-    left: 3rem;
+    left: 0rem;
     max-width: 33rem;
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       left: 4.55rem;
@@ -181,7 +185,7 @@
   @media only screen and (min-width: $break-m) {
     position: relative;
     top: 0.3rem;
-    left: 15.9rem;
+    left: 267px;
 //IE specific code for the position of the menu button
     @media screen and (-ms-high-contrast: none) {
       position: absolute;
@@ -190,7 +194,7 @@
 }
 }
   @media only screen and (min-width: $break-l) {
-    left: 10.2rem;
+    left: 158px;
     top: 0.25rem;
     height: 55px;
     width: 65px;
@@ -203,8 +207,8 @@
 }
   @media only screen and (min-width: $break-xl) {
     position: relative;
-    top: 0.2rem;    
-    left: 9rem;   
+    top: 4px;    
+    left: 136px;   
 }
 }
 
@@ -223,7 +227,7 @@
   @include menu-btn-hover;
 }
 
-#menu-lines {
+.menu-lines {
   padding: 10px 0 4px 16px;
   @media only screen and (min-width: $break-m) {
   padding: 0;
@@ -250,7 +254,6 @@
 //Styling of the 2 buttons in the header
 .btn {
   @include btn;
-    cursor: default;
     &-support {
       background-color: $color-button-blue;
       display: none;
@@ -277,14 +280,17 @@
 .fa-mouse {
   display: inline;
   line-height: 1px;
+  padding-right: 5px;
 }
 
 .btn-support:hover{
-  background-color: darken($color: $color-button-blue, $amount: 10%);    
+  background-color: darken($color: $color-button-blue, $amount: 10%); 
+  color: white;
 }
 
 .btn-contact:hover{
   background-color: darken($color: $color-button-gray, $amount: 10%);
+  color: white;
 }
 
 a {
@@ -306,11 +312,12 @@ i {
   max-width: 45%;
   position: relative;
   top: 1rem;
+  width: 375px; 
   @media only screen and (min-width: $break-m) {
     max-width: 160%;
 }
   @media only screen and (min-width: $break-l) {
-    left: 2rem;
+    left: 0rem;
 }
   @media only screen and (min-width: $break-xl) {
     left: 4rem;
@@ -321,6 +328,9 @@ i {
   padding: 15px 0 0 15px;
   margin-left: .1rem;
   z-index: 100;
+  @media only screen and (min-width: $break-l) {
+    padding-left: 33px;
+}
   @media only screen and (min-width: $break-xl) {
   position: relative;
   left: -4rem;
@@ -346,7 +356,7 @@ i {
   @media only screen and (min-width: $break-xl) {
     display: flex;
     height: 55px;
-    width: 238px;
+    width: 202px;
     position: relative;
     left: -2rem;
     top: -0.25rem;
