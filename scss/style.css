@@ -290,8 +290,7 @@
 }
 @media screen and (-ms-high-contrast: none) {
   .btn {
-    padding: 11px 7px;
-    font-size: 1rem;
+    padding: 14px 7px;
   }
 }
 .btn-support {
@@ -463,16 +462,26 @@ i {
 }
 
 .btn-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #333645;
-  width: 159px;
+  width: 153px;
   height: 94px;
   line-height: 0.3;
+  text-align: center;
   font-size: 18px;
   text-transform: uppercase;
+  padding-bottom: 11px;
   border-bottom: none;
   border-top: none;
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+@media screen and (-ms-high-contrast: none) {
+  .btn-navbar {
+    justify-content: space-around;
+  }
 }
 @media only screen and (min-width: 1260px) {
   .btn-navbar {
@@ -480,12 +489,16 @@ i {
   }
 }
 
-p {
-  margin-top: -5px;
+.li-main:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.btn-cyber-security {
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+.li-main:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+p {
+  margin-top: -5px;
 }
 
 .container {
@@ -496,8 +509,7 @@ p {
 }
 
 .li-main {
-  display: inline-table;
-  margin: 0 -5px;
+  display: table-cell;
 }
 
 .li-sub {
@@ -520,12 +532,12 @@ p {
 }
 @media screen and (min-width: 992px) {
   .web-design:hover .web-design-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .web-design:hover .web-design-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .web-design:hover .second-nav-background {
@@ -544,11 +556,10 @@ p {
 .web-design:hover .dash-2 {
   display: block;
 }
-
-li.web-design:hover button {
+.web-design:hover .btn-web-design {
   background-color: #926FB1;
 }
-li.web-design:hover button .fa-code {
+.web-design:hover .fa-code {
   color: white;
 }
 
@@ -562,12 +573,12 @@ li.web-design:hover button .fa-code {
 }
 @media screen and (min-width: 992px) {
   .it:hover .it-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .it:hover .it-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .it:hover .second-nav-background {
@@ -586,11 +597,10 @@ li.web-design:hover button .fa-code {
 .it:hover .dash-2 {
   display: block;
 }
-
-li.it:hover button {
+.it:hover .btn-it {
   background-color: #4183D7;
 }
-li.it:hover button .fa-tv {
+.it:hover .fa-tv {
   color: white;
 }
 
@@ -604,12 +614,12 @@ li.it:hover button .fa-tv {
 }
 @media screen and (min-width: 992px) {
   .telecoms:hover .telecoms-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .telecoms:hover .telecoms-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .telecoms:hover .second-nav-background {
@@ -628,11 +638,10 @@ li.it:hover button .fa-tv {
 .telecoms:hover .dash-2 {
   display: block;
 }
-
-li.telecoms:hover button {
+.telecoms:hover .btn-telecoms {
   background-color: #D64541;
 }
-li.telecoms:hover button .fa-phone-alt {
+.telecoms:hover .fa-phone-alt {
   color: white;
 }
 
@@ -646,12 +655,12 @@ li.telecoms:hover button .fa-phone-alt {
 }
 @media screen and (min-width: 992px) {
   .software:hover .software-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .software:hover .software-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .software:hover .second-nav-background {
@@ -670,11 +679,10 @@ li.telecoms:hover button .fa-phone-alt {
 .software:hover .dash-2 {
   display: block;
 }
-
-li.software:hover button {
+.software:hover .btn-software {
   background-color: #67809F;
 }
-li.software:hover button .fa-th {
+.software:hover .fa-th {
   color: white;
 }
 
@@ -688,12 +696,12 @@ li.software:hover button .fa-th {
 }
 @media screen and (min-width: 992px) {
   .digital-marketing:hover .digital-marketing-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .digital-marketing:hover .digital-marketing-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .digital-marketing:hover .second-nav-background {
@@ -712,11 +720,10 @@ li.software:hover button .fa-th {
 .digital-marketing:hover .dash-2 {
   display: block;
 }
-
-li.digital-marketing:hover button {
+.digital-marketing:hover .btn-digital-marketing {
   background-color: #2ECC71;
 }
-li.digital-marketing:hover button .fa-signal {
+.digital-marketing:hover .fa-signal {
   color: white;
 }
 
@@ -730,12 +737,12 @@ li.digital-marketing:hover button .fa-signal {
 }
 @media screen and (min-width: 992px) {
   .cyber-security:hover .cyber-security-ul {
-    width: 986px;
+    width: 978px;
   }
 }
 @media screen and (min-width: 1260px) {
   .cyber-security:hover .cyber-security-ul {
-    width: 1200px;
+    width: 1225px;
   }
 }
 .cyber-security:hover .second-nav-background {
@@ -754,11 +761,10 @@ li.digital-marketing:hover button .fa-signal {
 .cyber-security:hover .dash-2 {
   display: block;
 }
-
-li.cyber-security:hover button {
+.cyber-security:hover .btn-cyber-security {
   background-color: #F62459;
 }
-li.cyber-security:hover button .fa-shield-alt {
+.cyber-security:hover .fa-shield-alt {
   color: white;
 }
 
@@ -901,8 +907,7 @@ small {
 }
 @media screen and (-ms-high-contrast: none) {
   .btn-photo {
-    padding: 11px 7px;
-    font-size: 1rem;
+    padding: 14px 7px;
   }
 }
 

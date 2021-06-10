@@ -7,10 +7,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	@media screen and (min-width: $break-l) {
-		width: 986px;
+		width: 978px;
 }
 	@media screen and (min-width: $break-xl) {
-		width: 1200px;
+		width: 1225px;
 }
 }
 
@@ -32,8 +32,7 @@
 	height: 55px;
 	padding-top: 13px;
   @media screen and (-ms-high-contrast: none) {
-		padding: 11px 7px;
-		font-size: 1rem;
+		padding: 14px 7px;
 }
 }
 
