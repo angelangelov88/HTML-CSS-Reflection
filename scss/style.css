@@ -10,7 +10,7 @@
 }
 @media only screen and (min-width: 1260px) {
   .header-container {
-    max-width: 99%;
+    max-width: 100%;
   }
 }
 
@@ -365,7 +365,7 @@ i {
 }
 @media only screen and (min-width: 1260px) {
   .netmatters-logo {
-    left: 4rem;
+    left: 32px;
   }
 }
 
@@ -885,7 +885,7 @@ small {
 }
 @media only screen and (min-width: 1260px) {
   .text-block {
-    width: 75rem;
+    width: 78rem;
     max-width: 100%;
   }
 }

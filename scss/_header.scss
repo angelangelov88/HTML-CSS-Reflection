@@ -10,7 +10,7 @@
     //max-width: 92%; //helping for correct positioning
 }
   @media only screen and (min-width: $break-xl ) {
-    max-width: 99%;
+    max-width: 100%;
 }
 }
 
@@ -320,7 +320,7 @@ i {
     left: 0rem;
 }
   @media only screen and (min-width: $break-xl) {
-    left: 4rem;
+    left: 32px;
 }
 }
 
