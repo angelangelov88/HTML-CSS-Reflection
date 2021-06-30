@@ -175,6 +175,11 @@
     max-width: 100%;
   }
 }
+@media only screen and (min-width: 1260px) and (-ms-high-contrast: active), only screen and (min-width: 1260px) and (-ms-high-contrast: none) {
+  .btn-top {
+    width: 38rem;
+  }
+}
 
 .btn-menu-xs {
   background-color: #333645;
@@ -366,6 +371,11 @@ i {
 @media only screen and (min-width: 1260px) {
   .netmatters-logo {
     left: 32px;
+  }
+}
+@media only screen and (min-width: 1260px) and (-ms-high-contrast: none) {
+  .netmatters-logo {
+    left: -15px;
   }
 }
 

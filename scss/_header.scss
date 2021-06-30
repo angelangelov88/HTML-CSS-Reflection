@@ -161,6 +161,11 @@
     position: relative;
     left: 1rem;
     max-width: 100%;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 38rem;
+    }
+
+
 }
 }
 
@@ -321,6 +326,9 @@ i {
 }
   @media only screen and (min-width: $break-xl) {
     left: 32px;
+    @media screen and (-ms-high-contrast: none) {
+      left: -15px;
+}
 }
 }
 
