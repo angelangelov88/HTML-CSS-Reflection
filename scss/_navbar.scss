@@ -7,14 +7,24 @@
   display: none;
   text-transform: uppercase;
   max-height: 95px;
-  width: 100%;
-	position: relative;
+	position: fixed;
+	top: 7rem;
 	z-index: 100;
+	height: 95px;
+	width: 100%;
+	transition: all .3s ease;
+	box-shadow: 0 1px 25px rgba(0,0,0, .1);
 	@media screen and (min-width: $break-l) {
 		display: flex;
 		justify-content: center;
 }
 }
+
+//Added this for the sticky header as JS adds a new div which hides the element
+.main-navigation.hide {
+  top: -128px;
+}
+
 
 //All buttons in the navbar styling
 .btn-navbar {
@@ -61,6 +71,7 @@ p {
 	justify-content: center;
 	min-width: 100%;
 	margin-left: -1rem;
+	background: #333645;
 }
 
 .li-main {
