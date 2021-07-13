@@ -14,7 +14,7 @@
 
 //Added the main photo as a background image and styled it. Made it appear on full height on opening the page
 .main-photo {
-	background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
+	//background-image: url('../img/it-support.png');
 	width: 100%;
 	height: calc(100vh - 4rem);
 	min-height: 650px;
@@ -29,6 +29,39 @@
 		margin-top: 303px;
 }
 }
+.main-photo-1 {
+background-image: url('../img/marketing.jpg');
+}
+
+.main-photo-2 {
+	background-image: url('../img/it-support.png');
+}
+
+.main-photo-3 {
+	background-image: url('../img/telecoms.png');
+}
+
+.main-photo-4 {
+	background-image: url('../img/bespoke-software.png');
+}
+
+.main-photo-5 {
+	background-image: url('../img/digital-marketing.png');
+}
+
+.main-photo-6 {
+	background-image: url('../img/cyber-security.png');
+}
+
+
+
+
+
+
+
+	
+
+
 
 //The div that creates the gradient black effect on the image
 .gradient-div {
@@ -83,9 +116,65 @@
 	margin-left: 0;
 }
 
+.btn-photo-2 {
+	@include btn;
+	background-color: $color-it;
+	max-width: 250px;
+	margin-left: 0;
+}
+
+.btn-photo-3 {
+	@include btn;
+	background-color: $color-telecoms;
+	max-width: 250px;
+	margin-left: 0;
+}
+
+.btn-photo-4 {
+	@include btn;
+	background-color: $color-software;
+	max-width: 250px;
+	margin-left: 0;
+}
+
+.btn-photo-5 {
+	@include btn;
+	background-color: $color-digital-marketing;
+	max-width: 250px;
+	margin-left: 0;
+}
+
+.btn-photo-6 {
+	@include btn;
+	background-color: $color-cyber-security;
+	max-width: 250px;
+	margin-left: 0;
+}
+
 .btn-photo:hover {
 	background-color: darken($color: $color-web-design, $amount: 10%);
 }
+
+.btn-photo-2:hover {
+	background-color: darken($color: $color-it, $amount: 10%);
+}
+
+.btn-photo-3:hover {
+	background-color: darken($color: $color-telecoms, $amount: 10%);
+}
+
+.btn-photo-4:hover {
+	background-color: darken($color: $color-software, $amount: 10%);
+}
+
+.btn-photo-5:hover {
+	background-color: darken($color: $color-digital-marketing, $amount: 10%);
+}
+
+.btn-photo-6:hover {
+	background-color: darken($color: $color-cyber-security, $amount: 10%);
+}
+
 
 h1 {
 	text-transform: uppercase;
