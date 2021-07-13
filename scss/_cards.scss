@@ -31,8 +31,9 @@
 	@media only screen and (min-width: $break-l) {
 		padding: 1rem 0.2rem;
 		max-width: 1170px;
+		margin-top: -5.5rem;
     @media screen and (-ms-high-contrast: none) {
-			max-width: 978px;     
+			max-width: 978px;  			
 }
 		.card-text {
 			font-size: .85rem;
@@ -42,6 +43,7 @@
 }
 	@media only screen and (min-width: $break-xl) {
 		max-width: 1170px;
+		margin-top: -7.5rem;
     @media screen and (-ms-high-contrast: none) {
 			max-width: 1183px;      
 }
