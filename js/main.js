@@ -39,7 +39,7 @@
   var toggleHeader = function(direction, curScroll) {
     if (direction === 2 && curScroll > 205) { 
       
-      //replace 52 with the height of your header in px
+      //replace 205 with the height of your header in px
 
       header.classList.add('hide');
       navbarHeader.classList.add('hide');
