@@ -34,24 +34,33 @@ background-image: url('../img/marketing.jpg');
 }
 
 .main-photo-2 {
-	background-image: url('https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg');
+	background-image: url('../img/it-support.png');
 }
 
 .main-photo-3 {
-	background-image: url('https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-5yqm.jpg');
+	background-image: url('../img/telecoms.png');
 }
 
 .main-photo-4 {
-	background-image: url('https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-sqvx.jpg');
+	background-image: url('../img/bespoke-software.png');
 }
 
 .main-photo-5 {
-	background-image: url('https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg');
+	background-image: url('../img/digital-marketing.png');
 }
 
 .main-photo-6 {
-	background-image: url('https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-lQs1.jpg');
+	background-image: url('../img/cyber-security.png');
 }
+
+
+
+
+
+
+
+	
+
 
 
 //The div that creates the gradient black effect on the image
@@ -175,9 +184,4 @@ h1 {
 h5 {
 	line-height: 2.1rem;
 	padding: 15px 0;
-
-}
-
-.text-block h5 {
-	margin-bottom: 2rem;
 }
