@@ -93,8 +93,3 @@ window.onload = function () {
       PopUp('show');
   }, 0);
 }
-
-
-
-
-
