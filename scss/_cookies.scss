@@ -1,4 +1,4 @@
-
+//Cookies container
 #ac-wrapper {
 	position: fixed;
 	top: 0;
@@ -7,8 +7,10 @@
 	height: 100%;
 	z-index: 100;
 	background-color: rgba(0,0,0,.7);
+	z-index: 1000;
 }
 
+//Main window of the cookie
 #popup {
 	background: none repeat scroll 0 0 #FFFFFF;
 	border-radius: 18px;
