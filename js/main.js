@@ -39,7 +39,7 @@
   var toggleHeader = function(direction, curScroll) {
     if (direction === 2 && curScroll > 205) { 
       
-      //replace 205 with the height of your header in px
+      //replace 52 with the height of your header in px
 
       header.classList.add('hide');
       navbarHeader.classList.add('hide');
@@ -76,20 +76,3 @@ $(document).ready(function(){
   });
 });
 
-
-//Cookies
-
-function PopUp(hideOrshow) {
-  if (hideOrshow == 'hide') {
-      document.getElementById('ac-wrapper').style.display = "none";
-  }
-  else  if(localStorage.getItem("popupWasShown") == null) {
-      localStorage.setItem("popupWasShown",1);
-      document.getElementById('ac-wrapper').removeAttribute('style');
-  }
-}
-window.onload = function () {
-  setTimeout(function () {
-      PopUp('show');
-  }, 0);
-}
