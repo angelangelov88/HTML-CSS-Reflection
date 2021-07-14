@@ -62,7 +62,6 @@
 
 //Slider jQuery 
 
-
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
 
@@ -86,6 +85,7 @@ function PopUp(hideOrshow) {
   else  if(localStorage.getItem("popupWasShown") == null) {
       localStorage.setItem("popupWasShown",1);
       document.getElementById('ac-wrapper').removeAttribute('style');
+      document.body.style.overflow = 'hidden'; //disables the scroll when the cookie message appear
   }
 }
 window.onload = function () {
@@ -93,3 +93,6 @@ window.onload = function () {
       PopUp('show');
   }, 0);
 }
+
+
+
