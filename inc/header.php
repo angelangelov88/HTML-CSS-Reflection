@@ -1,7 +1,7 @@
 <header>
       <div class="header-container">
         <div class="logo">
-          <a href="https://www.netmatters.co.uk/">
+          <a href="index.php">
             <img src="img/netmatters-logo.png" alt="netmatters-logo-picture" class="netmatters-logo"></a>
 <!-- Extra code for the phone icon and menu button for small screens -->
           <div class="top-phone-menu">
