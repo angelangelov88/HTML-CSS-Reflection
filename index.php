@@ -1,4 +1,3 @@
-
 <!-- HTML head -->
   <?php include "./inc/head.php" ?>
 

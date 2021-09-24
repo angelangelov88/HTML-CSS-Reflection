@@ -39,7 +39,7 @@
           <a href="https://support.netmatters.com/" class="btn btn-support">            
             <i class="fas fa-mouse fa-lg"></i>Support
             </a>
-          <a href="https://www.netmatters.co.uk/contact-us/" class="btn btn-contact">
+          <a href="contact.php" class="btn btn-contact">
             <i class="fas fa-paper-plane fa-lg"></i>Contact
           </a>
           <div class="container-search">
