@@ -81,12 +81,13 @@ $(document).ready(function(){
 function PopUp(hideOrshow) {
   if (hideOrshow == 'hide') {
       document.getElementById('ac-wrapper').style.display = "none";
+      document.body.style.overflow = 'visible';
   }
   else  if(localStorage.getItem("popupWasShown") == null) {
       localStorage.setItem("popupWasShown",1);
       document.getElementById('ac-wrapper').removeAttribute('style');
       document.body.style.overflow = 'hidden'; //disables the scroll when the cookie message appear
-  }
+}
 }
 window.onload = function () {
   setTimeout(function () {
@@ -95,4 +96,41 @@ window.onload = function () {
 }
 
 
+//Side navbar
+//I added variables for all the elements in order to make the code readable
+const sidebarContainer = document.getElementById("sidebar-container");
+const hamburger = document.getElementsByClassName('hamburger')[0];
+const hamburgerXs = document.getElementsByClassName('hamburger-xs')[0];
+const body = document.body;
+const blocker = document.getElementsByClassName('blocker')[0];
 
+//I added this function to delay the scroll appearing when the sidebar is there
+function scrollDelay() {
+  blocker.style.overflowY = 'scroll';
+}
+
+//This is the function that is triggered on click on burger menu button. 
+function openNav() {
+    sidebarContainer.classList.toggle("shown");
+    body.classList.toggle("slide-in");
+    setTimeout(function() {
+      sidebarContainer.classList.toggle("slide-in");
+    }, 1);
+    setTimeout(scrollDelay, 600);
+    body.style.overflow = 'hidden';
+    hamburger.classList.add("is-active");
+    hamburgerXs.classList.add("is-active");
+}
+
+// //This is the function that closes the sidebar on clicking anywhere on the page but the sidebar
+function closeNav() {
+  sidebarContainer.classList.toggle("slide-in");
+  body.classList.toggle("slide-in");
+  setTimeout(function() {
+    sidebarContainer.classList.toggle("shown");
+  }, 600);
+  body.style.overflow = 'auto';
+  blocker.style.overflowY = 'hidden';
+  hamburger.classList.remove("is-active");
+  hamburgerXs.classList.remove("is-active");
+}
