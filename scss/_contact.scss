@@ -114,3 +114,18 @@
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
+.map-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: -40px;
+}
+
+.mapid { 
+  height: 370px;
+  width: 370px;
+  z-index: 0;
+
+}

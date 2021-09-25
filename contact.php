@@ -89,8 +89,25 @@
               <a href="#" class="btn-offices">View More</a>
             </div>
           </div>
-</div>
+        </div>
+      </div>
+      <div class="map-container">
+      <div id="mapid" class="mapid"></div>
+      <div id="mapid2" class="mapid"></div>
+      <div id="mapid3" class="mapid"></div>
+      </div>
+      <div class="contact-form-container">
+      <div class="contact-form">
 
+
+      </div>
+      <div class="email-us">
+        <p>Email us on:</p>
+        <p><a href="&#109;&#x61;i&#x6c;&#116;o&#x3a;&#115;u&#x70;&#112;&#111;r&#x74;&#64;ne&#x74;&#x6d;atte&#x72;s.&#x63;&#111;m">&#115;u&#x70;&#112;&#111;r&#x74;&#64;ne&#x74;&#x6d;atte&#x72;s.&#x63;&#111;m</a></p>
+        <p>Business hours:</p>
+        <p>Monday - Friday 07:00 - 18:00</p>
+        <p>Out of Hours IT Support</p>
+      </div>
       </div>
     </div>
 
