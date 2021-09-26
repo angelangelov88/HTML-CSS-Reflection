@@ -127,5 +127,90 @@
   height: 370px;
   width: 370px;
   z-index: 0;
+}
 
+.contact-form-container {
+  border: greenyellow 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact-form {
+  border: 1px red solid;
+  width: 65%;
+  height: 500px;
+  background-color: #E6E7E9;
+  margin-left: 0;
+  border-radius: 10px;
+  padding: 25px;
+
+}
+
+.submit-container-contact-form input[type=submit] {
+  background-color: $color-web-design;
+  margin-left: 0px;
+}
+
+.checkbox-text {
+  font-weight: 600;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#email-contact a{
+  font-weight: 600;
+  color: $color-web-design !important;
+  font-size: 1.625rem;
+}
+
+#email-contact:hover {
+  text-decoration: underline;
+}
+
+.email-us-container {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  color: #333645;
+  max-width: 350px;
+  padding-left: 25px;
+}
+
+.email-us p {
+  font-weight: 600;
+  color: #333645;
+}
+
+#working-hours-drop-down {
+  font-weight: 600;
+  color: #333645;
+}
+
+#out-of-hours:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.drop-down-contact {
+  //display: none;
+  height: 0px;
+  opacity: 0;
+  // transition: height;
+  // transition-duration: 1s;
+  // transition-timing-function: ease-in;
+}
+
+.drop-down-contact p {
+  color: #666;
 }

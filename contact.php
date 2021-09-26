@@ -98,17 +98,41 @@
       </div>
       <div class="contact-form-container">
       <div class="contact-form">
-
+      <div class="tickbox-contact-form">
+      <label class="checkbox-container checkbox-text">Please tick this box if you wish to receive marketing information from us. Please see our 
+            <a href="https://www.netmatters.co.uk/privacy-policy" class="privacy-text">Privacy Policy</a> for more information on how we use your data.
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <div class="submit-container-contact-form">
+            <input type="submit" value="Send Enquiry">
+          </div>
 
       </div>
+
+      </div>
+      <div class="email-us-container">
       <div class="email-us">
         <p>Email us on:</p>
-        <p><a href="&#109;&#x61;i&#x6c;&#116;o&#x3a;&#115;u&#x70;&#112;&#111;r&#x74;&#64;ne&#x74;&#x6d;atte&#x72;s.&#x63;&#111;m">&#115;u&#x70;&#112;&#111;r&#x74;&#64;ne&#x74;&#x6d;atte&#x72;s.&#x63;&#111;m</a></p>
+        <p id="email-contact"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
         <p>Business hours:</p>
         <p>Monday - Friday 07:00 - 18:00</p>
-        <p>Out of Hours IT Support</p>
+        <p id="out-of-hours">Out of Hours IT Support
+        <em style="font-style: normal" class="fa fa-chevron-down rotate down"></em>
+        </p>
+      </div>
+      <div class="drop-down-contact">
+        <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+        <p id="working-hours-drop-down">Monday - Friday 18:00 - 22:00 
+          <br>
+          Saturday 08:00 - 16:00
+          <br>
+          Sunday 10:00 - 18:00
+        </p>
+        <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
       </div>
       </div>
+    </div>
     </div>
 
   <!-- NEWSLETTER SIGN-UP -->

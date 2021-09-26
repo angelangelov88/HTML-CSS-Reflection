@@ -177,3 +177,20 @@ var marker = L.marker([52.235462735307294, 0.154262015014908]).addTo(mymap);
 var marker2 = L.marker([52.576037413411186, 1.1366218466544036]).addTo(mymap2);
 var marker3 = L.marker([52.55581865448684, 1.7129035269914628]).addTo(mymap3);
 
+
+//Drop down menu in the contact form on click function
+
+const dropDownMenu = document.getElementsByClassName('drop-down-contact')[0];
+const outOfHours = document.getElementById('out-of-hours');
+
+function showHide() {
+   if (dropDownMenu.style.height == '350px'){
+    dropDownMenu.style.height = '0';
+    dropDownMenu.style.opacity = '0';
+} else {
+  dropDownMenu.style.height = '350px';
+  dropDownMenu.style.opacity = '1';
+}
+}
+
+outOfHours.addEventListener("click", showHide);
