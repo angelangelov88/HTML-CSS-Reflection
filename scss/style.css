@@ -2963,21 +2963,44 @@ body.slide-in {
 
 .offices-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   max-width: 1170px;
   margin: auto;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 992px) {
+  .offices-container {
+    flex-direction: row;
+  }
+}
 
 .offices-card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .offices-card {
+    width: 370px;
+  }
+}
+
+.offices-border-div {
   border: 1px solid #ccc;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  width: 370px;
 }
 
 .offices-image img {
-  height: 170px;
-  width: 370px;
+  width: 100%;
+  height: 320px;
+}
+@media only screen and (min-width: 992px) {
+  .offices-image img {
+    height: 170px;
+    width: 370px;
+  }
 }
 
 .content {
@@ -3035,9 +3058,17 @@ body.slide-in {
 }
 
 .mapid {
-  height: 370px;
-  width: 370px;
-  z-index: 0;
+  width: 100%;
+  height: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (min-width: 992px) {
+  .mapid {
+    height: 370px;
+    width: 370px;
+    z-index: 0;
+  }
 }
 
 .contact-form-container {
@@ -3057,6 +3088,16 @@ body.slide-in {
   margin-left: 0;
   border-radius: 10px;
   padding: 25px;
+}
+
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-content label::after {
+  content: " *";
+  color: red;
 }
 
 .submit-container-contact-form input[type=submit] {
