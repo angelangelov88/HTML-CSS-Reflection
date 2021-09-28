@@ -5,17 +5,32 @@
 }
 
 .offices-title-container {
-  max-width: 1170px;
   margin: auto;
-  margin-top: 55px;
+  background-color: #333645;
+
+  @media only screen and (min-width: $break-l) {
+    background-color: white;
+    max-width: 1170px;
+    margin-top: 55px;
+
+  }
 }
 
 .offices-title-container h1 {
   font-size: 2.25rem;
   font-weight: 400;
   margin: 0 0 28px;
-  color: #333645;
+  color: white;
   text-transform: none;
+  @media only screen and (min-width: $break-m) {
+    max-width: 730px;
+  
+  }
+
+  @media only screen and (min-width: $break-l) {
+    color: #333645;
+
+  }
 }
 
 
@@ -54,6 +69,10 @@
   max-width: 1170px;
   margin: auto;
   margin-bottom: 40px;
+  @media only screen and (min-width: $break-m) {
+    max-width: 730px;
+  
+  }
 
   @media only screen and (min-width: $break-l) {
     flex-direction: row;
@@ -61,10 +80,14 @@
 }
 
 .offices-card {
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  @media only screen and (min-width: $break-m) {
+    width: 100%;
+  
+  }
+
   @media only screen and (min-width: $break-l) {
     width: 370px;
 
@@ -157,26 +180,106 @@
 .contact-form-container {
   border: greenyellow 1px solid;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
   max-width: 1170px;
   margin: auto;
   margin-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  @media only screen and (min-width: $break-m) {
+    max-width: 730px;
+  
+  }
+  @media only screen and (min-width: $break-l) {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  
+  }
 }
 
 .contact-form {
   border: 1px red solid;
-  width: 65%;
-  height: 500px;
   background-color: #E6E7E9;
   margin-left: 0;
   border-radius: 10px;
-  padding: 25px;
+  padding: 10px;
+  @media only screen and (min-width: $break-l) {
+    margin-left: 0;
+    width: 65%;
+    height: 525px;
+    padding: 15px;
+
+  
+  }
 
 }
 
 .contact-form-content {
+  @media only screen and (min-width: $break-l) {
+
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  }
+}
+
+.contact-form-input {
+
+  @media only screen and (min-width: $break-l) {
+
+  margin: 10px;
+  max-width: 340px;
+  min-width: 340px;
+}
+}
+
+.contact-form-textarea {
+  width: 98%;
+  @media only screen and (min-width: $break-l) {
+
+  margin-left: 10px;
+}
+}
+
+.contact-form input {
+  height: 45px;
+  padding: 5px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  @media only screen and (min-width: $break-l) {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+}
+}
+
+.contact-form-content textarea {
+  height: 100px;
+  width: 98%;
+}
+
+
+
+.contact-form-content input,
+.contact-form-content textarea { 
+  border: 1px #CCCCCC solid;
+}
+
+.contact-form-content label {
+  font-weight: 600;
+  padding: 5px;
+  @media only screen and (min-width: $break-l) {
+    //width: 40%;
+}
+}
+
+.checkbox-container {
+  width: 100% !important;
 }
 
 .contact-form-content label::after {
@@ -184,15 +287,38 @@
   color: red;
 }
 
+.checkbox-text::after {
+  content: "" !important;
+}
+
+#messageText {
+  color: red;
+  font-weight: 600;
+}
+
 
 .submit-container-contact-form input[type=submit] {
   background-color: $color-web-design;
-  margin-left: 0px;
+  border-radius: 5px;
+  margin-top: -50px;
+  margin-left: 10px;
+  width: 150px;
 }
 
 .checkbox-text {
   font-weight: 600;
   width: 100%;
+  font-size: 1rem;
+}
+
+.checkbox-text p {
+  margin-left: 50px;
+  margin-top: 6px;
+}
+
+.checkmark {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 
@@ -208,7 +334,12 @@
 #email-contact a{
   font-weight: 600;
   color: $color-web-design !important;
-  font-size: 1.625rem;
+  font-size: 1.3rem;
+
+  @media only screen and (min-width: $break-m) {
+    font-size: 1.625rem;
+
+  }
 }
 
 #email-contact:hover {
@@ -220,7 +351,11 @@
   margin-bottom: 25px;
   color: #333645;
   max-width: 350px;
-  padding-left: 25px;
+
+  @media only screen and (min-width: $break-l) {
+    padding-left: 25px;
+
+  }
 }
 
 .email-us p {

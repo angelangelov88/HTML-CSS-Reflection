@@ -29,56 +29,23 @@
 
    <?php   
 
+        // validate the form on the server-side and submit 
+        if (isset($_POST['submit'])) {
+          $array = validateForm();
+//create a message variable to store the message, and then pass the createMessage function the array that the validateForm function returns
+          $message = createMessage($array); 
 
-$contactArray = [];
-
-if (isset($_POST['submit'])) {
-
-    if (!empty($_POST['name'])
-    && !empty($_POST['email'])
-    && !empty($_POST['phone_number'])
-    && !empty($_POST['subject'])
-    && !empty($_POST['message'])) {
-
-       $name = $_POST['name'];
-       $email = $_POST['email'];
-       $phone_number = $_POST['phone_number'];
-       $subject = $_POST['subject'];
-       $message = $_POST['message'];
-
-       if (isset($_POST['newsletter'])) {
-            $newsletter = true;
-       } else {
-            $newsletter = false;
-       }
-
-       $contactArray = [
-        "name" => $name,
-        "email" => $email,
-        "phone_number" => $phone_number,
-        "subject" => $subject,
-        "message" => $message,
-        "newsletter" => $newsletter
-       ];
-
-       postContact($db, $contactArray);
-   }
-   
-  //  $completeMessage = createMessage($contactArray);
-}
-
-
-
-
-        // // validate the form on the server-side and submit 
-        // if (isset($_POST['submit'])) {
-        //   $array = validateForm();
-        //   if ($array["passed"]) {
-        //     $dbSuccess = postContact($GLOBALS["db"], $contactArray);
-        //   } else {
-        //     $errorArray = $array["array"];
-        //   }
-        // }
+          if ($array["passed"]) {
+            $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+          } else {
+            $errorArray = $array["array"];
+          }
+        }
+        // var_dump($message);
+        // echo "<br>";
+        // var_dump($array);
+        // echo "<br>";
+        // var_dump($errorArray);
 
       ?>
 
@@ -177,68 +144,48 @@ if (isset($_POST['submit'])) {
       </div> -->
       <div class="contact-form-container">
       <div class="contact-form">
-
-        <div class="message <?php if (isset($_POST['submit']) && !empty($contactArray)) {
-            echo "success";
-        } elseif (isset($_POST['submit']) && empty($contactArray))  {
-            echo "error";
-        }
-        ?>">        
-        
-        <span id="messageText"><?php if (isset($completeMessage)) echo $completeMessage ?></span>
-        <!-- <button type="button" id="close-message"><i class="fas fa-times"></i></button> -->
-
+        <div class="message">        
+        <span id="messageText"><?php if (isset($message)) echo $message ?></span>
         </div>
+        <form action="/contact.php" method="post" onsubmit="return validateForm()">
+          <div class="contact-form-content">
+            <div class="contact-form-input">
+              <label>Your Name</label>
+              <input id="name" type="text" name="name" value="<?php if (isset($_POST['name']) && isset($errorArray)) echo $_POST['name']?>">
+            </div>
+            <div class="contact-form-input">
+              <label>Your Email</label>
+              <input id="email" type="email" name="email" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
+            </div>
+            <div class="contact-form-input">
+              <label>Your Telephone Number</label>
+              <input id="phone_number" type="tel" name="phone_number" value="<?php if (isset($_POST['phone_number']) && isset($errorArray)) echo $_POST['phone_number']?>">
+            </div>
+            <div class="contact-form-input">
+              <label>Subject</label>
+              <input id="subject" type="text" name="subject" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
+            </div>
+            <div class="contact-form-textarea">
+              <label>Message</label>
+              <textarea id="message" type="text" name="message"><?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?></textarea>
+            </div>
 
-      <form action="/contact.php" method="post" onsubmit="return postContact()">
-        <div class="contact-form-content">
-          <label>Your Name</label>
-          <input id="name" type="text" name="name" required="required" value="<?php if (isset($_POST['name']) && empty($contactArray)) echo $_POST['name']?>">
-          <label>Your Email</label>
-          <input id="email" type="email" name="email" required="required" value="<?php if (isset($_POST['email']) && empty($contactArray)) echo $_POST['email']?>">
-          <label>Your Telephone Number</label>
-          <input id="phone_number" type="tel" name="phone_number" required="required" value="<?php if (isset($_POST['phone_number']) && empty($contactArray)) echo $_POST['phone_number']?>">
-          <label>Subject</label>
-          <input id="subject" type="text" name="subject" required="required" value="<?php if (isset($_POST['subject']) && empty($contactArray)) echo $_POST['subject']?>">
-          <label>Message</label>
-          <textarea id="message" type="text" name="message"><?php if (isset($_POST['message']) && empty($contactArray)) echo $_POST['message']?></textarea>
 
-          <div class="tickbox-contact-form">
-            <label class="checkbox-container checkbox-text">Please tick this box if you wish to receive marketing information from us. Please see our 
-              <a href="https://www.netmatters.co.uk/privacy-policy" class="privacy-text">Privacy Policy</a> for more information on how we use your data.
-              <input type="checkbox" name="newsletter"?php if (isset($_POST['newsletter_signup']) && empty($contactArray)) echo "checked"?>>
-              <span class="checkmark"></span>
-            </label>
+            <div class="tickbox-contact-form">
+                <label class="checkbox-container checkbox-text"><p>Please tick this box if you wish to receive marketing information from us. Please see our 
+                  <a href="https://www.netmatters.co.uk/privacy-policy" class="privacy-text">Privacy Policy</a> for more information on how we use your data.</p>
+                  <input type="checkbox" name="newsletter" <?php if (isset($_POST['newsletter']) && isset($errorArray)) echo "checked"?>>
+                  <span class="checkmark"></span>
+                </label>
+              <div class="submit-container-contact-form">
+                <input type="submit" name="submit" value="Send Enquiry">
+              </div>
+            </div>
+            </div>
+            </form>
 
-          
-          <div class="submit-container-contact-form">
-            <input type="submit" name="submit" value="Send Enquiry">
-
-          </div>
-        </div>
-      </form>
-<?php 
-    echo 'name =';
-    var_dump($_POST['name']);
-    echo '<br>email = ';
-    var_dump($_POST['email']);
-    echo '<br>phone number =';
-    var_dump($_POST['phone_number']);
-    echo '<br>subject =';
-    var_dump($_POST['subject']);
-    echo '<br>newsletter =';
-    var_dump($_POST['newsletter']);
-    echo '<br>message =';
-    var_dump($_POST['message']);
-
-?>
-          <!-- <div class="submit-container-contact-form">
-            <input type="submit" name="submit" value="Send Enquiry">
-
-          </div> -->
-      </div>
-      </div>
-      <div class="email-us-container">
+    </div>
+    <div class="email-us-container">
       <div class="email-us">
         <p>Email us on:</p>
         <p id="email-contact"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
@@ -259,7 +206,6 @@ if (isset($_POST['submit'])) {
         <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
       </div>
       </div>
-    </div>
     </div>
 
   <!-- NEWSLETTER SIGN-UP -->
