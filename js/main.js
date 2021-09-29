@@ -194,3 +194,16 @@ function showHide() {
 }
 
 outOfHours.addEventListener("click", showHide);
+
+
+
+//Scroll page to the form on submit
+const contactForm = document.getElementsByClassName('contact-form')[0];
+
+function scrollToContactForm() {
+
+  contactForm.scrollIntoView();
+
+}
+
+contactForm.addEventListener("click", scrollToContactForm);

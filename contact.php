@@ -23,10 +23,11 @@
       <div class="home-path-container">
         <div class="home-path"><a href="index.php">Home</a> / Our Offices</div>
       </div>
-      <div class="offices-title-container">
-        <h1>Our Offices</h1>
+      <div class="offices-title-width-container">
+        <div class="offices-title-container">
+          <h1>Our Offices</h1>
+        </div>
       </div>
-
    <?php   
 
         // validate the form on the server-side and submit 
@@ -177,10 +178,11 @@
                   <input type="checkbox" name="newsletter" <?php if (isset($_POST['newsletter']) && isset($errorArray)) echo "checked"?>>
                   <span class="checkmark"></span>
                 </label>
-              <div class="submit-container-contact-form">
+            </div>
+            <div class="submit-container-contact-form">
                 <input type="submit" name="submit" value="Send Enquiry">
               </div>
-            </div>
+
             </div>
             </form>
 

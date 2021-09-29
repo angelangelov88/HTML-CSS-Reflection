@@ -3,14 +3,28 @@
   //border: 2px red solid;
 
 }
+.offices-title-width-container {
+  background-color: #333645;
+  @media only screen and (min-width: $break-l) {
+    background-color: white;
+  }
+}
 
 .offices-title-container {
   margin: auto;
-  background-color: #333645;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  margin-top: -44px;
+  max-width: 730px;
 
   @media only screen and (min-width: $break-l) {
-    background-color: white;
-    max-width: 1170px;
+    max-width: 930px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: $break-xl) {
+    max-width: 1190px;
     margin-top: 55px;
 
   }
@@ -19,16 +33,12 @@
 .offices-title-container h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  margin: 0 0 28px;
   color: white;
   text-transform: none;
-  @media only screen and (min-width: $break-m) {
-    max-width: 730px;
-  
-  }
 
   @media only screen and (min-width: $break-l) {
     color: #333645;
+  margin: 0 0 28px;
 
   }
 }
@@ -38,16 +48,37 @@
 
 .home-path-container {
   box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
-
+  @media only screen and (min-width: $break-m) {
+    margin-bottom: 3rem;
+    margin-top: -5rem;
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .home-path {
+  display: none;
   padding: 14px 0 13px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1166px;
   height: 45px;
   font-size: .8125rem;
+  @media only screen and (min-width: $break-m) {
+    display: block;
+    margin-top: 10px;
+    max-width: 686px;
+  }
+  @media only screen and (min-width: $break-l) {
+    max-width: 880px;
+
+  }
+  @media only screen and (min-width: $break-xl) {
+    max-width: 1150px;
+
+  }
+
 }
 
 //Home button styling
@@ -66,16 +97,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 1170px;
+  //max-width: 1170px;
   margin: auto;
   margin-bottom: 40px;
+  //Because of unexplainable white space under each card I added this code. It was appearing on small screens only. After that I added display:flex for IE on break-l to make the cards next to each other
+  @media screen and (-ms-high-contrast: none) {
+  display: block;
+  }
   @media only screen and (min-width: $break-m) {
     max-width: 730px;
-  
   }
-
   @media only screen and (min-width: $break-l) {
     flex-direction: row;
+    max-width: 930px;
+    @media screen and (-ms-high-contrast: none) {
+      display: flex;
+  }
+  }
+  @media only screen and (min-width: $break-xl) {
+    max-width: 1170px;
   }
 }
 
@@ -83,15 +123,21 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  width: 90%;
   @media only screen and (min-width: $break-m) {
     width: 100%;
   
   }
 
   @media only screen and (min-width: $break-l) {
+    width: 290px;
+
+  }
+  @media only screen and (min-width: $break-xl) {
     width: 370px;
 
   }
+
 }
 
 .offices-border-div {
@@ -102,11 +148,16 @@
 
 .offices-image img {
   width: 100%;
-  height: 320px;
+  height: auto;
+
   @media only screen and (min-width: $break-l) {
+  width: 290px;
+}
+@media only screen and (min-width: $break-xl) {
   height: 170px;
   width: 370px;
 }
+
 }
 
 .content {
@@ -169,20 +220,25 @@
   height: 320px;
   margin-right: auto;
   margin-left: auto;
+  z-index: 0;
   @media only screen and (min-width: $break-l) {
+  height: 290px;
+  width: 290px;
+}
+@media only screen and (min-width: $break-xl) {
   height: 370px;
   width: 370px;
-  z-index: 0;
 }
+
 }
 
 
 .contact-form-container {
-  border: greenyellow 1px solid;
+  //border: greenyellow 1px solid;
   display: flex;
   flex-direction: column-reverse;
-  max-width: 1170px;
   margin: auto;
+  //max-width: 1170px;
   margin-top: 20px;
   padding-bottom: 60px;
   padding-left: 5px;
@@ -192,25 +248,40 @@
   
   }
   @media only screen and (min-width: $break-l) {
+    // flex-direction: row;
+   justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 930px;
+
+  }
+  @media only screen and (min-width: $break-xl) {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
-  
+    max-width: 1170px;
+
   }
+
 }
 
 .contact-form {
-  border: 1px red solid;
+  //border: 1px red solid;
   background-color: #E6E7E9;
   margin-left: 0;
   border-radius: 10px;
   padding: 10px;
   @media only screen and (min-width: $break-l) {
     margin-left: 0;
-    width: 65%;
+    width: 100%;
     height: 525px;
     padding: 15px;
+
+  }
+  @media only screen and (min-width: $break-xl) {
+    margin-left: 0;
+    width: 65%;
 
   
   }
@@ -226,8 +297,14 @@
 }
 
 .contact-form-input {
-
   @media only screen and (min-width: $break-l) {
+
+    margin: 10px;
+    max-width: 425px;
+    min-width: 425px;
+  }
+  
+  @media only screen and (min-width: $break-xl) {
 
   margin: 10px;
   max-width: 340px;
@@ -236,7 +313,7 @@
 }
 
 .contact-form-textarea {
-  width: 98%;
+  //width: 98%;
   @media only screen and (min-width: $break-l) {
 
   margin-left: 10px;
@@ -260,7 +337,13 @@
 
 .contact-form-content textarea {
   height: 100px;
-  width: 98%;
+  @media only screen and (min-width: $break-l) {
+    width: 862px !important;
+  }
+  @media only screen and (min-width: $break-xl) {
+    width: 693px !important;
+  }
+
 }
 
 
@@ -268,13 +351,17 @@
 .contact-form-content input,
 .contact-form-content textarea { 
   border: 1px #CCCCCC solid;
+  width: 98%;
+
 }
 
 .contact-form-content label {
   font-weight: 600;
   padding: 5px;
-  @media only screen and (min-width: $break-l) {
-    //width: 40%;
+
+  @media only screen and (min-width: $break-m) {
+    //width: 40%;  
+
 }
 }
 
@@ -300,15 +387,25 @@
 .submit-container-contact-form input[type=submit] {
   background-color: $color-web-design;
   border-radius: 5px;
-  margin-top: -50px;
-  margin-left: 10px;
+  // margin-top: -50px;
+  // margin-left: 10px;
+  position: relative;
+  top: -22px;
+  left: -26px;
   width: 150px;
+  @media only screen and (min-width: $break-l) {
+    top: -38px;
+
+  }
 }
 
 .checkbox-text {
   font-weight: 600;
   width: 100%;
+  font-size: .8rem;
+  @media only screen and (min-width: $break-m) {
   font-size: 1rem;
+}
 }
 
 .checkbox-text p {
