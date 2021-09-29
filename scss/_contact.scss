@@ -232,6 +232,23 @@
 
 }
 
+//Added this div to make the page show up on the form on load if there is a message to display
+#scroll-js {
+  position: absolute;
+  top: 166rem;
+  @media only screen and (min-width: $break-s) {
+    top: 190rem;
+}
+  @media only screen and (min-width: $break-m) {
+    top: 215rem;
+}
+  @media only screen and (min-width: $break-l) {
+    top: 80rem;
+}
+  @media only screen and (min-width: $break-xl) {
+    top: 70rem;
+}
+}
 
 .contact-form-container {
   //border: greenyellow 1px solid;
@@ -272,6 +289,7 @@
   margin-left: 0;
   border-radius: 10px;
   padding: 10px;
+  z-index: 1;
   @media only screen and (min-width: $break-l) {
     margin-left: 0;
     width: 100%;
@@ -297,6 +315,7 @@
 }
 
 .contact-form-input {
+  
   @media only screen and (min-width: $break-l) {
 
     margin: 10px;
@@ -334,6 +353,29 @@
     // flex-direction: column;
 }
 }
+
+.contact-form input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+}
+
+.contact-form input:focus:invalid {
+  border: 1px red solid;
+
+}
+
+.contact-form textarea:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+}
+
+.contact-form textarea:focus:invalid {
+  border: 1px red solid;
+
+}
+
 
 .contact-form-content textarea {
   height: 100px;

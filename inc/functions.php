@@ -101,7 +101,7 @@ function validateForm() {
 
 function createMessage($array) {
   if ($array["passed"]) {
-    $message = "Form was submitted successfully!";
+    $message = "<span style='color:green;'>Form was submitted successfully!</span>";
   } else {
     $message = "Error: please enter a valid ";
     $message .= implode(", ",$array["array"]);

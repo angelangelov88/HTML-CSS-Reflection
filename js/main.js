@@ -198,12 +198,51 @@ outOfHours.addEventListener("click", showHide);
 
 
 //Scroll page to the form on submit
-const contactForm = document.getElementsByClassName('contact-form')[0];
 
-function scrollToContactForm() {
+const spanContent = document.getElementById("messageText");
+const submitButton = document.getElementById("submit-button");
 
-  contactForm.scrollIntoView();
+
+function checkSpanContent() {
+if (!spanContent.innerHTML == "") {
+  setTimeout(function() {
+    window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#scroll-js"
+   }
+    , 1);
 
 }
+}
 
-contactForm.addEventListener("click", scrollToContactForm);
+submitButton.addEventListener("load", checkSpanContent());
+
+
+
+//Email/phone validation 
+const email = document.getElementById('email');
+const phone = document.getElementById('phone_number');
+
+let validationEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+let validationPhoneUk = /^\d{11}$/;
+
+const error = document.getElementById('messageText');
+
+function validationEmailPhone() {
+  if (email.value.match(validationEmail) && phone.value.match(validationPhoneUk)) {
+    console.log('Email/Phone correct');
+    return true;
+  } else if (!email.value.match(validationEmail)) {
+    console.log('error with email');
+    error.innerHTML = 'Please check your email';
+    email.style.border = "1px red solid";
+    return false;
+  } else if (!phone.value.match(validationPhoneUk)) {
+    console.log('error with phone');
+    error.innerHTML = 'Please check your phone';
+    phone.style.border = "1px red solid";
+    return false;
+  }
+}
+
+
+
+

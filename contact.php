@@ -143,32 +143,34 @@
       <div id="mapid2" class="mapid"></div>
       <div id="mapid3" class="mapid"></div>
       </div> -->
+      <!-- I added this div in order to target it and show the form correctly on click on submit button -->
+      <div id="scroll-js"></div>
       <div class="contact-form-container">
       <div class="contact-form">
         <div class="message">        
         <span id="messageText"><?php if (isset($message)) echo $message ?></span>
         </div>
-        <form action="/contact.php" method="post" onsubmit="return validateForm()">
+        <form action="/contact.php" method="post" onsubmit="return validationEmailPhone()">
           <div class="contact-form-content">
             <div class="contact-form-input">
               <label>Your Name</label>
-              <input id="name" type="text" name="name" value="<?php if (isset($_POST['name']) && isset($errorArray)) echo $_POST['name']?>">
+              <input id="name" type="text" name="name" required value="<?php if (isset($_POST['name']) && isset($errorArray)) echo $_POST['name']?>">
             </div>
             <div class="contact-form-input">
               <label>Your Email</label>
-              <input id="email" type="email" name="email" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
+              <input id="email" type="email" name="email" required value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
             </div>
             <div class="contact-form-input">
               <label>Your Telephone Number</label>
-              <input id="phone_number" type="tel" name="phone_number" value="<?php if (isset($_POST['phone_number']) && isset($errorArray)) echo $_POST['phone_number']?>">
+              <input id="phone_number" type="tel" name="phone_number" required value="<?php if (isset($_POST['phone_number']) && isset($errorArray)) echo $_POST['phone_number']?>">
             </div>
             <div class="contact-form-input">
               <label>Subject</label>
-              <input id="subject" type="text" name="subject" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
+              <input id="subject" type="text" name="subject" required value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
             </div>
             <div class="contact-form-textarea">
               <label>Message</label>
-              <textarea id="message" type="text" name="message"><?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?></textarea>
+              <textarea id="message" type="text" name="message" required><?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?></textarea>
             </div>
 
 
@@ -180,7 +182,7 @@
                 </label>
             </div>
             <div class="submit-container-contact-form">
-                <input type="submit" name="submit" value="Send Enquiry">
+                <input type="submit" name="submit" id="submit-button" value="Send Enquiry">
               </div>
 
             </div>
