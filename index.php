@@ -16,7 +16,6 @@
 
 <!-- CARDS -->
 
-
     <div class="main-cards-container">
       <div class="card">
         <a class="card-container software-container a-cards-software" href="https://www.netmatters.co.uk/bespoke-software/">
@@ -99,8 +98,7 @@
     <?php include "./inc/news.php" ?>
 
 
-      <!-- CLIENTS LOGOS -->
-
+    <!-- CLIENTS LOGOS -->
 
       <div class="clients-container">
         <div class="clients">

@@ -10,7 +10,7 @@
           <div class="sidebar-content-small">
             <ul class="ul-sidebar">
               <li>
-                <a href="#" class="sidebar-nav-button contact-us-sidenbar-btn">Contact Us
+                <a href="../contact.php" class="sidebar-nav-button contact-us-sidenbar-btn">Contact Us
                 </a>
               </li>
               <li id="sidebar-web">

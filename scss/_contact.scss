@@ -1,13 +1,13 @@
 .contact-page-container {
   margin-top: 206px;
-  //border: 2px red solid;
-
 }
+
+//The big title background for small screens
 .offices-title-width-container {
   background-color: #333645;
   @media only screen and (min-width: $break-l) {
     background-color: white;
-  }
+}
 }
 
 .offices-title-container {
@@ -17,17 +17,15 @@
   margin-bottom: 50px;
   margin-top: -44px;
   max-width: 730px;
-
   @media only screen and (min-width: $break-l) {
     max-width: 930px;
     margin-top: 30px;
     margin-bottom: 0;
-  }
+}
   @media only screen and (min-width: $break-xl) {
     max-width: 1190px;
     margin-top: 55px;
-
-  }
+}
 }
 
 .offices-title-container h1 {
@@ -35,27 +33,23 @@
   font-weight: 400;
   color: white;
   text-transform: none;
-
   @media only screen and (min-width: $break-l) {
     color: #333645;
-  margin: 0 0 28px;
-
-  }
+    margin: 0 0 28px;
+}
 }
 
-
-
-
+//Little text on top 
 .home-path-container {
   box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
   @media only screen and (min-width: $break-m) {
     margin-bottom: 3rem;
     margin-top: -5rem;
-  }
+}
   @media only screen and (min-width: $break-l) {
     margin-bottom: 0;
     margin-top: 0;
-  }
+}
 }
 
 .home-path {
@@ -69,16 +63,13 @@
     display: block;
     margin-top: 10px;
     max-width: 686px;
-  }
+}
   @media only screen and (min-width: $break-l) {
     max-width: 880px;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     max-width: 1150px;
-
-  }
-
+}
 }
 
 //Home button styling
@@ -86,7 +77,6 @@
   color: #333645;
   font-weight: 700;
   font-size: 13px;
-
 }
 
 .home-path a:hover {
@@ -97,26 +87,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  //max-width: 1170px;
   margin: auto;
   margin-bottom: 40px;
   //Because of unexplainable white space under each card I added this code. It was appearing on small screens only. After that I added display:flex for IE on break-l to make the cards next to each other
   @media screen and (-ms-high-contrast: none) {
-  display: block;
-  }
+    display: block;
+}
   @media only screen and (min-width: $break-m) {
     max-width: 730px;
-  }
+}
   @media only screen and (min-width: $break-l) {
     flex-direction: row;
     max-width: 930px;
     @media screen and (-ms-high-contrast: none) {
       display: flex;
-  }
-  }
+}
+}
   @media only screen and (min-width: $break-xl) {
     max-width: 1170px;
-  }
+}
 }
 
 .offices-card {
@@ -126,44 +115,37 @@
   width: 90%;
   @media only screen and (min-width: $break-m) {
     width: 100%;
-  
-  }
-
+}
   @media only screen and (min-width: $break-l) {
     width: 290px;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     width: 370px;
-
-  }
-
+}
 }
 
 .offices-border-div {
   border: 1px solid #ccc;
   box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
-
 }
 
 .offices-image img {
   width: 100%;
   height: auto;
-
   @media only screen and (min-width: $break-l) {
-  width: 290px;
+    width: 290px;
 }
-@media only screen and (min-width: $break-xl) {
-  height: 170px;
-  width: 370px;
+  @media only screen and (min-width: $break-xl) {
+    height: 170px;
+    width: 370px;
 }
-
 }
 
 .content {
   padding: 20px;
 }
 
+//Offices title
 .content h2 a {
   color: #333645;
   text-transform: none;
@@ -174,6 +156,7 @@
   text-decoration: underline;
 } 
 
+//Addresses of the offices
 .content p {
   margin-top: 15px;
   font-size: .8125rem;
@@ -189,6 +172,11 @@
   text-decoration: underline;
 }
 
+//Buttons container 
+.more-info-offices {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
 
 .btn-offices {
   background-color: $color-web-design;
@@ -200,11 +188,6 @@
 
 .btn-offices:hover {
   background-color: darken($color: $color-web-design, $amount: 10);
-}
-
-.more-info-offices {
-  margin-top: 20px;
-  margin-bottom: 15px;
 }
 
 .map-container {
@@ -222,14 +205,13 @@
   margin-left: auto;
   z-index: 0;
   @media only screen and (min-width: $break-l) {
-  height: 290px;
-  width: 290px;
+    height: 290px;
+    width: 290px;
 }
-@media only screen and (min-width: $break-xl) {
-  height: 370px;
-  width: 370px;
+  @media only screen and (min-width: $break-xl) {
+    height: 370px;
+    width: 370px;
 }
-
 }
 
 //Added this div to make the page show up on the form on load if there is a message to display
@@ -250,27 +232,23 @@
 }
 }
 
+//The container for the form and email-us
 .contact-form-container {
-  //border: greenyellow 1px solid;
   display: flex;
   flex-direction: column-reverse;
   margin: auto;
-  //max-width: 1170px;
   margin-top: 20px;
   padding-bottom: 60px;
   padding-left: 5px;
   padding-right: 5px;
   @media only screen and (min-width: $break-m) {
     max-width: 730px;
-  
-  }
+}
   @media only screen and (min-width: $break-l) {
-    // flex-direction: row;
-   justify-content: flex-start;
+    justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
     max-width: 930px;
-
   }
   @media only screen and (min-width: $break-xl) {
     flex-direction: row;
@@ -278,13 +256,10 @@
     padding-left: 0;
     padding-right: 0;
     max-width: 1170px;
-
-  }
-
+}
 }
 
 .contact-form {
-  //border: 1px red solid;
   background-color: #E6E7E9;
   margin-left: 0;
   border-radius: 10px;
@@ -295,47 +270,36 @@
     width: 100%;
     height: 525px;
     padding: 15px;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     margin-left: 0;
-    width: 65%;
-
-  
-  }
-
+    width: 65%;  
+}
 }
 
 .contact-form-content {
   @media only screen and (min-width: $break-l) {
-
-  display: flex;
-  flex-wrap: wrap;
-  }
+    display: flex;
+    flex-wrap: wrap;
+}
 }
 
 .contact-form-input {
-  
   @media only screen and (min-width: $break-l) {
-
     margin: 10px;
     max-width: 425px;
     min-width: 425px;
-  }
-  
+}
   @media only screen and (min-width: $break-xl) {
-
-  margin: 10px;
-  max-width: 340px;
-  min-width: 340px;
+    margin: 10px;
+    max-width: 340px;
+    min-width: 340px;
 }
 }
 
 .contact-form-textarea {
-  //width: 98%;
   @media only screen and (min-width: $break-l) {
-
-  margin-left: 10px;
+    margin-left: 10px;
 }
 }
 
@@ -346,11 +310,8 @@
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
   @media only screen and (min-width: $break-l) {
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
 }
 }
 
@@ -362,7 +323,6 @@
 
 .contact-form input:focus:invalid {
   border: 1px red solid;
-
 }
 
 .contact-form textarea:focus {
@@ -373,7 +333,6 @@
 
 .contact-form textarea:focus:invalid {
   border: 1px red solid;
-
 }
 
 
@@ -381,30 +340,21 @@
   height: 100px;
   @media only screen and (min-width: $break-l) {
     width: 862px !important;
-  }
+}
   @media only screen and (min-width: $break-xl) {
     width: 693px !important;
-  }
-
 }
-
-
+}
 
 .contact-form-content input,
 .contact-form-content textarea { 
   border: 1px #CCCCCC solid;
   width: 98%;
-
 }
 
 .contact-form-content label {
   font-weight: 600;
   padding: 5px;
-
-  @media only screen and (min-width: $break-m) {
-    //width: 40%;  
-
-}
 }
 
 .checkbox-container {
@@ -429,16 +379,13 @@
 .submit-container-contact-form input[type=submit] {
   background-color: $color-web-design;
   border-radius: 5px;
-  // margin-top: -50px;
-  // margin-left: 10px;
   position: relative;
   top: -22px;
   left: -26px;
   width: 150px;
   @media only screen and (min-width: $break-l) {
     top: -38px;
-
-  }
+}
 }
 
 .checkbox-text {
@@ -460,25 +407,13 @@
   margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
 #email-contact a{
   font-weight: 600;
   color: $color-web-design !important;
   font-size: 1.3rem;
-
   @media only screen and (min-width: $break-m) {
     font-size: 1.625rem;
-
-  }
+}
 }
 
 #email-contact:hover {
@@ -490,11 +425,9 @@
   margin-bottom: 25px;
   color: #333645;
   max-width: 350px;
-
   @media only screen and (min-width: $break-l) {
     padding-left: 25px;
-
-  }
+}
 }
 
 .email-us p {
@@ -513,12 +446,8 @@
 }
 
 .drop-down-contact {
-  //display: none;
   height: 0px;
   opacity: 0;
-  // transition: height;
-  // transition-duration: 1s;
-  // transition-timing-function: ease-in;
 }
 
 .drop-down-contact p {

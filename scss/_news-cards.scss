@@ -9,7 +9,7 @@
 	margin-right: auto;
 }
 	@media only screen and (min-width: $break-l) {
-	width: 950px;
+		width: 950px;
 }
 	@media only screen and (min-width: $break-xl) {
 		max-width: 100%;
@@ -59,7 +59,7 @@
 .news-card1,
 .news-card2,
 .news-card3 {
-	border: 1px $color-button-gray solid;
+	border: 1px #ccc solid;
 	border-radius: 4px;
 	margin: 1rem 1rem;
 	background-color: white;
@@ -109,7 +109,7 @@
 	text-decoration: underline;
 }
 
-//Code to make sure that news-card-3 is not visible on certain screen sizes and back shown on biggest screens
+//Code to make sure that news-card3 is not visible on certain screen sizes and back shown on biggest screens
 .news-card3 {
 	@media only screen and (min-width: $break-m) {
 		display: none;
@@ -143,13 +143,14 @@
 }
 }
 
+//Code to make sure that text in the cards is equally spread on all screens regardless of the number of words in the title
 .news-title-container {	
 	@media only screen and (min-width: $break-m) {
 		height: 80px;
 }
 }
 
-//Stylining the title of the newscards
+//Styling the title of the newscards
 a.careers-title,
 a.environmental-news-title {
 	color: $color-news-1;
@@ -184,7 +185,7 @@ a.environmental-news-title:hover {
 
 //Styling of the text under the title in the newscards
 .news-text {
-	color: black;
+	color: #666;
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: .8125rem;
@@ -267,8 +268,11 @@ article h3 {
 	padding-top: 10px;
 }
 
-.news-card hr {
+.news-card1 hr,
+.news-card2 hr, 
+.news-card3 hr {
 	text-align: center;
-	margin: 0 auto;
-	width: 80%;
+	margin: 0 10% !important;
+	width: 80% !important;
+
 }
