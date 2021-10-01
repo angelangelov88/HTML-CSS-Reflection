@@ -58,23 +58,23 @@
             
             $date = new DateTime($news['date']);
             
-            echo '<div class="news-card news-card-1">';
+            echo '<div class="news-card">';
             echo '<div class="img-container">';
             echo '<a href="#">';
             echo '<img src="' . $news['news_image'] . '" class="photo-hiring" alt="photo-hiring">';
             echo '</a>';
-            echo '<div class="image-caption-1">';
+            echo '<div class="' . strtolower(str_replace(' ', '-', $news['category_name'])) . '">';
             echo '<a href="#" class="caption-link">' . $news['category_name'];
             echo '</a>';
             echo '</div>';    
             echo '</div>';
             echo '<article>';
-            echo '<h3 class="news-1-title">';
-            echo '<a href="#" class="news-1-title">' . $news['heading'] . '</a>';
+            echo '<h3 class="news-title-container">';
+            echo '<a href="#" class="' . strtolower(str_replace(' ', '-', $news['category_name'])) . '-title">' . $news['heading'] . '</a>';
             echo '</h3>';
             echo '<br>';      
             echo '<h6 class="news-text">' . $news['description'] . '</h6>';
-            echo '<div class="btn btn-news-card-1">';
+            echo '<div class="btn ' . strtolower(str_replace(' ', '-', $news['category_name'])) . '-btn">';
             echo '<a href="#">Read more</a>';
             echo '</div>';  
             echo '<hr>';
@@ -187,29 +187,5 @@
       </div>
     </div>
 
-    <div class="news-text">
-            <?php 
-            if (function_exists('pullNews')) {
-              echo 'yes';
-            } else {
-              echo 'no';
-            }
-            echo '<br>';
-
-            pullNews($db2);
-
-            echo '<br>';
-
-            var_dump($results);
-
-            echo '<br>';
-
-            var_dump($db2);
-
-
-
-            ?>
   
-
-          </div>
 

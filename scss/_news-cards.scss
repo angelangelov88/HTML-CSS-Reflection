@@ -76,17 +76,18 @@
 }
 
 //Image caption styling
-.image-caption-1 {
+.environmental-news,
+.careers {
 	@include image-caption;
 	background-color: $color-news-1;
 }
 
-.image-caption-2 {
+.news {
 	@include image-caption;
 	background-color: $color-news-2;
 }
 
-.image-caption-3 {
+.insights {
 	@include image-caption;
 	background-color: $color-news-3;
 }
@@ -95,17 +96,18 @@
 	color: white;
 }
 
-.image-caption-1 {
-	background-color: $color-news-1;
-}
+// .image-caption-1 {
+// 	background-color: $color-news-1;
+// }
 
-.image-caption-2 {
-	background-color: $color-news-2;
-}
+// .image-caption-2 {
+// 	background-color: $color-news-2;
+// }
 
-.image-caption-1:hover, 
-.image-caption-2:hover, 
-.image-caption-3:hover {
+.environmental-news:hover, 
+.careers:hover, 
+.insights:hover,
+.news:hover {
 	text-decoration: underline;
 }
 
@@ -121,21 +123,21 @@
 
 //Image container used to make sure that the photo does not extend outside of its original container on hover
 .img-container {
-	overflow: hidden
+	overflow: hidden;
+	// width: 363px;
+	// height: 216px;
+	max-height: 190px;
+	max-width: 360px;
 }
 
 //I added the transition property here in order to make the hover effect smooth
-.photo-hiring,
-.photo-hand,
-.photo-rob {
+.photo-hiring {
 	width: 100%;
 	transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 //The effect on hovering over the image
-.photo-rob:hover,
-.photo-hiring:hover,
-.photo-hand:hover {
+.photo-hiring:hover {
 	@media only screen and (min-width: $break-l) {
 		transform: scale(1.1);
 		opacity: .7;
@@ -143,8 +145,15 @@
 }
 }
 
+.news-title-container {
+	border: 1px red solid;
+	height: 80px;
+
+}
+
 //Stylining the title of the newscards
-a.news-1-title {
+a.careers-title,
+a.environmental-news-title {
 	color: $color-news-1;
 	@include news-title-style;
 	@media only screen and (min-width: $break-s) {
@@ -152,7 +161,7 @@ a.news-1-title {
 }
 }
 
-a.news-2-title {
+a.news-title {
 	color: $color-news-2;
 	@include news-title-style;
 	@media only screen and (min-width: $break-s) {
@@ -160,15 +169,32 @@ a.news-2-title {
 }
 }
 
-a.news-3-title {
+a.insights-title {
 	color: $color-news-3;
-	padding: 30px 0;
 	@include news-title-style;
+	@media only screen and (min-width: $break-s) {
+		padding: 0px;
+}
 }
 
-a.news-1-title:hover,
-a.news-2-title:hover,
-a.news-3-title:hover {
+// a.news-2-title {
+// 	color: $color-news-2;
+// 	@include news-title-style;
+// 	@media only screen and (min-width: $break-s) {
+// 		padding: 0px;
+// }
+// }
+
+// a.news-3-title {
+// 	color: $color-news-3;
+// 	padding: 30px 0;
+// 	@include news-title-style;
+// }
+
+a.careers-title:hover,
+a.news-title:hover,
+a.insights-title:hover,
+a.environmental-news-title:hover {
 	text-decoration: underline;
 }
 
@@ -182,44 +208,57 @@ a.news-3-title:hover {
 }
 
 //Styling of the newscard "Read more" button and code to make sure that the buttons are aligned vertically with the other newscards on all screen sizes.
-.btn-news-card-1 {
+// .btn-news-card-1 {
+// 	@include button-news-colour;
+// 	@include btn-cards-newscards;
+// 	background-color: $color-news-1;
+// }
+
+.careers-btn,
+.environmental-news-btn {
 	@include button-news-colour;
 	@include btn-cards-newscards;
 	background-color: $color-news-1;
-	@media only screen and (min-width: $break-m) {
-		margin-top: 74px;
-}
-	@media only screen and (min-width: $break-l) {
-		margin-top: 52px;
-}
-	@media only screen and (min-width: $break-xl) {
-		margin-top: 74px;
-}
-}
 
-.btn-news-card-2 {
+}
+.news-btn {
 	@include button-news-colour;
 	@include btn-cards-newscards;
 	background-color: $color-news-2;
+
 }
 
-.btn-news-card-3 {
+.insights-btn {
 	@include button-news-colour;
 	@include btn-cards-newscards;
 	background-color: $color-news-3;
+
 }
 
-.btn-news-card-1:hover {
+// .btn-news-card-2 {
+// 	@include button-news-colour;
+// 	@include btn-cards-newscards;
+// 	background-color: $color-news-2;
+// }
+
+// .btn-news-card-3 {
+// 	@include button-news-colour;
+// 	@include btn-cards-newscards;
+// 	background-color: $color-news-3;
+// }
+
+.careers-btn:hover,
+.environmental-news-btn:hover {
 	color: white;
 	background-color: darken($color: $color-news-1, $amount: 10%);
 }
 
-.btn-news-card-2:hover {
+.news-btn:hover {
 	color: white;
 	background-color: darken($color: $color-news-2, $amount: 10%);
 }
 
-.btn-news-card-3:hover {
+.insights-btn:hover {
 	color: white;
 	background-color: darken($color: $color-news-3, $amount: 10%);
 }

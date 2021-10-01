@@ -1800,7 +1800,8 @@ h2 {
   }
 }
 
-.image-caption-1 {
+.environmental-news,
+.careers {
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -1812,7 +1813,7 @@ h2 {
   background-color: #7E57A0;
 }
 
-.image-caption-2 {
+.news {
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -1824,7 +1825,7 @@ h2 {
   background-color: #2A6EC6;
 }
 
-.image-caption-3 {
+.insights {
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -1833,24 +1834,17 @@ h2 {
   position: absolute;
   top: -0.5rem;
   right: 0rem;
-  background-color: #566C88;
+  background-color: #C42E2A;
 }
 
 .caption-link {
   color: white;
 }
 
-.image-caption-1 {
-  background-color: #7E57A0;
-}
-
-.image-caption-2 {
-  background-color: #2A6EC6;
-}
-
-.image-caption-1:hover,
-.image-caption-2:hover,
-.image-caption-3:hover {
+.environmental-news:hover,
+.careers:hover,
+.insights:hover,
+.news:hover {
   text-decoration: underline;
 }
 
@@ -1867,57 +1861,67 @@ h2 {
 
 .img-container {
   overflow: hidden;
+  max-height: 190px;
+  max-width: 360px;
 }
 
-.photo-hiring,
-.photo-hand,
-.photo-rob {
+.photo-hiring {
   width: 100%;
   transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media only screen and (min-width: 992px) {
-  .photo-rob:hover,
-.photo-hiring:hover,
-.photo-hand:hover {
+  .photo-hiring:hover {
     transform: scale(1.1);
     opacity: 0.7;
     transition: 0.4s;
   }
 }
 
-a.news-1-title {
+.news-title-container {
+  border: 1px red solid;
+  height: 80px;
+}
+
+a.careers-title,
+a.environmental-news-title {
   color: #7E57A0;
   font-size: 1rem;
   font-weight: 600;
 }
 @media only screen and (min-width: 576px) {
-  a.news-1-title {
+  a.careers-title,
+a.environmental-news-title {
     padding: 0px;
   }
 }
 
-a.news-2-title {
+a.news-title {
   color: #2A6EC6;
   font-size: 1rem;
   font-weight: 600;
 }
 @media only screen and (min-width: 576px) {
-  a.news-2-title {
+  a.news-title {
     padding: 0px;
   }
 }
 
-a.news-3-title {
-  color: #566C88;
-  padding: 30px 0;
+a.insights-title {
+  color: #C42E2A;
   font-size: 1rem;
   font-weight: 600;
 }
+@media only screen and (min-width: 576px) {
+  a.insights-title {
+    padding: 0px;
+  }
+}
 
-a.news-1-title:hover,
-a.news-2-title:hover,
-a.news-3-title:hover {
+a.careers-title:hover,
+a.news-title:hover,
+a.insights-title:hover,
+a.environmental-news-title:hover {
   text-decoration: underline;
 }
 
@@ -1929,7 +1933,8 @@ a.news-3-title:hover {
   line-height: 1.375rem;
 }
 
-.btn-news-card-1 {
+.careers-btn,
+.environmental-news-btn {
   color: white;
   margin: 30px;
   font-weight: 400;
@@ -1938,23 +1943,8 @@ a.news-3-title:hover {
   height: 50px;
   background-color: #7E57A0;
 }
-@media only screen and (min-width: 768px) {
-  .btn-news-card-1 {
-    margin-top: 74px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .btn-news-card-1 {
-    margin-top: 52px;
-  }
-}
-@media only screen and (min-width: 1260px) {
-  .btn-news-card-1 {
-    margin-top: 74px;
-  }
-}
 
-.btn-news-card-2 {
+.news-btn {
   color: white;
   margin: 30px;
   font-weight: 400;
@@ -1964,29 +1954,30 @@ a.news-3-title:hover {
   background-color: #2A6EC6;
 }
 
-.btn-news-card-3 {
+.insights-btn {
   color: white;
   margin: 30px;
   font-weight: 400;
   font-size: 1rem;
   width: 130px;
   height: 50px;
-  background-color: #566C88;
+  background-color: #C42E2A;
 }
 
-.btn-news-card-1:hover {
+.careers-btn:hover,
+.environmental-news-btn:hover {
   color: white;
   background-color: #64457f;
 }
 
-.btn-news-card-2:hover {
+.news-btn:hover {
   color: white;
   background-color: #21579c;
 }
 
-.btn-news-card-3:hover {
+.insights-btn:hover {
   color: white;
-  background-color: #425369;
+  background-color: #9a2421;
 }
 
 .news-card-footer {

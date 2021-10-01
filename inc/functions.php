@@ -112,31 +112,6 @@ function createMessage($array) {
 
 //Function to pull the news from the database
 
-// require __DIR__ . '/connection.php';
-
-// function connect_to_db() {
-// $dsn = "mysql";
-// $host = "localhost";
-// $port = 3306;
-// $db2name = "news-db";
-// $user = "angel_user";
-// $pass = "123";
- 
-// try {
-//     $db2 = new PDO("$dsn:host=$host;port=$port;dbname=$db2name", $user, $pass);
-//     $db2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// } catch (Exception $e) {
-//     echo "Unable to connect - ";
-//     echo $e->getMessage();
-//     exit;
-// }
-
-// }
-
-
-
-
 function pullNews($db2) {
   try {
     $query = "
