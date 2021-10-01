@@ -37,7 +37,7 @@
           $message = createMessage($array); 
 
           if ($array["passed"]) {
-            $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+            $dbSuccess = postContact($GLOBALS["db1"], $array["array"]);
           } else {
             $errorArray = $array["array"];
           }

@@ -1,12 +1,12 @@
 <?php 
 
 //Add user input to the database
-function postContact($db, $contactArray) {
+function postContact($db1, $contactArray) {
   try {
     $query = "INSERT INTO contact (email, name, phone_number, subject, message, newsletter, date)
     VALUES (:email, :name, :phone_number, :subject, :message, :newsletter, :date)";
 
-  $stmt = $db->prepare($query);
+  $stmt = $db1->prepare($query);
   $stmt->bindParam(":email", $contactArray['email']);
   $stmt->bindParam(":name", $contactArray['name']);
   $stmt->bindParam(":phone_number", $contactArray['phone_number']);
@@ -107,6 +107,59 @@ function createMessage($array) {
     $message .= implode(", ",$array["array"]);
   }
   return $message;
+}
+
+
+//Function to pull the news from the database
+
+// require __DIR__ . '/connection.php';
+
+// function connect_to_db() {
+// $dsn = "mysql";
+// $host = "localhost";
+// $port = 3306;
+// $db2name = "news-db";
+// $user = "angel_user";
+// $pass = "123";
+ 
+// try {
+//     $db2 = new PDO("$dsn:host=$host;port=$port;dbname=$db2name", $user, $pass);
+//     $db2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+// } catch (Exception $e) {
+//     echo "Unable to connect - ";
+//     echo $e->getMessage();
+//     exit;
+// }
+
+// }
+
+
+
+
+function pullNews($db2) {
+  try {
+    $query = "
+    SELECT news.heading, news.description, news.news_image, news.date, author.profile_image, category.category_name, author.full_name
+    FROM news
+    JOIN author ON news.author_id = author.author_id
+    JOIN category ON news.category_id = category.category_id
+    Order by RAND()
+    LIMIT 3
+    ";
+    $stmt = $db2->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $results;
+    echo "hi";
+    var_dump($results);
+
+
+  } catch (Exception $e) {
+    echo "Unable to connect - ";
+    echo $e->getMessage();
+  }
+
 }
 
 
