@@ -1,5 +1,5 @@
 <?php  
-// env variables
+
 $dsn = "mysql";
 $host = "localhost";
 $port = 3306;

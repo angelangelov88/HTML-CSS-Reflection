@@ -1775,7 +1775,9 @@ h2 {
   }
 }
 
-.news-card {
+.news-card1,
+.news-card2,
+.news-card3 {
   border: 1px #999aa2 solid;
   border-radius: 4px;
   margin: 1rem 1rem;
@@ -1784,17 +1786,23 @@ h2 {
   position: relative;
 }
 @media only screen and (min-width: 576px) {
-  .news-card {
+  .news-card1,
+.news-card2,
+.news-card3 {
     width: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .news-card {
+  .news-card1,
+.news-card2,
+.news-card3 {
     max-width: 350px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .news-card {
+  .news-card1,
+.news-card2,
+.news-card3 {
     max-width: 450px;
     overflow: hidden;
   }
@@ -1811,6 +1819,10 @@ h2 {
   top: -0.5rem;
   right: 0rem;
   background-color: #7E57A0;
+}
+
+.environmental-news {
+  width: 46%;
 }
 
 .news {
@@ -1849,20 +1861,24 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  .news-card-3 {
+  .news-card3 {
     display: none;
   }
 }
 @media only screen and (min-width: 1260px) {
-  .news-card-3 {
+  .news-card3 {
     display: block;
   }
 }
 
 .img-container {
   overflow: hidden;
-  max-height: 190px;
-  max-width: 360px;
+}
+@media only screen and (min-width: 1260px) {
+  .img-container {
+    max-height: 190px;
+    max-width: 370px;
+  }
 }
 
 .photo-hiring {
@@ -1878,9 +1894,10 @@ h2 {
   }
 }
 
-.news-title-container {
-  border: 1px red solid;
-  height: 80px;
+@media only screen and (min-width: 768px) {
+  .news-title-container {
+    height: 80px;
+  }
 }
 
 a.careers-title,

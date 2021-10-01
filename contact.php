@@ -18,7 +18,6 @@
   require __DIR__ . './inc/functions.php';
 
   ?>
-
     <div class="contact-page-container">
       <div class="home-path-container">
         <div class="home-path"><a href="index.php">Home</a> / Our Offices</div>
@@ -29,29 +28,19 @@
         </div>
       </div>
    <?php   
-
-        // validate the form on the server-side and submit 
+// Make sure the form is validated before submitting it 
         if (isset($_POST['submit'])) {
           $array = validateForm();
-//create a message variable to store the message, and then pass the createMessage function the array that the validateForm function returns
+//Message to user that contains the errors that need to be fixed
           $message = createMessage($array); 
-
           if ($array["passed"]) {
             $dbSuccess = postContact($GLOBALS["db1"], $array["array"]);
-          } else {
+          } 
+          else {
             $errorArray = $array["array"];
           }
         }
-        // var_dump($message);
-        // echo "<br>";
-        // var_dump($array);
-        // echo "<br>";
-        // var_dump($errorArray);
-
       ?>
-
-
-
       <div class="offices-container">
         <div class="offices-card">
           <div class="offices-border-div">
@@ -79,8 +68,6 @@
           </div>
           <div id="mapid" class="mapid"></div>
         </div>
-
-
         <div class="offices-card">    
           <div class="offices-border-div">     
             <div class="offices-image">
@@ -107,8 +94,6 @@
           </div>
           <div id="mapid2" class="mapid"></div>
         </div> 
-
-
         <div class="offices-card">    
           <div class="offices-border-div">
             <div class="offices-image">
@@ -135,15 +120,9 @@
           </div>
           <div id="mapid3" class="mapid"></div>
         </div>
-
-
       </div>
-      <!-- <div class="map-container">
-      <div id="mapid" class="mapid"></div>
-      <div id="mapid2" class="mapid"></div>
-      <div id="mapid3" class="mapid"></div>
-      </div> -->
-      <!-- I added this div in order to target it and show the form correctly on click on submit button -->
+
+<!-- I added this div in order to target it and show the form correctly on click on submit button -->
       <div id="scroll-js"></div>
       <div class="contact-form-container">
       <div class="contact-form">
@@ -172,8 +151,6 @@
               <label>Message</label>
               <textarea id="message" type="text" name="message" required><?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?></textarea>
             </div>
-
-
             <div class="tickbox-contact-form">
                 <label class="checkbox-container checkbox-text"><p>Please tick this box if you wish to receive marketing information from us. Please see our 
                   <a href="https://www.netmatters.co.uk/privacy-policy" class="privacy-text">Privacy Policy</a> for more information on how we use your data.</p>
@@ -182,38 +159,36 @@
                 </label>
             </div>
             <div class="submit-container-contact-form">
-                <input type="submit" name="submit" id="submit-button" value="Send Enquiry">
-              </div>
-
+              <input type="submit" name="submit" id="submit-button" value="Send Enquiry">
             </div>
-            </form>
-
-    </div>
-    <div class="email-us-container">
-      <div class="email-us">
-        <p>Email us on:</p>
-        <p id="email-contact"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
-        <p>Business hours:</p>
-        <p>Monday - Friday 07:00 - 18:00</p>
-        <p id="out-of-hours">Out of Hours IT Support
-        <em style="font-style: normal" class="fa fa-chevron-down rotate down"></em>
-        </p>
+          </div>
+        </form>
       </div>
-      <div class="drop-down-contact">
-        <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-        <p id="working-hours-drop-down">Monday - Friday 18:00 - 22:00 
-          <br>
-          Saturday 08:00 - 16:00
-          <br>
-          Sunday 10:00 - 18:00
-        </p>
-        <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
-      </div>
+      <div class="email-us-container">
+        <div class="email-us">
+          <p>Email us on:</p>
+          <p id="email-contact"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
+          <p>Business hours:</p>
+          <p>Monday - Friday 07:00 - 18:00</p>
+          <p id="out-of-hours">Out of Hours IT Support
+          <em style="font-style: normal" class="fa fa-chevron-down rotate down"></em>
+          </p>
+        </div>
+        <div class="drop-down-contact">
+          <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+          <p id="working-hours-drop-down">Monday - Friday 18:00 - 22:00 
+            <br>
+            Saturday 08:00 - 16:00
+            <br>
+            Sunday 10:00 - 18:00
+          </p>
+          <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+        </div>
       </div>
     </div>
 
   <!-- NEWSLETTER SIGN-UP -->
-  <?php include "./inc/newsletter.php" ?>
+        <?php include "./inc/newsletter.php" ?>
       
   <!-- FOOTER -->
         <?php include "./inc/footer.php" ?>
@@ -223,11 +198,12 @@
   
   <!-- Scripts -->
         <?php include "./inc/scripts.php" ?>
+
   <!-- Maps JS file -->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-
+  <!-- JS for contact-page -->
         <script src="js/contact-page.js"></script>
         
   </body>

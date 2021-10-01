@@ -36,39 +36,32 @@ function validateForm() {
   } else {
       $errorArray[] = "name";
   }
-
   if (!empty($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       $email = $_POST['email'];
   } else {
       $errorArray[] = "email";
   }
-
   if (!empty($_POST['phone_number']) && preg_match($phoneRegex, $_POST['phone_number'])) {
       $phone_number = $_POST['phone_number'];
   } else {
       $errorArray[] = "phone_number";
   }
-
   if (!empty($_POST['subject'])) {
       $subject = $_POST['subject'];
   }else {
       $errorArray[] = "subject";
   }
-
   if (!empty($_POST['message'])) {
       $message = $_POST['message'];
   } else {
       $errorArray[] = "message";
   }
-
-
   if (!empty($_POST['newsletter'])) {
       $newsletter = true;
   } else {
       $newsletter = false;
   }
 
-  
 
 //Select the current date/time
   $dt = new DateTime();
@@ -76,8 +69,7 @@ function validateForm() {
   $today = $dt->format("Y-m-d H:i:s");
 
 
-
-  // if no errors showed up, add variables to an array and submit
+//Add the user input to an array if no errors
   if (empty($errorArray)) {
       $contactArray = [
       "name" => $name,
@@ -88,7 +80,6 @@ function validateForm() {
       "newsletter" => $newsletter,
       "date" => $today
       ];
-
       return ["passed" => true, "array" => $contactArray];
   } else {
       return ["passed" => false, "array" => $errorArray];
@@ -96,9 +87,7 @@ function validateForm() {
 }
 
 
-
-//Message to the user
-
+//Message to the user tha the form has been submitted or error has occured
 function createMessage($array) {
   if ($array["passed"]) {
     $message = "<span style='color:green;'>Form was submitted successfully!</span>";
@@ -111,7 +100,6 @@ function createMessage($array) {
 
 
 //Function to pull the news from the database
-
 function pullNews($db2) {
   try {
     $query = "
@@ -126,18 +114,10 @@ function pullNews($db2) {
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $results;
-    echo "hi";
-    var_dump($results);
-
-
   } catch (Exception $e) {
     echo "Unable to connect - ";
     echo $e->getMessage();
   }
-
 }
-
-
-
 
 ?>

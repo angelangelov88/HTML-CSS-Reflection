@@ -56,7 +56,9 @@
 }
 
 //Each newscard container div
-.news-card {
+.news-card1,
+.news-card2,
+.news-card3 {
 	border: 1px $color-button-gray solid;
 	border-radius: 4px;
 	margin: 1rem 1rem;
@@ -82,6 +84,10 @@
 	background-color: $color-news-1;
 }
 
+.environmental-news {
+	width: 46%;
+}
+
 .news {
 	@include image-caption;
 	background-color: $color-news-2;
@@ -96,14 +102,6 @@
 	color: white;
 }
 
-// .image-caption-1 {
-// 	background-color: $color-news-1;
-// }
-
-// .image-caption-2 {
-// 	background-color: $color-news-2;
-// }
-
 .environmental-news:hover, 
 .careers:hover, 
 .insights:hover,
@@ -112,7 +110,7 @@
 }
 
 //Code to make sure that news-card-3 is not visible on certain screen sizes and back shown on biggest screens
-.news-card-3 {
+.news-card3 {
 	@media only screen and (min-width: $break-m) {
 		display: none;
 }
@@ -124,10 +122,10 @@
 //Image container used to make sure that the photo does not extend outside of its original container on hover
 .img-container {
 	overflow: hidden;
-	// width: 363px;
-	// height: 216px;
-	max-height: 190px;
-	max-width: 360px;
+	@media only screen and (min-width: $break-xl) {
+		max-height: 190px;
+		max-width: 370px;
+}
 }
 
 //I added the transition property here in order to make the hover effect smooth
@@ -145,10 +143,10 @@
 }
 }
 
-.news-title-container {
-	border: 1px red solid;
-	height: 80px;
-
+.news-title-container {	
+	@media only screen and (min-width: $break-m) {
+		height: 80px;
+}
 }
 
 //Stylining the title of the newscards
@@ -177,20 +175,6 @@ a.insights-title {
 }
 }
 
-// a.news-2-title {
-// 	color: $color-news-2;
-// 	@include news-title-style;
-// 	@media only screen and (min-width: $break-s) {
-// 		padding: 0px;
-// }
-// }
-
-// a.news-3-title {
-// 	color: $color-news-3;
-// 	padding: 30px 0;
-// 	@include news-title-style;
-// }
-
 a.careers-title:hover,
 a.news-title:hover,
 a.insights-title:hover,
@@ -208,11 +192,6 @@ a.environmental-news-title:hover {
 }
 
 //Styling of the newscard "Read more" button and code to make sure that the buttons are aligned vertically with the other newscards on all screen sizes.
-// .btn-news-card-1 {
-// 	@include button-news-colour;
-// 	@include btn-cards-newscards;
-// 	background-color: $color-news-1;
-// }
 
 .careers-btn,
 .environmental-news-btn {
@@ -225,7 +204,6 @@ a.environmental-news-title:hover {
 	@include button-news-colour;
 	@include btn-cards-newscards;
 	background-color: $color-news-2;
-
 }
 
 .insights-btn {
@@ -234,18 +212,6 @@ a.environmental-news-title:hover {
 	background-color: $color-news-3;
 
 }
-
-// .btn-news-card-2 {
-// 	@include button-news-colour;
-// 	@include btn-cards-newscards;
-// 	background-color: $color-news-2;
-// }
-
-// .btn-news-card-3 {
-// 	@include button-news-colour;
-// 	@include btn-cards-newscards;
-// 	background-color: $color-news-3;
-// }
 
 .careers-btn:hover,
 .environmental-news-btn:hover {
