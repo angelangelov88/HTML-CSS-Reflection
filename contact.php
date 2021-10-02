@@ -1,3 +1,12 @@
+<!-- Database connection file -->
+<?php 
+  require __DIR__ . '/inc/connection.php';
+  echo 'first';
+  require __DIR__ . '/inc/functions.php';
+  echo 'second';
+  ?>
+
+
 <!-- HTML head -->
   <?php include "./inc/head.php" ?>
 
@@ -6,18 +15,11 @@
   <?php include "./inc/cookies.php" ?>
 
 <!-- Header -->
-
   <?php include "./inc/header.php" ?>
 
 <!-- NAV BAR -->
   <?php include "./inc/navbar.php" ?>
 
-<!-- Database connection file -->
-  <?php 
-  require __DIR__ . './inc/connection.php';
-  require __DIR__ . './inc/functions.php';
-
-  ?>
     <div class="contact-page-container">
       <div class="home-path-container">
         <div class="home-path"><a href="index.php">Home</a> / Our Offices</div>

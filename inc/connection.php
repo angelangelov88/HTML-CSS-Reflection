@@ -3,10 +3,10 @@
 $dsn = "mysql";
 $host = "localhost";
 $port = 3306;
-$db1name = "contact-page-reflection";
-$db2name = "news-db";
-$user = "angel_user";
-$pass = "123";
+$db1name = "angelang_contact-page-reflection";
+$db2name = "angelang_news-db";
+$user = "angelang_user";
+$pass = "l633,mF7Ysh&";
  
 try {
     $db1 = new PDO("$dsn:host=$host;port=$port;dbname=$db1name", $user, $pass);

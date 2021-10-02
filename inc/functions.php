@@ -12,7 +12,7 @@ function postContact($db1, $contactArray) {
   $stmt->bindParam(":phone_number", $contactArray['phone_number']);
   $stmt->bindParam(":subject", $contactArray['subject']);
   $stmt->bindParam(":message", $contactArray['message']);
-  $stmt->bindParam(":newsletter", $contactArray['newsletter']);
+  $stmt->bindParam(":newsletter", $contactArray['newsletter'], PDO::PARAM_BOOL);
   $stmt->bindParam(":date", $contactArray['date']);
 
   $stmt->execute();
